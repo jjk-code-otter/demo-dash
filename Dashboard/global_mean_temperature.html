@@ -55,6 +55,16 @@ p {
 
 
 </style>
+
+<script>
+        function copyText(invar) {
+
+            /* Copy text into clipboard */
+            navigator.clipboard.writeText
+                (invar);
+        }
+
+</script>
 <body>
 
 <div class="w3-container w3-padding-32 w3-light-grey">
@@ -276,7 +286,7 @@ A key indicator of climate change is the global mean temperature. Global mean te
 <a href="https://unfccc.int/process-and-meetings/the-paris-agreement/the-paris-agreement" target="_blank"  rel="noopener">The Paris Agreement</a> aims to hold the increase in the global average temperature to well below 2&deg;C above pre-industrial levels and pursue efforts to limit the temperature increase to 1.5&deg;C above pre-industrial levels, recognizing that this would significantly reduce the risks and impacts of climate change. The Paris Agreement is generally understood to refer to long-term changes in temperature, so a single year that exceeds 1.5&deg;C would not necessarily signal a breach of the threshold.
 </p>
 <p>
-Warming of the Earth is not the same everywhere. The land has warmed more rapidly than the ocean and the rate of warming has been highest in the Arctic, which has warmed around two to four times faster than the global mean.
+Warming of the Earth is not the same everywhere. The land has warmed more rapidly than the ocean and the rate of warming has been highest in the Arctic, which has warmed around two to four times faster than the global mean depending on the time period chosen.
 </p>
 <h2>
 What the IPCC says
@@ -352,7 +362,8 @@ Global mean temperature is based on measurements made at weather stations over l
                 <p>
                     Data file: <a href="formatted_data/Global_mean_temperature_data_files.zip"
                                                   aria-label="Bundle of csv data in a zip file">Global_mean_temperature_data_files.zip</a>
-                    <br>Checksum: f0b4f3f946b7b292c29c43b5d864e10b
+                    <br>Checksum: 125cd63d315b6f86497da414e24e96e7
+                    <button onclick="copyText('125cd63d315b6f86497da414e24e96e7')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
                        aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
@@ -635,7 +646,8 @@ Land surface air temperature is the temperature of air approximately 2m above th
                 <p>
                     Data file: <a href="formatted_data/Land_air_temperature_data_files.zip"
                                                   aria-label="Bundle of csv data in a zip file">Land_air_temperature_data_files.zip</a>
-                    <br>Checksum: 780df18a99b7dfd92c698b5299d5e9c8
+                    <br>Checksum: 74bcd02ce6315c01e5ac5775da271658
+                    <button onclick="copyText('74bcd02ce6315c01e5ac5775da271658')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
                        aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
@@ -798,7 +810,7 @@ Land surface air temperature is the temperature of air approximately 2m above th
 
                 
                 <p>
-Sea-surface temperature (SST) is the temperature of the surface ocean, typically measured in the upper metre, or metres, by ships and buoys.
+Sea-surface temperature (SST) is the temperature of the surface ocean, typically measured in the upper metre, or metres of the ocean, by ships, buoys and satellites.
 </p>
                 
 
@@ -808,7 +820,8 @@ Sea-surface temperature (SST) is the temperature of the surface ocean, typically
                 <p>
                     Data file: <a href="formatted_data/Sea-surface_temperature_data_files.zip"
                                                   aria-label="Bundle of csv data in a zip file">Sea-surface_temperature_data_files.zip</a>
-                    <br>Checksum: 4b4bf9cbafeff7bbe21a3ba89546abb1
+                    <br>Checksum: b27b1506fe4e6656b8b5a6c266802b79
+                    <button onclick="copyText('b27b1506fe4e6656b8b5a6c266802b79')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
                        aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
@@ -918,6 +931,7 @@ Global mean temperature is based on measurements made at weather stations over l
                     Data file: <a href="formatted_data/Temperature_anomaly_map_data_files.zip"
                                                   aria-label="Bundle of csv data in a zip file">Temperature_anomaly_map_data_files.zip</a>
                     <br>Checksum: 76cdb2bad9582d23c1f6f4d868218d6c
+                    <button onclick="copyText('76cdb2bad9582d23c1f6f4d868218d6c')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
                        aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
@@ -1201,6 +1215,7 @@ Global mean temperature is based on measurements made at weather stations over l
                     Data file: <a href="formatted_data/Temperature_anomaly_uncertainty_map_data_files.zip"
                                                   aria-label="Bundle of csv data in a zip file">Temperature_anomaly_uncertainty_map_data_files.zip</a>
                     <br>Checksum: 76cdb2bad9582d23c1f6f4d868218d6c
+                    <button onclick="copyText('76cdb2bad9582d23c1f6f4d868218d6c')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
                        aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
@@ -1484,6 +1499,7 @@ Global mean temperature is based on measurements made at weather stations over l
                     Data file: <a href="formatted_data/Temperature_anomaly_rank_map_data_files.zip"
                                                   aria-label="Bundle of csv data in a zip file">Temperature_anomaly_rank_map_data_files.zip</a>
                     <br>Checksum: 76cdb2bad9582d23c1f6f4d868218d6c
+                    <button onclick="copyText('76cdb2bad9582d23c1f6f4d868218d6c')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
                        aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>

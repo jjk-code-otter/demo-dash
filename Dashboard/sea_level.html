@@ -55,6 +55,16 @@ p {
 
 
 </style>
+
+<script>
+        function copyText(invar) {
+
+            /* Copy text into clipboard */
+            navigator.clipboard.writeText
+                (invar);
+        }
+
+</script>
 <body>
 
 <div class="w3-container w3-padding-32 w3-light-grey">
@@ -177,7 +187,7 @@ p {
         <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
             <div class="w3-content">
                 <p>
-The ocean covers nearly 70% of the Earth's surface. Most of the excess energy that accumulates in the Earth system due to increasing concentrations of greenhouse gases is taken up by the ocean. The added energy warms the ocean and this warming causes the water to expand, which in turn leads to sea-level rise. The melting of ice on the land also adds to sea level rise. The surface layers of the ocean have warmed more rapidly than the interior, mirrored in the rise of global mean sea-surface temperature and in the increased incidence of marine heatwaves.
+The ocean covers nearly 70% of the Earth's surface. Most of the excess energy that accumulates in the Earth system due to increasing concentrations of greenhouse gases is taken up by the ocean. The added energy warms the ocean and this warming causes the water to expand, which in turn leads to sea-level rise. The melting of ice on the land also adds to sea level rise. The surface layers of the ocean have warmed more rapidly than the deeper interior, mirrored in the rise of global mean sea-surface temperature and in the increased incidence of marine heatwaves.
 </p>
 <p>
 As the concentration of CO<sub>2</sub> in the atmosphere increases, so too does the concentration of CO<sub>2</sub> in the ocean. This affects ocean chemistry, lowering the average pH of the water, a process known as ocean acidification, though it should be noted that the ocean remains, on average, slightly alkaline. All these changes have a broad range of impacts and interactions in the ocean and coastal areas.
@@ -257,7 +267,8 @@ Global mean sea level is a measured by satellites using radar altimeters that re
                 <p>
                     Data file: <a href="formatted_data/Sea_level_data_files.zip"
                                                   aria-label="Bundle of csv data in a zip file">Sea_level_data_files.zip</a>
-                    <br>Checksum: 85d88b253d7d339f56ed00fcdf22892a
+                    <br>Checksum: bbab355cc617c76024e5e601afbd86c6
+                    <button onclick="copyText('bbab355cc617c76024e5e601afbd86c6')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
                        aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
@@ -348,7 +359,8 @@ Ocean heat content is a measure of the change in heat energy stored in the subsu
                 <p>
                     Data file: <a href="formatted_data/Ocean_heat_content_data_files.zip"
                                                   aria-label="Bundle of csv data in a zip file">Ocean_heat_content_data_files.zip</a>
-                    <br>Checksum: 0e2a1964493dca17a8086d50180960eb
+                    <br>Checksum: f13f9257fd0a6df9addf44496f2e488d
+                    <button onclick="copyText('f13f9257fd0a6df9addf44496f2e488d')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
                        aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
@@ -402,7 +414,7 @@ Ocean heat content is a measure of the change in heat energy stored in the subsu
 
                 
                 <p>
-Sea-surface temperature (SST) is the temperature of the surface ocean, typically measured in the upper metre, or metres, by ships and buoys.
+Sea-surface temperature (SST) is the temperature of the surface ocean, typically measured in the upper metre, or metres of the ocean, by ships, buoys and satellites.
 </p>
                 
 
@@ -412,7 +424,8 @@ Sea-surface temperature (SST) is the temperature of the surface ocean, typically
                 <p>
                     Data file: <a href="formatted_data/Sea-surface_temperature_data_files.zip"
                                                   aria-label="Bundle of csv data in a zip file">Sea-surface_temperature_data_files.zip</a>
-                    <br>Checksum: 114daf0d929cffdd9d87dcc369460485
+                    <br>Checksum: bff027a691e7a937834bbc9da8e61dc1
+                    <button onclick="copyText('bff027a691e7a937834bbc9da8e61dc1')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
                        aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
