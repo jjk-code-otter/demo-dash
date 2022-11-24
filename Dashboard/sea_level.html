@@ -32,28 +32,6 @@ p {
   display: inline-block;
   border-radius: 5px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </style>
 
 <script>
@@ -63,7 +41,6 @@ p {
             navigator.clipboard.writeText
                 (invar);
         }
-
 </script>
 <body>
 
@@ -75,17 +52,22 @@ p {
         </div>
     </div>
 
+    
     <div class="w3-row-padding" style="margin:0 -16px">
 
         
         <div class="w3-third">
 
-            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey"  style="padding-bottom:10px">
                 <p>
-                    <img src="figures/Sea_level.png" width=100% alt="monthly Global mean sea level (mm)  from 1993-2022. Data are from the following two data sets: AVISO, AVISO ftp."
+                    <img src="figures/Sea_level.png" width=100% alt="Monthly Global mean sea level (mm)  from 1993-2022. Data are from the following two data sets: AVISO, AVISO CNES."
                          title="Graph of Sea level">
                 </p>
                 <h3>Sea level</h3>
+                <p>
+                    Monthly Global mean sea level (mm)  from 1993-2022. Data are from the following two data sets: AVISO, AVISO CNES.
+                    <button onclick="copyText('Monthly Global mean sea level (mm)  from 1993-2022. Data are from the following two data sets: AVISO, AVISO CNES.')">Copy caption</button>
+                </p>
                 <p>
                 <div style="float: left;">
                     Image: <a href="figures/Sea_level.png" target="_blank" aria-label="Figure in png format">png</a>-<a
@@ -111,12 +93,16 @@ p {
         
         <div class="w3-third">
 
-            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey"  style="padding-bottom:10px">
                 <p>
-                    <img src="figures/Ocean_heat_content.png" width=100% alt="annual Global ocean heat content (zJ, difference from the 1981-2010 average)  from 1960-2020. Data are from GCOS."
+                    <img src="figures/Ocean_heat_content.png" width=100% alt="Annual Global ocean heat content (zJ, difference from the 1981-2010 average)  from 1960-2020. Data are from GCOS."
                          title="Graph of Ocean heat content">
                 </p>
                 <h3>Ocean heat content</h3>
+                <p>
+                    Annual Global ocean heat content (zJ, difference from the 1981-2010 average)  from 1960-2020. Data are from GCOS.
+                    <button onclick="copyText('Annual Global ocean heat content (zJ, difference from the 1981-2010 average)  from 1960-2020. Data are from GCOS.')">Copy caption</button>
+                </p>
                 <p>
                 <div style="float: left;">
                     Image: <a href="figures/Ocean_heat_content.png" target="_blank" aria-label="Figure in png format">png</a>-<a
@@ -142,12 +128,16 @@ p {
         
         <div class="w3-third">
 
-            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey"  style="padding-bottom:10px">
                 <p>
-                    <img src="figures/Sea-surface_temperature.png" width=100% alt="annual Global mean sea-surface temperature (degC, difference from the 1981-2010 average)  from 1850-2022. Data are from the following two data sets: ERSST, HadSST4."
+                    <img src="figures/Sea-surface_temperature.png" width=100% alt="Annual Global mean sea-surface temperature (&deg;C, difference from the 1981-2010 average)  from 1850-2022. Data are from the following two data sets: ERSST, HadSST4."
                          title="Graph of Sea-surface temperature">
                 </p>
                 <h3>Sea-surface temperature</h3>
+                <p>
+                    Annual Global mean sea-surface temperature (&deg;C, difference from the 1981-2010 average)  from 1850-2022. Data are from the following two data sets: ERSST, HadSST4.
+                    <button onclick="copyText('Annual Global mean sea-surface temperature (&deg;C, difference from the 1981-2010 average)  from 1850-2022. Data are from the following two data sets: ERSST, HadSST4.')">Copy caption</button>
+                </p>
                 <p>
                 <div style="float: left;">
                     Image: <a href="figures/Sea-surface_temperature.png" target="_blank" aria-label="Figure in png format">png</a>-<a
@@ -173,6 +163,7 @@ p {
         
 
     </div>
+    
 
     
     <div class="w3-container" style="margin:0 -16px">
@@ -266,11 +257,11 @@ Global mean sea level is a measured by satellites using radar altimeters that re
                 </p>
                 <p>
                     Data file: <a href="formatted_data/Sea_level_data_files.zip"
-                                                  aria-label="Bundle of csv data in a zip file">Sea_level_data_files.zip</a>
-                    <br>Checksum: bbab355cc617c76024e5e601afbd86c6
-                    <button onclick="copyText('bbab355cc617c76024e5e601afbd86c6')">Copy</button>
+                                  aria-label="Bundle of csv data in a zip file">Sea_level_data_files.zip</a>
+                    <br>Checksum: 72cfe87e69cf036fc72d2d5f6134bd5a
+                    <button onclick="copyText('72cfe87e69cf036fc72d2d5f6134bd5a')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
-                       aria-label="extrenal link to data format description">BADC CSV format</a><br>
+                                   aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
 
                 
@@ -332,7 +323,7 @@ Global mean sea level is a measured by satellites using radar altimeters that re
                 <p>Processing:</p>
                 <ul>
                     
-                    <li>Data set created from file ['MSL_Serie_MERGED_Global_AVISO_GIA_Adjust_Filter6m_NRT.nc'] downloaded from ['ftp://ftp.aviso.altimetry.fr/pub/oceano/AVISO/indicators/msl/MSL_Serie_MERGED_Global_AVISO_GIA_Adjust_Filter6m_NRT.nc'] at ['2022-11-23 09:15:06']</li>
+                    <li>Data set created from file ['MSL_Serie_MERGED_Global_AVISO_GIA_Adjust_Filter6m_NRT.nc'] downloaded from ['ftp://ftp.aviso.altimetry.fr/pub/oceano/AVISO/indicators/msl/MSL_Serie_MERGED_Global_AVISO_GIA_Adjust_Filter6m_NRT.nc'] at ['2022-11-24 09:15:06']</li>
                     
                 </ul>
                 
@@ -358,11 +349,11 @@ Ocean heat content is a measure of the change in heat energy stored in the subsu
                 </p>
                 <p>
                     Data file: <a href="formatted_data/Ocean_heat_content_data_files.zip"
-                                                  aria-label="Bundle of csv data in a zip file">Ocean_heat_content_data_files.zip</a>
-                    <br>Checksum: f13f9257fd0a6df9addf44496f2e488d
-                    <button onclick="copyText('f13f9257fd0a6df9addf44496f2e488d')">Copy</button>
+                                  aria-label="Bundle of csv data in a zip file">Ocean_heat_content_data_files.zip</a>
+                    <br>Checksum: 02968512ea3f6fa2f19edf5f886102ab
+                    <button onclick="copyText('02968512ea3f6fa2f19edf5f886102ab')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
-                       aria-label="extrenal link to data format description">BADC CSV format</a><br>
+                                   aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
 
                 
@@ -423,11 +414,11 @@ Sea-surface temperature (SST) is the temperature of the surface ocean, typically
                 </p>
                 <p>
                     Data file: <a href="formatted_data/Sea-surface_temperature_data_files.zip"
-                                                  aria-label="Bundle of csv data in a zip file">Sea-surface_temperature_data_files.zip</a>
-                    <br>Checksum: bff027a691e7a937834bbc9da8e61dc1
-                    <button onclick="copyText('bff027a691e7a937834bbc9da8e61dc1')">Copy</button>
+                                  aria-label="Bundle of csv data in a zip file">Sea-surface_temperature_data_files.zip</a>
+                    <br>Checksum: 9defc74e493b877d797c79273cb69b4a
+                    <button onclick="copyText('9defc74e493b877d797c79273cb69b4a')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
-                       aria-label="extrenal link to data format description">BADC CSV format</a><br>
+                                   aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
 
                 
@@ -456,7 +447,7 @@ Sea-surface temperature (SST) is the temperature of the surface ocean, typically
                 
                 
                 <p>
-                    Data citation: Boyin Huang, Peter W. Thorne, Viva F. Banzon, Tim Boyer, Gennady Chepurin, Jay H. Lawrimore, Matthew J. Menne, Thomas M. Smith, Russell S. Vose, and Huai-Min Zhang (2017): NOAA Extended Reconstructed Sea Surface Temperature (ERSST), Version 5. [indicate subset used]. NOAA National Centers for Environmental Information. doi:10.7289/V5T72FNM [2022-11-23 09:15:54].
+                    Data citation: Boyin Huang, Peter W. Thorne, Viva F. Banzon, Tim Boyer, Gennady Chepurin, Jay H. Lawrimore, Matthew J. Menne, Thomas M. Smith, Russell S. Vose, and Huai-Min Zhang (2017): NOAA Extended Reconstructed Sea Surface Temperature (ERSST), Version 5. [indicate subset used]. NOAA National Centers for Environmental Information. doi:10.7289/V5T72FNM [2022-11-24 09:16:01].
                 </p>
                 
                 
@@ -464,7 +455,7 @@ Sea-surface temperature (SST) is the temperature of the surface ocean, typically
                 <p>Processing:</p>
                 <ul>
                     
-                    <li>Data set created from file ['aravg.mon.ocean.90S.90N.v5.0.0.2022MMMM.asc', 'aravg.ann.ocean.90S.90N.v5.0.0.2022MMMM.asc'] downloaded from ['https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/timeseries/aravg.mon.ocean.90S.90N.v5.0.0.2022MMMM.asc', 'https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/timeseries/aravg.ann.ocean.90S.90N.v5.0.0.2022MMMM.asc'] at ['2022-11-23 09:15:54']</li>
+                    <li>Data set created from file ['aravg.mon.ocean.90S.90N.v5.0.0.2022MMMM.asc', 'aravg.ann.ocean.90S.90N.v5.0.0.2022MMMM.asc'] downloaded from ['https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/timeseries/aravg.mon.ocean.90S.90N.v5.0.0.2022MMMM.asc', 'https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/timeseries/aravg.ann.ocean.90S.90N.v5.0.0.2022MMMM.asc'] at ['2022-11-24 09:16:01']</li>
                     
                     <li>Calculated annual average from monthly averages using arithmetic mean</li>
                     
@@ -498,12 +489,12 @@ Sea-surface temperature (SST) is the temperature of the surface ocean, typically
                 
                 
                 
-                <p>Acknowledgement: HadSST.4.0.1.0 data were obtained from http://www.metoffice.gov.uk/hadobs/hadsst4 on 2022-11-23 09:16:58 and are © British Crown Copyright, Met Office 2022, provided under an Open Government License, http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/</p>
+                <p>Acknowledgement: HadSST.4.0.1.0 data were obtained from http://www.metoffice.gov.uk/hadobs/hadsst4 on 2022-11-24 09:17:13 and are © British Crown Copyright, Met Office 2022, provided under an Open Government License, http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/</p>
                 
                 <p>Processing:</p>
                 <ul>
                     
-                    <li>Data set created from file ['HadSST.4.0.1.0_monthly_GLOBE.csv', 'HadSST.4.0.1.0_annual_GLOBE.csv'] downloaded from ['https://www.metoffice.gov.uk/hadobs/hadsst4/data/csv/HadSST.4.0.1.0_monthly_GLOBE.csv', 'https://www.metoffice.gov.uk/hadobs/hadsst4/data/csv/HadSST.4.0.1.0_annual_GLOBE.csv'] at ['2022-11-23 09:16:58', '2022-11-23 09:16:59']</li>
+                    <li>Data set created from file ['HadSST.4.0.1.0_monthly_GLOBE.csv', 'HadSST.4.0.1.0_annual_GLOBE.csv'] downloaded from ['https://www.metoffice.gov.uk/hadobs/hadsst4/data/csv/HadSST.4.0.1.0_monthly_GLOBE.csv', 'https://www.metoffice.gov.uk/hadobs/hadsst4/data/csv/HadSST.4.0.1.0_annual_GLOBE.csv'] at ['2022-11-24 09:17:13', '2022-11-24 09:17:13']</li>
                     
                     <li>Calculated annual average from monthly averages using arithmetic mean</li>
                     
@@ -518,7 +509,7 @@ Sea-surface temperature (SST) is the temperature of the surface ocean, typically
     
 
     <p>
-        Page created on 2022-11-23 using
+        Page created on 2022-11-24 using
         <a href="https://github.com/jjk-code-otter/climate-indicator-manager">climind v0.1</a>
     </p>
 

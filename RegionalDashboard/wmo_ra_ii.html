@@ -32,25 +32,16 @@ p {
   display: inline-block;
   border-radius: 5px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </style>
+
+<script>
+        function copyText(invar) {
+
+            /* Copy text into clipboard */
+            navigator.clipboard.writeText
+                (invar);
+        }
+</script>
 <body>
 
 <div class="w3-container w3-padding-32 w3-light-grey">
@@ -61,17 +52,22 @@ p {
         </div>
     </div>
 
+    
     <div class="w3-row-padding" style="margin:0 -16px">
 
         
         <div class="w3-third">
 
-            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey"  style="padding-bottom:10px">
                 <p>
-                    <img src="figures/WMO_RA_II_Asia.png" width=100% alt="annual Regional mean temperature for WMO RA 2 Asia (degC, difference from the 1981-2010 average)  from 1900-2021. Data are from the following five data sets: wmo_ra_2_Berkeley Earth, wmo_ra_2_ERA5, wmo_ra_2_GISTEMP, wmo_ra_2_HadCRUT5, wmo_ra_2_NOAAGlobalTemp."
+                    <img src="figures/WMO_RA_II_Asia.png" width=100% alt="Annual Regional mean temperature for WMO RA 2 Asia (&deg;C, difference from the 1981-2010 average)  from 1900-2022. Data are from the following six data sets: Berkeley Earth, ERA5, GISTEMP, HadCRUT5, JRA-55, NOAAGlobalTemp."
                          title="Graph of WMO RA II Asia">
                 </p>
                 <h3>WMO RA II Asia</h3>
+                <p>
+                    Annual Regional mean temperature for WMO RA 2 Asia (&deg;C, difference from the 1981-2010 average)  from 1900-2022. Data are from the following six data sets: Berkeley Earth, ERA5, GISTEMP, HadCRUT5, JRA-55, NOAAGlobalTemp.
+                    <button onclick="copyText('Annual Regional mean temperature for WMO RA 2 Asia (&deg;C, difference from the 1981-2010 average)  from 1900-2022. Data are from the following six data sets: Berkeley Earth, ERA5, GISTEMP, HadCRUT5, JRA-55, NOAAGlobalTemp.')">Copy caption</button>
+                </p>
                 <p>
                 <div style="float: left;">
                     Image: <a href="figures/WMO_RA_II_Asia.png" target="_blank" aria-label="Figure in png format">png</a>-<a
@@ -80,7 +76,9 @@ p {
                         href="figures/WMO_RA_II_Asia.svg" target="_blank"
                         aria-label="Figure in svg format">svg</a><br>
                     Formatted data: <a href="formatted_data/WMO_RA_II_Asia_data_files.zip"
-                                       aria-label="Bundle of csv data in a zip file">csv</a><br>
+                                       aria-label="Bundle of csv data in a zip file">csv</a>
+                    (<a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
+                        aria-label="extrenal link to data format description">format</a>)<br>
                     <a href="#WMO RA II Asia"
                        aria-label="link to references, acknowledgements and processing details">References and
                         processing</a><br>
@@ -95,12 +93,16 @@ p {
         
         <div class="w3-third">
 
-            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey"  style="padding-bottom:10px">
                 <p>
-                    <img src="figures/Continental_trends.png" width=100% alt="Figure shows the trends for four sub=periods (1901-1930, 1931-1960, 1961-1990 and 1991-present. Coloured bars show the mean trend for each region and the black vertical lines indicate the range of different estimates."
+                    <img src="figures/Continental_trends.png" width=100% alt="Figure shows the trends for four sub-periods (1901-1930, 1931-1960, 1961-1990 and 1991-present. Coloured bars show the mean trend for each region and the black vertical lines indicate the range of different estimates."
                          title="Graph of Continental trends">
                 </p>
                 <h3>Continental trends</h3>
+                <p>
+                    Figure shows the trends for four sub-periods (1901-1930, 1931-1960, 1961-1990 and 1991-present. Coloured bars show the mean trend for each region and the black vertical lines indicate the range of different estimates.
+                    <button onclick="copyText('Figure shows the trends for four sub-periods (1901-1930, 1931-1960, 1961-1990 and 1991-present. Coloured bars show the mean trend for each region and the black vertical lines indicate the range of different estimates.')">Copy caption</button>
+                </p>
                 <p>
                 <div style="float: left;">
                     Image: <a href="figures/Continental_trends.png" target="_blank" aria-label="Figure in png format">png</a>-<a
@@ -109,7 +111,9 @@ p {
                         href="figures/Continental_trends.svg" target="_blank"
                         aria-label="Figure in svg format">svg</a><br>
                     Formatted data: <a href="formatted_data/Continental_trends_data_files.zip"
-                                       aria-label="Bundle of csv data in a zip file">csv</a><br>
+                                       aria-label="Bundle of csv data in a zip file">csv</a>
+                    (<a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
+                        aria-label="extrenal link to data format description">format</a>)<br>
                     <a href="#Continental trends"
                        aria-label="link to references, acknowledgements and processing details">References and
                         processing</a><br>
@@ -122,8 +126,47 @@ p {
 
         </div>
         
+        <div class="w3-third">
+
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey"  style="padding-bottom:10px">
+                <p>
+                    <img src="figures/" width=100% alt=""
+                         title="Graph of <built-in method title of str object at 0x0000016BA30D51B0>">
+                </p>
+                <h3><built-in method title of str object at 0x0000016BA30D51B0></h3>
+                <p>
+                    
+                    <button onclick="copyText('')">Copy caption</button>
+                </p>
+                <p>
+                <div style="float: left;">
+                    Image: <a href="figures/" target="_blank" aria-label="Figure in png format">png</a>-<a
+                        href="figures/" target="_blank"
+                        aria-label="Figure in pdf format">pdf</a>-<a
+                        href="figures/" target="_blank"
+                        aria-label="Figure in svg format">svg</a><br>
+                    Formatted data: <a href="formatted_data/"
+                                       aria-label="Bundle of csv data in a zip file">csv</a>
+                    (<a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
+                        aria-label="extrenal link to data format description">format</a>)<br>
+                    <a href="#<built-in method title of str object at 0x0000016BA30D51B0>"
+                       aria-label="link to references, acknowledgements and processing details">References and
+                        processing</a><br>
+                </div>
+                <div style="float: right;">
+                    
+                    <a href=".html" class="button_link w3-right "
+                       aria-label="Link to read more about <built-in method title of str object at 0x0000016BA30D51B0>">Click to read more</a>
+                    
+                </div>
+                </p>
+            </div>
+
+        </div>
+        
 
     </div>
+    
 
     
 
@@ -142,7 +185,7 @@ p {
                 
                 <h2>Regional mean temperature for WMO RA 2 Asia</h2>
                 <p>
-                    The year 2021 was ranked the 7th highest on record. The mean value for 2021 was 0.84&deg;C relative to the 1981-2010 average (0.78-0.88&deg;C depending on the data set used). 5 data sets were used in this assessment: Berkeley Earth, ERA5, GISTEMP, HadCRUT5, and NOAAGlobalTemp. Relative to a 1961-1990 baseline, the mean value for 2021 was 1.43&deg;C (1.37-1.47&deg;C depending on the data set used). 4 data sets were used in the assessment relative to 1961-1990.
+                    The year 2022 was ranked the 2nd highest on record. The mean value for 2022 was 1.21&deg;C relative to the 1981-2010 average (1.16-1.27&deg;C depending on the data set used). 6 data sets were used in this assessment: Berkeley Earth (to Oct 2022), ERA5 (to Oct 2022), GISTEMP (to Oct 2022), HadCRUT5 (to Sep 2022), JRA-55 (to Oct 2022), and NOAAGlobalTemp (to Oct 2022). Relative to a 1961-1990 baseline, the mean value for 2022 was 1.79&deg;C (1.75-1.83&deg;C depending on the data set used). 5 data sets were used in the assessment relative to 1961-1990.
                 </p>
                 
             </div>
@@ -168,6 +211,18 @@ p {
                 
                 
                 
+
+                <p>
+                    The data in the above plot are available in a zip file containing a csv file for each data set.
+                </p>
+                <p>
+                    Data file: <a href="formatted_data/WMO_RA_II_Asia_data_files.zip"
+                                  aria-label="Bundle of csv data in a zip file">WMO_RA_II_Asia_data_files.zip</a>
+                    <br>Checksum: 4747338e76d1dcc662122e1d7495a56e
+                    <button onclick="copyText('4747338e76d1dcc662122e1d7495a56e')">Copy</button>
+                    <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
+                                   aria-label="extrenal link to data format description">BADC CSV format</a><br>
+                </p>
 
                 
                 <h3>Berkeley Earth</h3>
@@ -195,7 +250,7 @@ p {
                 <p>Processing:</p>
                 <ul>
                     
-                    <li>"Data set created from file ['Land_and_Ocean_LatLong1.nc'] downloaded from ['http://berkeleyearth.lbl.gov/auto/Global/Gridded/Land_and_Ocean_LatLong1.nc'] at ['2022-08-23 10:31:29']"</li>
+                    <li>"Data set created from file ['Land_and_Ocean_LatLong1.nc'] downloaded from ['http://berkeleyearth.lbl.gov/auto/Global/Gridded/Land_and_Ocean_LatLong1.nc'] at ['2022-11-15 19:09:18']"</li>
                     
                     <li>"Rebaselined to 1981-2010"</li>
                     
@@ -203,11 +258,11 @@ p {
                     
                     <li>"Calculated annual average from monthly averages using arithmetic mean"</li>
                     
-                    <li>"Selected year range 1900 to 2021"</li>
+                    <li>"Selected years within the range 1900 to 2022."</li>
                     
                     <li>"Wrote to file wmo_ra_2_Berkeley Earth.csv"</li>
                     
-                    <li>Data set created from file ['wmo_ra_2_Berkeley Earth.csv'] downloaded from [''] at ['2022-09-01 17:55:46']</li>
+                    <li>Data set created from file ['wmo_ra_2_Berkeley Earth.csv'] downloaded from [''] at ['2022-11-23 19:13:23']</li>
                     
                 </ul>
                 
@@ -236,9 +291,21 @@ p {
                 <p>Processing:</p>
                 <ul>
                     
-                    <li>"Gridded dataset created from file ['era5_2m_tas_2022.nc'] downloaded from ['']"history,G,"Regridded to 1 degree latitude-longitude resolution"history,G,"Rebaselined to 1981-2010"history,G,"Calculated area-average"history,G,"Calculated annual average from monthly averages using arithmetic mean"history,G,"Selected year range 1900 to 2021"history,G,"Wrote to file wmo_ra_2_ERA5.csv"</li>
+                    <li>"Gridded dataset created from file ['era5_2m_tas_2022.nc'] downloaded from ['']"</li>
                     
-                    <li>Data set created from file ['wmo_ra_2_ERA5.csv'] downloaded from [''] at ['2022-09-01 11:33:10']</li>
+                    <li>"Regridded to 1 degree latitude-longitude resolution"</li>
+                    
+                    <li>"Rebaselined to 1981-2010"</li>
+                    
+                    <li>"Calculated area-average"</li>
+                    
+                    <li>"Calculated annual average from monthly averages using arithmetic mean"</li>
+                    
+                    <li>"Selected years within the range 1900 to 2022."</li>
+                    
+                    <li>"Wrote to file wmo_ra_2_ERA5.csv"</li>
+                    
+                    <li>Data set created from file ['wmo_ra_2_ERA5.csv'] downloaded from [''] at ['2022-11-23 19:13:48']</li>
                     
                 </ul>
                 
@@ -263,7 +330,7 @@ p {
                 
                 
                 <p>
-                    Data citation: GISTEMP Team, 2022: GISS Surface Temperature Analysis (GISTEMP), version 4. NASA Goddard Institute for Space Studies. Dataset accessed 2022-08-23 10:32:28 at data.giss.nasa.gov/gistemp/.
+                    Data citation: GISTEMP Team, 2022: GISS Surface Temperature Analysis (GISTEMP), version 4. NASA Goddard Institute for Space Studies. Dataset accessed 2022-11-15 19:10:16 at data.giss.nasa.gov/gistemp/.
                 </p>
                 
                 
@@ -271,7 +338,7 @@ p {
                 <p>Processing:</p>
                 <ul>
                     
-                    <li>"Data set created from file ['gistemp1200_GHCNv4_ERSSTv5.nc.gz'] downloaded from ['https://data.giss.nasa.gov/pub/gistemp/gistemp1200_GHCNv4_ERSSTv5.nc.gz'] at ['2022-08-23 10:32:28']"</li>
+                    <li>"Data set created from file ['gistemp1200_GHCNv4_ERSSTv5.nc.gz'] downloaded from ['https://data.giss.nasa.gov/pub/gistemp/gistemp1200_GHCNv4_ERSSTv5.nc.gz'] at ['2022-11-15 19:10:16']"</li>
                     
                     <li>"Regridded to 1 degree latitude-longitude resolution"</li>
                     
@@ -281,11 +348,11 @@ p {
                     
                     <li>"Calculated annual average from monthly averages using arithmetic mean"</li>
                     
-                    <li>"Selected year range 1900 to 2021"</li>
+                    <li>"Selected years within the range 1900 to 2022."</li>
                     
                     <li>"Wrote to file wmo_ra_2_GISTEMP.csv"</li>
                     
-                    <li>Data set created from file ['wmo_ra_2_GISTEMP.csv'] downloaded from [''] at ['2022-09-01 17:56:10']</li>
+                    <li>Data set created from file ['wmo_ra_2_GISTEMP.csv'] downloaded from [''] at ['2022-11-23 19:13:59']</li>
                     
                 </ul>
                 
@@ -311,12 +378,12 @@ p {
                 
                 
                 
-                <p>Acknowledgement: HadCRUT.5.0.1.0 data were obtained from http://www.metoffice.gov.uk/hadobs/hadcrut5 on 2022-08-23 10:32:28 and are © British Crown Copyright, Met Office 2022, provided under an Open Government License, http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/</p>
+                <p>Acknowledgement: HadCRUT.5.0.1.0 data were obtained from http://www.metoffice.gov.uk/hadobs/hadcrut5 on 2022-11-15 19:10:18 and are © British Crown Copyright, Met Office 2022, provided under an Open Government License, http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/</p>
                 
                 <p>Processing:</p>
                 <ul>
                     
-                    <li>"Data set created from file ['HadCRUT.5.0.1.0.analysis.anomalies.ensemble_mean.nc'] downloaded from ['https://www.metoffice.gov.uk/hadobs/hadcrut5/data/current/analysis/HadCRUT.5.0.1.0.analysis.anomalies.ensemble_mean.nc'] at ['2022-08-23 10:32:28']"</li>
+                    <li>"Data set created from file ['HadCRUT.5.0.1.0.analysis.anomalies.ensemble_mean.nc'] downloaded from ['https://www.metoffice.gov.uk/hadobs/hadcrut5/data/current/analysis/HadCRUT.5.0.1.0.analysis.anomalies.ensemble_mean.nc'] at ['2022-11-15 19:10:18']"</li>
                     
                     <li>"Regridded to 1 degree latitude-longitude resolution"</li>
                     
@@ -326,11 +393,54 @@ p {
                     
                     <li>"Calculated annual average from monthly averages using arithmetic mean"</li>
                     
-                    <li>"Selected year range 1900 to 2021"</li>
+                    <li>"Selected years within the range 1900 to 2022."</li>
                     
                     <li>"Wrote to file wmo_ra_2_HadCRUT5.csv"</li>
                     
-                    <li>Data set created from file ['wmo_ra_2_HadCRUT5.csv'] downloaded from [''] at ['2022-09-01 17:56:28']</li>
+                    <li>Data set created from file ['wmo_ra_2_HadCRUT5.csv'] downloaded from [''] at ['2022-11-23 19:14:20']</li>
+                    
+                </ul>
+                
+                <h3>JRA-55</h3>
+                <p>
+                    
+                    <a href="" target="_blank"
+                       aria-label="Link to original data file for JRA-55">Original data file (external
+                        link)</a>
+                    
+                </p>
+                
+                
+                <p>
+                    Citation:
+                    
+                    <a href="https://doi.org/10.2151/jmsj.2015-001">Kobayashi, S., Ota, Y., Harada, Y., Ebita, A., Moriya, M., Onoda, H., Onogi, K., Kamahori, H., Kobayashi, C., Endo, H. and Miyaoka, K., (2015). The JRA-55 reanalysis: General specifications and basic characteristics. Journal of the Meteorological Society of Japan. Ser. II, 93(1), pp.5-48.</a>.
+                    
+                </p>
+                
+                
+                
+                
+                
+                
+                <p>Processing:</p>
+                <ul>
+                    
+                    <li>"Data set created from file ['anl_surf125.011_tmp.202201_202212', 'anl_surf125.2022MMMM'] downloaded from ['', ''] at ['2022-11-08 14:59:36']"</li>
+                    
+                    <li>"Regridded to 1 degree latitude-longitude resolution"</li>
+                    
+                    <li>"Rebaselined to 1981-2010"</li>
+                    
+                    <li>"Calculated area-average"</li>
+                    
+                    <li>"Calculated annual average from monthly averages using arithmetic mean"</li>
+                    
+                    <li>"Selected years within the range 1900 to 2022."</li>
+                    
+                    <li>"Wrote to file wmo_ra_2_JRA-55.csv"</li>
+                    
+                    <li>Data set created from file ['wmo_ra_2_JRA-55.csv'] downloaded from [''] at ['2022-11-23 19:14:45']</li>
                     
                 </ul>
                 
@@ -357,7 +467,7 @@ p {
                 
                 
                 <p>
-                    Data citation: Zhang, H.-M., B. Huang, J. Lawrimore, M. Menne, Thomas M. Smith, NOAA Global Surface Temperature Dataset (NOAAGlobalTemp), Version 5 [indicate subset used]. NOAA National Centers for Environmental Information. doi:10.25921/9qth-2p70 Accessed [2022-08-23 10:32:43].
+                    Data citation: Zhang, H.-M., B. Huang, J. Lawrimore, M. Menne, Thomas M. Smith, NOAA Global Surface Temperature Dataset (NOAAGlobalTemp), Version 5 [indicate subset used]. NOAA National Centers for Environmental Information. doi:10.25921/9qth-2p70 Accessed [2022-11-21 17:47:59].
                 </p>
                 
                 
@@ -365,9 +475,9 @@ p {
                 <p>Processing:</p>
                 <ul>
                     
-                    <li>"Data set created from file ['NOAAGlobalTemp_v*.nc'] downloaded from ['https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/gridded/NOAAGlobalTemp_v.*.nc'] at ['2022-08-23 10:32:43']"</li>
+                    <li>"Data set created from file ['NOAAGlobalTemp_v*.nc'] downloaded from ['https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/gridded/NOAAGlobalTemp_v.*.nc'] at ['2022-11-21 17:47:59']"</li>
                     
-                    <li>"Data set created from file ['NOAAGlobalTemp_v*.nc'] downloaded from ['https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/gridded/NOAAGlobalTemp_v.*.nc'] at ['2022-08-23 10:32:43']"</li>
+                    <li>"Data set created from file ['NOAAGlobalTemp_v*.nc'] downloaded from ['https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/gridded/NOAAGlobalTemp_v.*.nc'] at ['2022-11-21 17:47:59']"</li>
                     
                     <li>"Regridded to 1 degree latitude-longitude resolution"</li>
                     
@@ -377,11 +487,11 @@ p {
                     
                     <li>"Calculated annual average from monthly averages using arithmetic mean"</li>
                     
-                    <li>"Selected year range 1900 to 2021"</li>
+                    <li>"Selected years within the range 1900 to 2022."</li>
                     
                     <li>"Wrote to file wmo_ra_2_NOAAGlobalTemp.csv"</li>
                     
-                    <li>Data set created from file ['wmo_ra_2_NOAAGlobalTemp.csv'] downloaded from [''] at ['2022-09-01 17:56:52']</li>
+                    <li>Data set created from file ['wmo_ra_2_NOAAGlobalTemp.csv'] downloaded from [''] at ['2022-11-23 19:15:00']</li>
                     
                 </ul>
                 
@@ -415,6 +525,18 @@ Global mean temperature is based on measurements made at weather stations over l
 </p>
                 
                 
+
+                <p>
+                    The data in the above plot are available in a zip file containing a csv file for each data set.
+                </p>
+                <p>
+                    Data file: <a href="formatted_data/Continental_trends_data_files.zip"
+                                  aria-label="Bundle of csv data in a zip file">Continental_trends_data_files.zip</a>
+                    <br>Checksum: 7a2456a5fdb02e77c115327b9762aa18
+                    <button onclick="copyText('7a2456a5fdb02e77c115327b9762aa18')">Copy</button>
+                    <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
+                                   aria-label="extrenal link to data format description">BADC CSV format</a><br>
+                </p>
 
                 
                 <h3>Berkeley Earth</h3>
@@ -640,7 +762,7 @@ Global mean temperature is based on measurements made at weather stations over l
                 <p>Processing:</p>
                 <ul>
                     
-                    <li>"Data set created from file ['Land_and_Ocean_LatLong1.nc'] downloaded from ['http://berkeleyearth.lbl.gov/auto/Global/Gridded/Land_and_Ocean_LatLong1.nc'] at ['2022-08-23 10:31:29']"</li>
+                    <li>"Data set created from file ['Land_and_Ocean_LatLong1.nc'] downloaded from ['http://berkeleyearth.lbl.gov/auto/Global/Gridded/Land_and_Ocean_LatLong1.nc'] at ['2022-11-15 19:09:18']"</li>
                     
                     <li>"Rebaselined to 1981-2010"</li>
                     
@@ -648,11 +770,11 @@ Global mean temperature is based on measurements made at weather stations over l
                     
                     <li>"Calculated annual average from monthly averages using arithmetic mean"</li>
                     
-                    <li>"Selected year range 1900 to 2021"</li>
+                    <li>"Selected years within the range 1900 to 2022."</li>
                     
                     <li>"Wrote to file wmo_ra_1_Berkeley Earth.csv"</li>
                     
-                    <li>Data set created from file ['wmo_ra_1_Berkeley Earth.csv'] downloaded from [''] at ['2022-09-01 17:55:44']</li>
+                    <li>Data set created from file ['wmo_ra_1_Berkeley Earth.csv'] downloaded from [''] at ['2022-11-23 19:13:21']</li>
                     
                 </ul>
                 
@@ -681,9 +803,21 @@ Global mean temperature is based on measurements made at weather stations over l
                 <p>Processing:</p>
                 <ul>
                     
-                    <li>"Gridded dataset created from file ['era5_2m_tas_2022.nc'] downloaded from ['']"history,G,"Regridded to 1 degree latitude-longitude resolution"history,G,"Rebaselined to 1981-2010"history,G,"Calculated area-average"history,G,"Calculated annual average from monthly averages using arithmetic mean"history,G,"Selected year range 1900 to 2021"history,G,"Wrote to file wmo_ra_1_ERA5.csv"</li>
+                    <li>"Gridded dataset created from file ['era5_2m_tas_2022.nc'] downloaded from ['']"</li>
                     
-                    <li>Data set created from file ['wmo_ra_1_ERA5.csv'] downloaded from [''] at ['2022-09-01 11:33:10']</li>
+                    <li>"Regridded to 1 degree latitude-longitude resolution"</li>
+                    
+                    <li>"Rebaselined to 1981-2010"</li>
+                    
+                    <li>"Calculated area-average"</li>
+                    
+                    <li>"Calculated annual average from monthly averages using arithmetic mean"</li>
+                    
+                    <li>"Selected years within the range 1900 to 2022."</li>
+                    
+                    <li>"Wrote to file wmo_ra_1_ERA5.csv"</li>
+                    
+                    <li>Data set created from file ['wmo_ra_1_ERA5.csv'] downloaded from [''] at ['2022-11-23 19:13:48']</li>
                     
                 </ul>
                 
@@ -708,7 +842,7 @@ Global mean temperature is based on measurements made at weather stations over l
                 
                 
                 <p>
-                    Data citation: GISTEMP Team, 2022: GISS Surface Temperature Analysis (GISTEMP), version 4. NASA Goddard Institute for Space Studies. Dataset accessed 2022-08-23 10:32:28 at data.giss.nasa.gov/gistemp/.
+                    Data citation: GISTEMP Team, 2022: GISS Surface Temperature Analysis (GISTEMP), version 4. NASA Goddard Institute for Space Studies. Dataset accessed 2022-11-15 19:10:16 at data.giss.nasa.gov/gistemp/.
                 </p>
                 
                 
@@ -716,7 +850,7 @@ Global mean temperature is based on measurements made at weather stations over l
                 <p>Processing:</p>
                 <ul>
                     
-                    <li>"Data set created from file ['gistemp1200_GHCNv4_ERSSTv5.nc.gz'] downloaded from ['https://data.giss.nasa.gov/pub/gistemp/gistemp1200_GHCNv4_ERSSTv5.nc.gz'] at ['2022-08-23 10:32:28']"</li>
+                    <li>"Data set created from file ['gistemp1200_GHCNv4_ERSSTv5.nc.gz'] downloaded from ['https://data.giss.nasa.gov/pub/gistemp/gistemp1200_GHCNv4_ERSSTv5.nc.gz'] at ['2022-11-15 19:10:16']"</li>
                     
                     <li>"Regridded to 1 degree latitude-longitude resolution"</li>
                     
@@ -726,11 +860,11 @@ Global mean temperature is based on measurements made at weather stations over l
                     
                     <li>"Calculated annual average from monthly averages using arithmetic mean"</li>
                     
-                    <li>"Selected year range 1900 to 2021"</li>
+                    <li>"Selected years within the range 1900 to 2022."</li>
                     
                     <li>"Wrote to file wmo_ra_1_GISTEMP.csv"</li>
                     
-                    <li>Data set created from file ['wmo_ra_1_GISTEMP.csv'] downloaded from [''] at ['2022-09-01 17:56:09']</li>
+                    <li>Data set created from file ['wmo_ra_1_GISTEMP.csv'] downloaded from [''] at ['2022-11-23 19:13:58']</li>
                     
                 </ul>
                 
@@ -756,12 +890,12 @@ Global mean temperature is based on measurements made at weather stations over l
                 
                 
                 
-                <p>Acknowledgement: HadCRUT.5.0.1.0 data were obtained from http://www.metoffice.gov.uk/hadobs/hadcrut5 on 2022-08-23 10:32:28 and are © British Crown Copyright, Met Office 2022, provided under an Open Government License, http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/</p>
+                <p>Acknowledgement: HadCRUT.5.0.1.0 data were obtained from http://www.metoffice.gov.uk/hadobs/hadcrut5 on 2022-11-15 19:10:18 and are © British Crown Copyright, Met Office 2022, provided under an Open Government License, http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/</p>
                 
                 <p>Processing:</p>
                 <ul>
                     
-                    <li>"Data set created from file ['HadCRUT.5.0.1.0.analysis.anomalies.ensemble_mean.nc'] downloaded from ['https://www.metoffice.gov.uk/hadobs/hadcrut5/data/current/analysis/HadCRUT.5.0.1.0.analysis.anomalies.ensemble_mean.nc'] at ['2022-08-23 10:32:28']"</li>
+                    <li>"Data set created from file ['HadCRUT.5.0.1.0.analysis.anomalies.ensemble_mean.nc'] downloaded from ['https://www.metoffice.gov.uk/hadobs/hadcrut5/data/current/analysis/HadCRUT.5.0.1.0.analysis.anomalies.ensemble_mean.nc'] at ['2022-11-15 19:10:18']"</li>
                     
                     <li>"Regridded to 1 degree latitude-longitude resolution"</li>
                     
@@ -771,11 +905,54 @@ Global mean temperature is based on measurements made at weather stations over l
                     
                     <li>"Calculated annual average from monthly averages using arithmetic mean"</li>
                     
-                    <li>"Selected year range 1900 to 2021"</li>
+                    <li>"Selected years within the range 1900 to 2022."</li>
                     
                     <li>"Wrote to file wmo_ra_1_HadCRUT5.csv"</li>
                     
-                    <li>Data set created from file ['wmo_ra_1_HadCRUT5.csv'] downloaded from [''] at ['2022-09-01 17:56:27']</li>
+                    <li>Data set created from file ['wmo_ra_1_HadCRUT5.csv'] downloaded from [''] at ['2022-11-23 19:14:18']</li>
+                    
+                </ul>
+                
+                <h3>JRA-55</h3>
+                <p>
+                    
+                    <a href="" target="_blank"
+                       aria-label="Link to original data file for JRA-55">Original data file (external
+                        link)</a>
+                    
+                </p>
+                
+                
+                <p>
+                    Citation:
+                    
+                    <a href="https://doi.org/10.2151/jmsj.2015-001">Kobayashi, S., Ota, Y., Harada, Y., Ebita, A., Moriya, M., Onoda, H., Onogi, K., Kamahori, H., Kobayashi, C., Endo, H. and Miyaoka, K., (2015). The JRA-55 reanalysis: General specifications and basic characteristics. Journal of the Meteorological Society of Japan. Ser. II, 93(1), pp.5-48.</a>.
+                    
+                </p>
+                
+                
+                
+                
+                
+                
+                <p>Processing:</p>
+                <ul>
+                    
+                    <li>"Data set created from file ['anl_surf125.011_tmp.202201_202212', 'anl_surf125.2022MMMM'] downloaded from ['', ''] at ['2022-11-08 14:59:36']"</li>
+                    
+                    <li>"Regridded to 1 degree latitude-longitude resolution"</li>
+                    
+                    <li>"Rebaselined to 1981-2010"</li>
+                    
+                    <li>"Calculated area-average"</li>
+                    
+                    <li>"Calculated annual average from monthly averages using arithmetic mean"</li>
+                    
+                    <li>"Selected years within the range 1900 to 2022."</li>
+                    
+                    <li>"Wrote to file wmo_ra_1_JRA-55.csv"</li>
+                    
+                    <li>Data set created from file ['wmo_ra_1_JRA-55.csv'] downloaded from [''] at ['2022-11-23 19:14:45']</li>
                     
                 </ul>
                 
@@ -802,7 +979,7 @@ Global mean temperature is based on measurements made at weather stations over l
                 
                 
                 <p>
-                    Data citation: Zhang, H.-M., B. Huang, J. Lawrimore, M. Menne, Thomas M. Smith, NOAA Global Surface Temperature Dataset (NOAAGlobalTemp), Version 5 [indicate subset used]. NOAA National Centers for Environmental Information. doi:10.25921/9qth-2p70 Accessed [2022-08-23 10:32:43].
+                    Data citation: Zhang, H.-M., B. Huang, J. Lawrimore, M. Menne, Thomas M. Smith, NOAA Global Surface Temperature Dataset (NOAAGlobalTemp), Version 5 [indicate subset used]. NOAA National Centers for Environmental Information. doi:10.25921/9qth-2p70 Accessed [2022-11-21 17:47:59].
                 </p>
                 
                 
@@ -810,9 +987,9 @@ Global mean temperature is based on measurements made at weather stations over l
                 <p>Processing:</p>
                 <ul>
                     
-                    <li>"Data set created from file ['NOAAGlobalTemp_v*.nc'] downloaded from ['https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/gridded/NOAAGlobalTemp_v.*.nc'] at ['2022-08-23 10:32:43']"</li>
+                    <li>"Data set created from file ['NOAAGlobalTemp_v*.nc'] downloaded from ['https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/gridded/NOAAGlobalTemp_v.*.nc'] at ['2022-11-21 17:47:59']"</li>
                     
-                    <li>"Data set created from file ['NOAAGlobalTemp_v*.nc'] downloaded from ['https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/gridded/NOAAGlobalTemp_v.*.nc'] at ['2022-08-23 10:32:43']"</li>
+                    <li>"Data set created from file ['NOAAGlobalTemp_v*.nc'] downloaded from ['https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/gridded/NOAAGlobalTemp_v.*.nc'] at ['2022-11-21 17:47:59']"</li>
                     
                     <li>"Regridded to 1 degree latitude-longitude resolution"</li>
                     
@@ -822,11 +999,11 @@ Global mean temperature is based on measurements made at weather stations over l
                     
                     <li>"Calculated annual average from monthly averages using arithmetic mean"</li>
                     
-                    <li>"Selected year range 1900 to 2021"</li>
+                    <li>"Selected years within the range 1900 to 2022."</li>
                     
                     <li>"Wrote to file wmo_ra_1_NOAAGlobalTemp.csv"</li>
                     
-                    <li>Data set created from file ['wmo_ra_1_NOAAGlobalTemp.csv'] downloaded from [''] at ['2022-09-01 17:56:50']</li>
+                    <li>Data set created from file ['wmo_ra_1_NOAAGlobalTemp.csv'] downloaded from [''] at ['2022-11-23 19:14:58']</li>
                     
                 </ul>
                 
@@ -855,7 +1032,7 @@ Global mean temperature is based on measurements made at weather stations over l
                 <p>Processing:</p>
                 <ul>
                     
-                    <li>"Data set created from file ['Land_and_Ocean_LatLong1.nc'] downloaded from ['http://berkeleyearth.lbl.gov/auto/Global/Gridded/Land_and_Ocean_LatLong1.nc'] at ['2022-08-23 10:31:29']"</li>
+                    <li>"Data set created from file ['Land_and_Ocean_LatLong1.nc'] downloaded from ['http://berkeleyearth.lbl.gov/auto/Global/Gridded/Land_and_Ocean_LatLong1.nc'] at ['2022-11-15 19:09:18']"</li>
                     
                     <li>"Rebaselined to 1981-2010"</li>
                     
@@ -863,11 +1040,11 @@ Global mean temperature is based on measurements made at weather stations over l
                     
                     <li>"Calculated annual average from monthly averages using arithmetic mean"</li>
                     
-                    <li>"Selected year range 1900 to 2021"</li>
+                    <li>"Selected years within the range 1900 to 2022."</li>
                     
                     <li>"Wrote to file wmo_ra_2_Berkeley Earth.csv"</li>
                     
-                    <li>Data set created from file ['wmo_ra_2_Berkeley Earth.csv'] downloaded from [''] at ['2022-09-01 17:55:46']</li>
+                    <li>Data set created from file ['wmo_ra_2_Berkeley Earth.csv'] downloaded from [''] at ['2022-11-23 19:13:23']</li>
                     
                 </ul>
                 
@@ -896,9 +1073,21 @@ Global mean temperature is based on measurements made at weather stations over l
                 <p>Processing:</p>
                 <ul>
                     
-                    <li>"Gridded dataset created from file ['era5_2m_tas_2022.nc'] downloaded from ['']"history,G,"Regridded to 1 degree latitude-longitude resolution"history,G,"Rebaselined to 1981-2010"history,G,"Calculated area-average"history,G,"Calculated annual average from monthly averages using arithmetic mean"history,G,"Selected year range 1900 to 2021"history,G,"Wrote to file wmo_ra_2_ERA5.csv"</li>
+                    <li>"Gridded dataset created from file ['era5_2m_tas_2022.nc'] downloaded from ['']"</li>
                     
-                    <li>Data set created from file ['wmo_ra_2_ERA5.csv'] downloaded from [''] at ['2022-09-01 11:33:10']</li>
+                    <li>"Regridded to 1 degree latitude-longitude resolution"</li>
+                    
+                    <li>"Rebaselined to 1981-2010"</li>
+                    
+                    <li>"Calculated area-average"</li>
+                    
+                    <li>"Calculated annual average from monthly averages using arithmetic mean"</li>
+                    
+                    <li>"Selected years within the range 1900 to 2022."</li>
+                    
+                    <li>"Wrote to file wmo_ra_2_ERA5.csv"</li>
+                    
+                    <li>Data set created from file ['wmo_ra_2_ERA5.csv'] downloaded from [''] at ['2022-11-23 19:13:48']</li>
                     
                 </ul>
                 
@@ -923,7 +1112,7 @@ Global mean temperature is based on measurements made at weather stations over l
                 
                 
                 <p>
-                    Data citation: GISTEMP Team, 2022: GISS Surface Temperature Analysis (GISTEMP), version 4. NASA Goddard Institute for Space Studies. Dataset accessed 2022-08-23 10:32:28 at data.giss.nasa.gov/gistemp/.
+                    Data citation: GISTEMP Team, 2022: GISS Surface Temperature Analysis (GISTEMP), version 4. NASA Goddard Institute for Space Studies. Dataset accessed 2022-11-15 19:10:16 at data.giss.nasa.gov/gistemp/.
                 </p>
                 
                 
@@ -931,7 +1120,7 @@ Global mean temperature is based on measurements made at weather stations over l
                 <p>Processing:</p>
                 <ul>
                     
-                    <li>"Data set created from file ['gistemp1200_GHCNv4_ERSSTv5.nc.gz'] downloaded from ['https://data.giss.nasa.gov/pub/gistemp/gistemp1200_GHCNv4_ERSSTv5.nc.gz'] at ['2022-08-23 10:32:28']"</li>
+                    <li>"Data set created from file ['gistemp1200_GHCNv4_ERSSTv5.nc.gz'] downloaded from ['https://data.giss.nasa.gov/pub/gistemp/gistemp1200_GHCNv4_ERSSTv5.nc.gz'] at ['2022-11-15 19:10:16']"</li>
                     
                     <li>"Regridded to 1 degree latitude-longitude resolution"</li>
                     
@@ -941,11 +1130,11 @@ Global mean temperature is based on measurements made at weather stations over l
                     
                     <li>"Calculated annual average from monthly averages using arithmetic mean"</li>
                     
-                    <li>"Selected year range 1900 to 2021"</li>
+                    <li>"Selected years within the range 1900 to 2022."</li>
                     
                     <li>"Wrote to file wmo_ra_2_GISTEMP.csv"</li>
                     
-                    <li>Data set created from file ['wmo_ra_2_GISTEMP.csv'] downloaded from [''] at ['2022-09-01 17:56:10']</li>
+                    <li>Data set created from file ['wmo_ra_2_GISTEMP.csv'] downloaded from [''] at ['2022-11-23 19:13:59']</li>
                     
                 </ul>
                 
@@ -971,12 +1160,12 @@ Global mean temperature is based on measurements made at weather stations over l
                 
                 
                 
-                <p>Acknowledgement: HadCRUT.5.0.1.0 data were obtained from http://www.metoffice.gov.uk/hadobs/hadcrut5 on 2022-08-23 10:32:28 and are © British Crown Copyright, Met Office 2022, provided under an Open Government License, http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/</p>
+                <p>Acknowledgement: HadCRUT.5.0.1.0 data were obtained from http://www.metoffice.gov.uk/hadobs/hadcrut5 on 2022-11-15 19:10:18 and are © British Crown Copyright, Met Office 2022, provided under an Open Government License, http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/</p>
                 
                 <p>Processing:</p>
                 <ul>
                     
-                    <li>"Data set created from file ['HadCRUT.5.0.1.0.analysis.anomalies.ensemble_mean.nc'] downloaded from ['https://www.metoffice.gov.uk/hadobs/hadcrut5/data/current/analysis/HadCRUT.5.0.1.0.analysis.anomalies.ensemble_mean.nc'] at ['2022-08-23 10:32:28']"</li>
+                    <li>"Data set created from file ['HadCRUT.5.0.1.0.analysis.anomalies.ensemble_mean.nc'] downloaded from ['https://www.metoffice.gov.uk/hadobs/hadcrut5/data/current/analysis/HadCRUT.5.0.1.0.analysis.anomalies.ensemble_mean.nc'] at ['2022-11-15 19:10:18']"</li>
                     
                     <li>"Regridded to 1 degree latitude-longitude resolution"</li>
                     
@@ -986,11 +1175,54 @@ Global mean temperature is based on measurements made at weather stations over l
                     
                     <li>"Calculated annual average from monthly averages using arithmetic mean"</li>
                     
-                    <li>"Selected year range 1900 to 2021"</li>
+                    <li>"Selected years within the range 1900 to 2022."</li>
                     
                     <li>"Wrote to file wmo_ra_2_HadCRUT5.csv"</li>
                     
-                    <li>Data set created from file ['wmo_ra_2_HadCRUT5.csv'] downloaded from [''] at ['2022-09-01 17:56:28']</li>
+                    <li>Data set created from file ['wmo_ra_2_HadCRUT5.csv'] downloaded from [''] at ['2022-11-23 19:14:20']</li>
+                    
+                </ul>
+                
+                <h3>JRA-55</h3>
+                <p>
+                    
+                    <a href="" target="_blank"
+                       aria-label="Link to original data file for JRA-55">Original data file (external
+                        link)</a>
+                    
+                </p>
+                
+                
+                <p>
+                    Citation:
+                    
+                    <a href="https://doi.org/10.2151/jmsj.2015-001">Kobayashi, S., Ota, Y., Harada, Y., Ebita, A., Moriya, M., Onoda, H., Onogi, K., Kamahori, H., Kobayashi, C., Endo, H. and Miyaoka, K., (2015). The JRA-55 reanalysis: General specifications and basic characteristics. Journal of the Meteorological Society of Japan. Ser. II, 93(1), pp.5-48.</a>.
+                    
+                </p>
+                
+                
+                
+                
+                
+                
+                <p>Processing:</p>
+                <ul>
+                    
+                    <li>"Data set created from file ['anl_surf125.011_tmp.202201_202212', 'anl_surf125.2022MMMM'] downloaded from ['', ''] at ['2022-11-08 14:59:36']"</li>
+                    
+                    <li>"Regridded to 1 degree latitude-longitude resolution"</li>
+                    
+                    <li>"Rebaselined to 1981-2010"</li>
+                    
+                    <li>"Calculated area-average"</li>
+                    
+                    <li>"Calculated annual average from monthly averages using arithmetic mean"</li>
+                    
+                    <li>"Selected years within the range 1900 to 2022."</li>
+                    
+                    <li>"Wrote to file wmo_ra_2_JRA-55.csv"</li>
+                    
+                    <li>Data set created from file ['wmo_ra_2_JRA-55.csv'] downloaded from [''] at ['2022-11-23 19:14:45']</li>
                     
                 </ul>
                 
@@ -1017,7 +1249,7 @@ Global mean temperature is based on measurements made at weather stations over l
                 
                 
                 <p>
-                    Data citation: Zhang, H.-M., B. Huang, J. Lawrimore, M. Menne, Thomas M. Smith, NOAA Global Surface Temperature Dataset (NOAAGlobalTemp), Version 5 [indicate subset used]. NOAA National Centers for Environmental Information. doi:10.25921/9qth-2p70 Accessed [2022-08-23 10:32:43].
+                    Data citation: Zhang, H.-M., B. Huang, J. Lawrimore, M. Menne, Thomas M. Smith, NOAA Global Surface Temperature Dataset (NOAAGlobalTemp), Version 5 [indicate subset used]. NOAA National Centers for Environmental Information. doi:10.25921/9qth-2p70 Accessed [2022-11-21 17:47:59].
                 </p>
                 
                 
@@ -1025,9 +1257,9 @@ Global mean temperature is based on measurements made at weather stations over l
                 <p>Processing:</p>
                 <ul>
                     
-                    <li>"Data set created from file ['NOAAGlobalTemp_v*.nc'] downloaded from ['https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/gridded/NOAAGlobalTemp_v.*.nc'] at ['2022-08-23 10:32:43']"</li>
+                    <li>"Data set created from file ['NOAAGlobalTemp_v*.nc'] downloaded from ['https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/gridded/NOAAGlobalTemp_v.*.nc'] at ['2022-11-21 17:47:59']"</li>
                     
-                    <li>"Data set created from file ['NOAAGlobalTemp_v*.nc'] downloaded from ['https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/gridded/NOAAGlobalTemp_v.*.nc'] at ['2022-08-23 10:32:43']"</li>
+                    <li>"Data set created from file ['NOAAGlobalTemp_v*.nc'] downloaded from ['https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/gridded/NOAAGlobalTemp_v.*.nc'] at ['2022-11-21 17:47:59']"</li>
                     
                     <li>"Regridded to 1 degree latitude-longitude resolution"</li>
                     
@@ -1037,11 +1269,11 @@ Global mean temperature is based on measurements made at weather stations over l
                     
                     <li>"Calculated annual average from monthly averages using arithmetic mean"</li>
                     
-                    <li>"Selected year range 1900 to 2021"</li>
+                    <li>"Selected years within the range 1900 to 2022."</li>
                     
                     <li>"Wrote to file wmo_ra_2_NOAAGlobalTemp.csv"</li>
                     
-                    <li>Data set created from file ['wmo_ra_2_NOAAGlobalTemp.csv'] downloaded from [''] at ['2022-09-01 17:56:52']</li>
+                    <li>Data set created from file ['wmo_ra_2_NOAAGlobalTemp.csv'] downloaded from [''] at ['2022-11-23 19:15:00']</li>
                     
                 </ul>
                 
@@ -1070,7 +1302,7 @@ Global mean temperature is based on measurements made at weather stations over l
                 <p>Processing:</p>
                 <ul>
                     
-                    <li>"Data set created from file ['Land_and_Ocean_LatLong1.nc'] downloaded from ['http://berkeleyearth.lbl.gov/auto/Global/Gridded/Land_and_Ocean_LatLong1.nc'] at ['2022-08-23 10:31:29']"</li>
+                    <li>"Data set created from file ['Land_and_Ocean_LatLong1.nc'] downloaded from ['http://berkeleyearth.lbl.gov/auto/Global/Gridded/Land_and_Ocean_LatLong1.nc'] at ['2022-11-15 19:09:18']"</li>
                     
                     <li>"Rebaselined to 1981-2010"</li>
                     
@@ -1078,11 +1310,11 @@ Global mean temperature is based on measurements made at weather stations over l
                     
                     <li>"Calculated annual average from monthly averages using arithmetic mean"</li>
                     
-                    <li>"Selected year range 1900 to 2021"</li>
+                    <li>"Selected years within the range 1900 to 2022."</li>
                     
                     <li>"Wrote to file wmo_ra_3_Berkeley Earth.csv"</li>
                     
-                    <li>Data set created from file ['wmo_ra_3_Berkeley Earth.csv'] downloaded from [''] at ['2022-09-01 17:55:48']</li>
+                    <li>Data set created from file ['wmo_ra_3_Berkeley Earth.csv'] downloaded from [''] at ['2022-11-23 19:13:25']</li>
                     
                 </ul>
                 
@@ -1111,9 +1343,21 @@ Global mean temperature is based on measurements made at weather stations over l
                 <p>Processing:</p>
                 <ul>
                     
-                    <li>"Gridded dataset created from file ['era5_2m_tas_2022.nc'] downloaded from ['']"history,G,"Regridded to 1 degree latitude-longitude resolution"history,G,"Rebaselined to 1981-2010"history,G,"Calculated area-average"history,G,"Calculated annual average from monthly averages using arithmetic mean"history,G,"Selected year range 1900 to 2021"history,G,"Wrote to file wmo_ra_3_ERA5.csv"</li>
+                    <li>"Gridded dataset created from file ['era5_2m_tas_2022.nc'] downloaded from ['']"</li>
                     
-                    <li>Data set created from file ['wmo_ra_3_ERA5.csv'] downloaded from [''] at ['2022-09-01 11:33:11']</li>
+                    <li>"Regridded to 1 degree latitude-longitude resolution"</li>
+                    
+                    <li>"Rebaselined to 1981-2010"</li>
+                    
+                    <li>"Calculated area-average"</li>
+                    
+                    <li>"Calculated annual average from monthly averages using arithmetic mean"</li>
+                    
+                    <li>"Selected years within the range 1900 to 2022."</li>
+                    
+                    <li>"Wrote to file wmo_ra_3_ERA5.csv"</li>
+                    
+                    <li>Data set created from file ['wmo_ra_3_ERA5.csv'] downloaded from [''] at ['2022-11-23 19:13:49']</li>
                     
                 </ul>
                 
@@ -1138,7 +1382,7 @@ Global mean temperature is based on measurements made at weather stations over l
                 
                 
                 <p>
-                    Data citation: GISTEMP Team, 2022: GISS Surface Temperature Analysis (GISTEMP), version 4. NASA Goddard Institute for Space Studies. Dataset accessed 2022-08-23 10:32:28 at data.giss.nasa.gov/gistemp/.
+                    Data citation: GISTEMP Team, 2022: GISS Surface Temperature Analysis (GISTEMP), version 4. NASA Goddard Institute for Space Studies. Dataset accessed 2022-11-15 19:10:16 at data.giss.nasa.gov/gistemp/.
                 </p>
                 
                 
@@ -1146,7 +1390,7 @@ Global mean temperature is based on measurements made at weather stations over l
                 <p>Processing:</p>
                 <ul>
                     
-                    <li>"Data set created from file ['gistemp1200_GHCNv4_ERSSTv5.nc.gz'] downloaded from ['https://data.giss.nasa.gov/pub/gistemp/gistemp1200_GHCNv4_ERSSTv5.nc.gz'] at ['2022-08-23 10:32:28']"</li>
+                    <li>"Data set created from file ['gistemp1200_GHCNv4_ERSSTv5.nc.gz'] downloaded from ['https://data.giss.nasa.gov/pub/gistemp/gistemp1200_GHCNv4_ERSSTv5.nc.gz'] at ['2022-11-15 19:10:16']"</li>
                     
                     <li>"Regridded to 1 degree latitude-longitude resolution"</li>
                     
@@ -1156,11 +1400,11 @@ Global mean temperature is based on measurements made at weather stations over l
                     
                     <li>"Calculated annual average from monthly averages using arithmetic mean"</li>
                     
-                    <li>"Selected year range 1900 to 2021"</li>
+                    <li>"Selected years within the range 1900 to 2022."</li>
                     
                     <li>"Wrote to file wmo_ra_3_GISTEMP.csv"</li>
                     
-                    <li>Data set created from file ['wmo_ra_3_GISTEMP.csv'] downloaded from [''] at ['2022-09-01 17:56:11']</li>
+                    <li>Data set created from file ['wmo_ra_3_GISTEMP.csv'] downloaded from [''] at ['2022-11-23 19:14:00']</li>
                     
                 </ul>
                 
@@ -1186,12 +1430,12 @@ Global mean temperature is based on measurements made at weather stations over l
                 
                 
                 
-                <p>Acknowledgement: HadCRUT.5.0.1.0 data were obtained from http://www.metoffice.gov.uk/hadobs/hadcrut5 on 2022-08-23 10:32:28 and are © British Crown Copyright, Met Office 2022, provided under an Open Government License, http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/</p>
+                <p>Acknowledgement: HadCRUT.5.0.1.0 data were obtained from http://www.metoffice.gov.uk/hadobs/hadcrut5 on 2022-11-15 19:10:18 and are © British Crown Copyright, Met Office 2022, provided under an Open Government License, http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/</p>
                 
                 <p>Processing:</p>
                 <ul>
                     
-                    <li>"Data set created from file ['HadCRUT.5.0.1.0.analysis.anomalies.ensemble_mean.nc'] downloaded from ['https://www.metoffice.gov.uk/hadobs/hadcrut5/data/current/analysis/HadCRUT.5.0.1.0.analysis.anomalies.ensemble_mean.nc'] at ['2022-08-23 10:32:28']"</li>
+                    <li>"Data set created from file ['HadCRUT.5.0.1.0.analysis.anomalies.ensemble_mean.nc'] downloaded from ['https://www.metoffice.gov.uk/hadobs/hadcrut5/data/current/analysis/HadCRUT.5.0.1.0.analysis.anomalies.ensemble_mean.nc'] at ['2022-11-15 19:10:18']"</li>
                     
                     <li>"Regridded to 1 degree latitude-longitude resolution"</li>
                     
@@ -1201,11 +1445,54 @@ Global mean temperature is based on measurements made at weather stations over l
                     
                     <li>"Calculated annual average from monthly averages using arithmetic mean"</li>
                     
-                    <li>"Selected year range 1900 to 2021"</li>
+                    <li>"Selected years within the range 1900 to 2022."</li>
                     
                     <li>"Wrote to file wmo_ra_3_HadCRUT5.csv"</li>
                     
-                    <li>Data set created from file ['wmo_ra_3_HadCRUT5.csv'] downloaded from [''] at ['2022-09-01 17:56:30']</li>
+                    <li>Data set created from file ['wmo_ra_3_HadCRUT5.csv'] downloaded from [''] at ['2022-11-23 19:14:22']</li>
+                    
+                </ul>
+                
+                <h3>JRA-55</h3>
+                <p>
+                    
+                    <a href="" target="_blank"
+                       aria-label="Link to original data file for JRA-55">Original data file (external
+                        link)</a>
+                    
+                </p>
+                
+                
+                <p>
+                    Citation:
+                    
+                    <a href="https://doi.org/10.2151/jmsj.2015-001">Kobayashi, S., Ota, Y., Harada, Y., Ebita, A., Moriya, M., Onoda, H., Onogi, K., Kamahori, H., Kobayashi, C., Endo, H. and Miyaoka, K., (2015). The JRA-55 reanalysis: General specifications and basic characteristics. Journal of the Meteorological Society of Japan. Ser. II, 93(1), pp.5-48.</a>.
+                    
+                </p>
+                
+                
+                
+                
+                
+                
+                <p>Processing:</p>
+                <ul>
+                    
+                    <li>"Data set created from file ['anl_surf125.011_tmp.202201_202212', 'anl_surf125.2022MMMM'] downloaded from ['', ''] at ['2022-11-08 14:59:36']"</li>
+                    
+                    <li>"Regridded to 1 degree latitude-longitude resolution"</li>
+                    
+                    <li>"Rebaselined to 1981-2010"</li>
+                    
+                    <li>"Calculated area-average"</li>
+                    
+                    <li>"Calculated annual average from monthly averages using arithmetic mean"</li>
+                    
+                    <li>"Selected years within the range 1900 to 2022."</li>
+                    
+                    <li>"Wrote to file wmo_ra_3_JRA-55.csv"</li>
+                    
+                    <li>Data set created from file ['wmo_ra_3_JRA-55.csv'] downloaded from [''] at ['2022-11-23 19:14:46']</li>
                     
                 </ul>
                 
@@ -1232,7 +1519,7 @@ Global mean temperature is based on measurements made at weather stations over l
                 
                 
                 <p>
-                    Data citation: Zhang, H.-M., B. Huang, J. Lawrimore, M. Menne, Thomas M. Smith, NOAA Global Surface Temperature Dataset (NOAAGlobalTemp), Version 5 [indicate subset used]. NOAA National Centers for Environmental Information. doi:10.25921/9qth-2p70 Accessed [2022-08-23 10:32:43].
+                    Data citation: Zhang, H.-M., B. Huang, J. Lawrimore, M. Menne, Thomas M. Smith, NOAA Global Surface Temperature Dataset (NOAAGlobalTemp), Version 5 [indicate subset used]. NOAA National Centers for Environmental Information. doi:10.25921/9qth-2p70 Accessed [2022-11-21 17:47:59].
                 </p>
                 
                 
@@ -1240,9 +1527,9 @@ Global mean temperature is based on measurements made at weather stations over l
                 <p>Processing:</p>
                 <ul>
                     
-                    <li>"Data set created from file ['NOAAGlobalTemp_v*.nc'] downloaded from ['https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/gridded/NOAAGlobalTemp_v.*.nc'] at ['2022-08-23 10:32:43']"</li>
+                    <li>"Data set created from file ['NOAAGlobalTemp_v*.nc'] downloaded from ['https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/gridded/NOAAGlobalTemp_v.*.nc'] at ['2022-11-21 17:47:59']"</li>
                     
-                    <li>"Data set created from file ['NOAAGlobalTemp_v*.nc'] downloaded from ['https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/gridded/NOAAGlobalTemp_v.*.nc'] at ['2022-08-23 10:32:43']"</li>
+                    <li>"Data set created from file ['NOAAGlobalTemp_v*.nc'] downloaded from ['https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/gridded/NOAAGlobalTemp_v.*.nc'] at ['2022-11-21 17:47:59']"</li>
                     
                     <li>"Regridded to 1 degree latitude-longitude resolution"</li>
                     
@@ -1252,11 +1539,11 @@ Global mean temperature is based on measurements made at weather stations over l
                     
                     <li>"Calculated annual average from monthly averages using arithmetic mean"</li>
                     
-                    <li>"Selected year range 1900 to 2021"</li>
+                    <li>"Selected years within the range 1900 to 2022."</li>
                     
                     <li>"Wrote to file wmo_ra_3_NOAAGlobalTemp.csv"</li>
                     
-                    <li>Data set created from file ['wmo_ra_3_NOAAGlobalTemp.csv'] downloaded from [''] at ['2022-09-01 17:56:53']</li>
+                    <li>Data set created from file ['wmo_ra_3_NOAAGlobalTemp.csv'] downloaded from [''] at ['2022-11-23 19:15:01']</li>
                     
                 </ul>
                 
@@ -1285,7 +1572,7 @@ Global mean temperature is based on measurements made at weather stations over l
                 <p>Processing:</p>
                 <ul>
                     
-                    <li>"Data set created from file ['Land_and_Ocean_LatLong1.nc'] downloaded from ['http://berkeleyearth.lbl.gov/auto/Global/Gridded/Land_and_Ocean_LatLong1.nc'] at ['2022-08-23 10:31:29']"</li>
+                    <li>"Data set created from file ['Land_and_Ocean_LatLong1.nc'] downloaded from ['http://berkeleyearth.lbl.gov/auto/Global/Gridded/Land_and_Ocean_LatLong1.nc'] at ['2022-11-15 19:09:18']"</li>
                     
                     <li>"Rebaselined to 1981-2010"</li>
                     
@@ -1293,11 +1580,11 @@ Global mean temperature is based on measurements made at weather stations over l
                     
                     <li>"Calculated annual average from monthly averages using arithmetic mean"</li>
                     
-                    <li>"Selected year range 1900 to 2021"</li>
+                    <li>"Selected years within the range 1900 to 2022."</li>
                     
                     <li>"Wrote to file wmo_ra_4_Berkeley Earth.csv"</li>
                     
-                    <li>Data set created from file ['wmo_ra_4_Berkeley Earth.csv'] downloaded from [''] at ['2022-09-01 17:55:50']</li>
+                    <li>Data set created from file ['wmo_ra_4_Berkeley Earth.csv'] downloaded from [''] at ['2022-11-23 19:13:27']</li>
                     
                 </ul>
                 
@@ -1326,9 +1613,21 @@ Global mean temperature is based on measurements made at weather stations over l
                 <p>Processing:</p>
                 <ul>
                     
-                    <li>"Gridded dataset created from file ['era5_2m_tas_2022.nc'] downloaded from ['']"history,G,"Regridded to 1 degree latitude-longitude resolution"history,G,"Rebaselined to 1981-2010"history,G,"Calculated area-average"history,G,"Calculated annual average from monthly averages using arithmetic mean"history,G,"Selected year range 1900 to 2021"history,G,"Wrote to file wmo_ra_4_ERA5.csv"</li>
+                    <li>"Gridded dataset created from file ['era5_2m_tas_2022.nc'] downloaded from ['']"</li>
                     
-                    <li>Data set created from file ['wmo_ra_4_ERA5.csv'] downloaded from [''] at ['2022-09-01 11:33:11']</li>
+                    <li>"Regridded to 1 degree latitude-longitude resolution"</li>
+                    
+                    <li>"Rebaselined to 1981-2010"</li>
+                    
+                    <li>"Calculated area-average"</li>
+                    
+                    <li>"Calculated annual average from monthly averages using arithmetic mean"</li>
+                    
+                    <li>"Selected years within the range 1900 to 2022."</li>
+                    
+                    <li>"Wrote to file wmo_ra_4_ERA5.csv"</li>
+                    
+                    <li>Data set created from file ['wmo_ra_4_ERA5.csv'] downloaded from [''] at ['2022-11-23 19:13:49']</li>
                     
                 </ul>
                 
@@ -1353,7 +1652,7 @@ Global mean temperature is based on measurements made at weather stations over l
                 
                 
                 <p>
-                    Data citation: GISTEMP Team, 2022: GISS Surface Temperature Analysis (GISTEMP), version 4. NASA Goddard Institute for Space Studies. Dataset accessed 2022-08-23 10:32:28 at data.giss.nasa.gov/gistemp/.
+                    Data citation: GISTEMP Team, 2022: GISS Surface Temperature Analysis (GISTEMP), version 4. NASA Goddard Institute for Space Studies. Dataset accessed 2022-11-15 19:10:16 at data.giss.nasa.gov/gistemp/.
                 </p>
                 
                 
@@ -1361,7 +1660,7 @@ Global mean temperature is based on measurements made at weather stations over l
                 <p>Processing:</p>
                 <ul>
                     
-                    <li>"Data set created from file ['gistemp1200_GHCNv4_ERSSTv5.nc.gz'] downloaded from ['https://data.giss.nasa.gov/pub/gistemp/gistemp1200_GHCNv4_ERSSTv5.nc.gz'] at ['2022-08-23 10:32:28']"</li>
+                    <li>"Data set created from file ['gistemp1200_GHCNv4_ERSSTv5.nc.gz'] downloaded from ['https://data.giss.nasa.gov/pub/gistemp/gistemp1200_GHCNv4_ERSSTv5.nc.gz'] at ['2022-11-15 19:10:16']"</li>
                     
                     <li>"Regridded to 1 degree latitude-longitude resolution"</li>
                     
@@ -1371,11 +1670,11 @@ Global mean temperature is based on measurements made at weather stations over l
                     
                     <li>"Calculated annual average from monthly averages using arithmetic mean"</li>
                     
-                    <li>"Selected year range 1900 to 2021"</li>
+                    <li>"Selected years within the range 1900 to 2022."</li>
                     
                     <li>"Wrote to file wmo_ra_4_GISTEMP.csv"</li>
                     
-                    <li>Data set created from file ['wmo_ra_4_GISTEMP.csv'] downloaded from [''] at ['2022-09-01 17:56:12']</li>
+                    <li>Data set created from file ['wmo_ra_4_GISTEMP.csv'] downloaded from [''] at ['2022-11-23 19:14:01']</li>
                     
                 </ul>
                 
@@ -1401,12 +1700,12 @@ Global mean temperature is based on measurements made at weather stations over l
                 
                 
                 
-                <p>Acknowledgement: HadCRUT.5.0.1.0 data were obtained from http://www.metoffice.gov.uk/hadobs/hadcrut5 on 2022-08-23 10:32:28 and are © British Crown Copyright, Met Office 2022, provided under an Open Government License, http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/</p>
+                <p>Acknowledgement: HadCRUT.5.0.1.0 data were obtained from http://www.metoffice.gov.uk/hadobs/hadcrut5 on 2022-11-15 19:10:18 and are © British Crown Copyright, Met Office 2022, provided under an Open Government License, http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/</p>
                 
                 <p>Processing:</p>
                 <ul>
                     
-                    <li>"Data set created from file ['HadCRUT.5.0.1.0.analysis.anomalies.ensemble_mean.nc'] downloaded from ['https://www.metoffice.gov.uk/hadobs/hadcrut5/data/current/analysis/HadCRUT.5.0.1.0.analysis.anomalies.ensemble_mean.nc'] at ['2022-08-23 10:32:28']"</li>
+                    <li>"Data set created from file ['HadCRUT.5.0.1.0.analysis.anomalies.ensemble_mean.nc'] downloaded from ['https://www.metoffice.gov.uk/hadobs/hadcrut5/data/current/analysis/HadCRUT.5.0.1.0.analysis.anomalies.ensemble_mean.nc'] at ['2022-11-15 19:10:18']"</li>
                     
                     <li>"Regridded to 1 degree latitude-longitude resolution"</li>
                     
@@ -1416,11 +1715,54 @@ Global mean temperature is based on measurements made at weather stations over l
                     
                     <li>"Calculated annual average from monthly averages using arithmetic mean"</li>
                     
-                    <li>"Selected year range 1900 to 2021"</li>
+                    <li>"Selected years within the range 1900 to 2022."</li>
                     
                     <li>"Wrote to file wmo_ra_4_HadCRUT5.csv"</li>
                     
-                    <li>Data set created from file ['wmo_ra_4_HadCRUT5.csv'] downloaded from [''] at ['2022-09-01 17:56:32']</li>
+                    <li>Data set created from file ['wmo_ra_4_HadCRUT5.csv'] downloaded from [''] at ['2022-11-23 19:14:24']</li>
+                    
+                </ul>
+                
+                <h3>JRA-55</h3>
+                <p>
+                    
+                    <a href="" target="_blank"
+                       aria-label="Link to original data file for JRA-55">Original data file (external
+                        link)</a>
+                    
+                </p>
+                
+                
+                <p>
+                    Citation:
+                    
+                    <a href="https://doi.org/10.2151/jmsj.2015-001">Kobayashi, S., Ota, Y., Harada, Y., Ebita, A., Moriya, M., Onoda, H., Onogi, K., Kamahori, H., Kobayashi, C., Endo, H. and Miyaoka, K., (2015). The JRA-55 reanalysis: General specifications and basic characteristics. Journal of the Meteorological Society of Japan. Ser. II, 93(1), pp.5-48.</a>.
+                    
+                </p>
+                
+                
+                
+                
+                
+                
+                <p>Processing:</p>
+                <ul>
+                    
+                    <li>"Data set created from file ['anl_surf125.011_tmp.202201_202212', 'anl_surf125.2022MMMM'] downloaded from ['', ''] at ['2022-11-08 14:59:36']"</li>
+                    
+                    <li>"Regridded to 1 degree latitude-longitude resolution"</li>
+                    
+                    <li>"Rebaselined to 1981-2010"</li>
+                    
+                    <li>"Calculated area-average"</li>
+                    
+                    <li>"Calculated annual average from monthly averages using arithmetic mean"</li>
+                    
+                    <li>"Selected years within the range 1900 to 2022."</li>
+                    
+                    <li>"Wrote to file wmo_ra_4_JRA-55.csv"</li>
+                    
+                    <li>Data set created from file ['wmo_ra_4_JRA-55.csv'] downloaded from [''] at ['2022-11-23 19:14:47']</li>
                     
                 </ul>
                 
@@ -1447,7 +1789,7 @@ Global mean temperature is based on measurements made at weather stations over l
                 
                 
                 <p>
-                    Data citation: Zhang, H.-M., B. Huang, J. Lawrimore, M. Menne, Thomas M. Smith, NOAA Global Surface Temperature Dataset (NOAAGlobalTemp), Version 5 [indicate subset used]. NOAA National Centers for Environmental Information. doi:10.25921/9qth-2p70 Accessed [2022-08-23 10:32:43].
+                    Data citation: Zhang, H.-M., B. Huang, J. Lawrimore, M. Menne, Thomas M. Smith, NOAA Global Surface Temperature Dataset (NOAAGlobalTemp), Version 5 [indicate subset used]. NOAA National Centers for Environmental Information. doi:10.25921/9qth-2p70 Accessed [2022-11-21 17:47:59].
                 </p>
                 
                 
@@ -1455,9 +1797,9 @@ Global mean temperature is based on measurements made at weather stations over l
                 <p>Processing:</p>
                 <ul>
                     
-                    <li>"Data set created from file ['NOAAGlobalTemp_v*.nc'] downloaded from ['https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/gridded/NOAAGlobalTemp_v.*.nc'] at ['2022-08-23 10:32:43']"</li>
+                    <li>"Data set created from file ['NOAAGlobalTemp_v*.nc'] downloaded from ['https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/gridded/NOAAGlobalTemp_v.*.nc'] at ['2022-11-21 17:47:59']"</li>
                     
-                    <li>"Data set created from file ['NOAAGlobalTemp_v*.nc'] downloaded from ['https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/gridded/NOAAGlobalTemp_v.*.nc'] at ['2022-08-23 10:32:43']"</li>
+                    <li>"Data set created from file ['NOAAGlobalTemp_v*.nc'] downloaded from ['https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/gridded/NOAAGlobalTemp_v.*.nc'] at ['2022-11-21 17:47:59']"</li>
                     
                     <li>"Regridded to 1 degree latitude-longitude resolution"</li>
                     
@@ -1467,11 +1809,11 @@ Global mean temperature is based on measurements made at weather stations over l
                     
                     <li>"Calculated annual average from monthly averages using arithmetic mean"</li>
                     
-                    <li>"Selected year range 1900 to 2021"</li>
+                    <li>"Selected years within the range 1900 to 2022."</li>
                     
                     <li>"Wrote to file wmo_ra_4_NOAAGlobalTemp.csv"</li>
                     
-                    <li>Data set created from file ['wmo_ra_4_NOAAGlobalTemp.csv'] downloaded from [''] at ['2022-09-01 17:56:55']</li>
+                    <li>Data set created from file ['wmo_ra_4_NOAAGlobalTemp.csv'] downloaded from [''] at ['2022-11-23 19:15:03']</li>
                     
                 </ul>
                 
@@ -1500,7 +1842,7 @@ Global mean temperature is based on measurements made at weather stations over l
                 <p>Processing:</p>
                 <ul>
                     
-                    <li>"Data set created from file ['Land_and_Ocean_LatLong1.nc'] downloaded from ['http://berkeleyearth.lbl.gov/auto/Global/Gridded/Land_and_Ocean_LatLong1.nc'] at ['2022-08-23 10:31:29']"</li>
+                    <li>"Data set created from file ['Land_and_Ocean_LatLong1.nc'] downloaded from ['http://berkeleyearth.lbl.gov/auto/Global/Gridded/Land_and_Ocean_LatLong1.nc'] at ['2022-11-15 19:09:18']"</li>
                     
                     <li>"Rebaselined to 1981-2010"</li>
                     
@@ -1508,11 +1850,11 @@ Global mean temperature is based on measurements made at weather stations over l
                     
                     <li>"Calculated annual average from monthly averages using arithmetic mean"</li>
                     
-                    <li>"Selected year range 1900 to 2021"</li>
+                    <li>"Selected years within the range 1900 to 2022."</li>
                     
                     <li>"Wrote to file wmo_ra_5_Berkeley Earth.csv"</li>
                     
-                    <li>Data set created from file ['wmo_ra_5_Berkeley Earth.csv'] downloaded from [''] at ['2022-09-01 17:55:52']</li>
+                    <li>Data set created from file ['wmo_ra_5_Berkeley Earth.csv'] downloaded from [''] at ['2022-11-23 19:13:28']</li>
                     
                 </ul>
                 
@@ -1541,9 +1883,21 @@ Global mean temperature is based on measurements made at weather stations over l
                 <p>Processing:</p>
                 <ul>
                     
-                    <li>"Gridded dataset created from file ['era5_2m_tas_2022.nc'] downloaded from ['']"history,G,"Regridded to 1 degree latitude-longitude resolution"history,G,"Rebaselined to 1981-2010"history,G,"Calculated area-average"history,G,"Calculated annual average from monthly averages using arithmetic mean"history,G,"Selected year range 1900 to 2021"history,G,"Wrote to file wmo_ra_5_ERA5.csv"</li>
+                    <li>"Gridded dataset created from file ['era5_2m_tas_2022.nc'] downloaded from ['']"</li>
                     
-                    <li>Data set created from file ['wmo_ra_5_ERA5.csv'] downloaded from [''] at ['2022-09-01 11:33:12']</li>
+                    <li>"Regridded to 1 degree latitude-longitude resolution"</li>
+                    
+                    <li>"Rebaselined to 1981-2010"</li>
+                    
+                    <li>"Calculated area-average"</li>
+                    
+                    <li>"Calculated annual average from monthly averages using arithmetic mean"</li>
+                    
+                    <li>"Selected years within the range 1900 to 2022."</li>
+                    
+                    <li>"Wrote to file wmo_ra_5_ERA5.csv"</li>
+                    
+                    <li>Data set created from file ['wmo_ra_5_ERA5.csv'] downloaded from [''] at ['2022-11-23 19:13:50']</li>
                     
                 </ul>
                 
@@ -1568,7 +1922,7 @@ Global mean temperature is based on measurements made at weather stations over l
                 
                 
                 <p>
-                    Data citation: GISTEMP Team, 2022: GISS Surface Temperature Analysis (GISTEMP), version 4. NASA Goddard Institute for Space Studies. Dataset accessed 2022-08-23 10:32:28 at data.giss.nasa.gov/gistemp/.
+                    Data citation: GISTEMP Team, 2022: GISS Surface Temperature Analysis (GISTEMP), version 4. NASA Goddard Institute for Space Studies. Dataset accessed 2022-11-15 19:10:16 at data.giss.nasa.gov/gistemp/.
                 </p>
                 
                 
@@ -1576,7 +1930,7 @@ Global mean temperature is based on measurements made at weather stations over l
                 <p>Processing:</p>
                 <ul>
                     
-                    <li>"Data set created from file ['gistemp1200_GHCNv4_ERSSTv5.nc.gz'] downloaded from ['https://data.giss.nasa.gov/pub/gistemp/gistemp1200_GHCNv4_ERSSTv5.nc.gz'] at ['2022-08-23 10:32:28']"</li>
+                    <li>"Data set created from file ['gistemp1200_GHCNv4_ERSSTv5.nc.gz'] downloaded from ['https://data.giss.nasa.gov/pub/gistemp/gistemp1200_GHCNv4_ERSSTv5.nc.gz'] at ['2022-11-15 19:10:16']"</li>
                     
                     <li>"Regridded to 1 degree latitude-longitude resolution"</li>
                     
@@ -1586,11 +1940,11 @@ Global mean temperature is based on measurements made at weather stations over l
                     
                     <li>"Calculated annual average from monthly averages using arithmetic mean"</li>
                     
-                    <li>"Selected year range 1900 to 2021"</li>
+                    <li>"Selected years within the range 1900 to 2022."</li>
                     
                     <li>"Wrote to file wmo_ra_5_GISTEMP.csv"</li>
                     
-                    <li>Data set created from file ['wmo_ra_5_GISTEMP.csv'] downloaded from [''] at ['2022-09-01 17:56:13']</li>
+                    <li>Data set created from file ['wmo_ra_5_GISTEMP.csv'] downloaded from [''] at ['2022-11-23 19:14:03']</li>
                     
                 </ul>
                 
@@ -1616,12 +1970,12 @@ Global mean temperature is based on measurements made at weather stations over l
                 
                 
                 
-                <p>Acknowledgement: HadCRUT.5.0.1.0 data were obtained from http://www.metoffice.gov.uk/hadobs/hadcrut5 on 2022-08-23 10:32:28 and are © British Crown Copyright, Met Office 2022, provided under an Open Government License, http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/</p>
+                <p>Acknowledgement: HadCRUT.5.0.1.0 data were obtained from http://www.metoffice.gov.uk/hadobs/hadcrut5 on 2022-11-15 19:10:18 and are © British Crown Copyright, Met Office 2022, provided under an Open Government License, http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/</p>
                 
                 <p>Processing:</p>
                 <ul>
                     
-                    <li>"Data set created from file ['HadCRUT.5.0.1.0.analysis.anomalies.ensemble_mean.nc'] downloaded from ['https://www.metoffice.gov.uk/hadobs/hadcrut5/data/current/analysis/HadCRUT.5.0.1.0.analysis.anomalies.ensemble_mean.nc'] at ['2022-08-23 10:32:28']"</li>
+                    <li>"Data set created from file ['HadCRUT.5.0.1.0.analysis.anomalies.ensemble_mean.nc'] downloaded from ['https://www.metoffice.gov.uk/hadobs/hadcrut5/data/current/analysis/HadCRUT.5.0.1.0.analysis.anomalies.ensemble_mean.nc'] at ['2022-11-15 19:10:18']"</li>
                     
                     <li>"Regridded to 1 degree latitude-longitude resolution"</li>
                     
@@ -1631,11 +1985,54 @@ Global mean temperature is based on measurements made at weather stations over l
                     
                     <li>"Calculated annual average from monthly averages using arithmetic mean"</li>
                     
-                    <li>"Selected year range 1900 to 2021"</li>
+                    <li>"Selected years within the range 1900 to 2022."</li>
                     
                     <li>"Wrote to file wmo_ra_5_HadCRUT5.csv"</li>
                     
-                    <li>Data set created from file ['wmo_ra_5_HadCRUT5.csv'] downloaded from [''] at ['2022-09-01 17:56:34']</li>
+                    <li>Data set created from file ['wmo_ra_5_HadCRUT5.csv'] downloaded from [''] at ['2022-11-23 19:14:26']</li>
+                    
+                </ul>
+                
+                <h3>JRA-55</h3>
+                <p>
+                    
+                    <a href="" target="_blank"
+                       aria-label="Link to original data file for JRA-55">Original data file (external
+                        link)</a>
+                    
+                </p>
+                
+                
+                <p>
+                    Citation:
+                    
+                    <a href="https://doi.org/10.2151/jmsj.2015-001">Kobayashi, S., Ota, Y., Harada, Y., Ebita, A., Moriya, M., Onoda, H., Onogi, K., Kamahori, H., Kobayashi, C., Endo, H. and Miyaoka, K., (2015). The JRA-55 reanalysis: General specifications and basic characteristics. Journal of the Meteorological Society of Japan. Ser. II, 93(1), pp.5-48.</a>.
+                    
+                </p>
+                
+                
+                
+                
+                
+                
+                <p>Processing:</p>
+                <ul>
+                    
+                    <li>"Data set created from file ['anl_surf125.011_tmp.202201_202212', 'anl_surf125.2022MMMM'] downloaded from ['', ''] at ['2022-11-08 14:59:36']"</li>
+                    
+                    <li>"Regridded to 1 degree latitude-longitude resolution"</li>
+                    
+                    <li>"Rebaselined to 1981-2010"</li>
+                    
+                    <li>"Calculated area-average"</li>
+                    
+                    <li>"Calculated annual average from monthly averages using arithmetic mean"</li>
+                    
+                    <li>"Selected years within the range 1900 to 2022."</li>
+                    
+                    <li>"Wrote to file wmo_ra_5_JRA-55.csv"</li>
+                    
+                    <li>Data set created from file ['wmo_ra_5_JRA-55.csv'] downloaded from [''] at ['2022-11-23 19:14:48']</li>
                     
                 </ul>
                 
@@ -1662,7 +2059,7 @@ Global mean temperature is based on measurements made at weather stations over l
                 
                 
                 <p>
-                    Data citation: Zhang, H.-M., B. Huang, J. Lawrimore, M. Menne, Thomas M. Smith, NOAA Global Surface Temperature Dataset (NOAAGlobalTemp), Version 5 [indicate subset used]. NOAA National Centers for Environmental Information. doi:10.25921/9qth-2p70 Accessed [2022-08-23 10:32:43].
+                    Data citation: Zhang, H.-M., B. Huang, J. Lawrimore, M. Menne, Thomas M. Smith, NOAA Global Surface Temperature Dataset (NOAAGlobalTemp), Version 5 [indicate subset used]. NOAA National Centers for Environmental Information. doi:10.25921/9qth-2p70 Accessed [2022-11-21 17:47:59].
                 </p>
                 
                 
@@ -1670,9 +2067,9 @@ Global mean temperature is based on measurements made at weather stations over l
                 <p>Processing:</p>
                 <ul>
                     
-                    <li>"Data set created from file ['NOAAGlobalTemp_v*.nc'] downloaded from ['https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/gridded/NOAAGlobalTemp_v.*.nc'] at ['2022-08-23 10:32:43']"</li>
+                    <li>"Data set created from file ['NOAAGlobalTemp_v*.nc'] downloaded from ['https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/gridded/NOAAGlobalTemp_v.*.nc'] at ['2022-11-21 17:47:59']"</li>
                     
-                    <li>"Data set created from file ['NOAAGlobalTemp_v*.nc'] downloaded from ['https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/gridded/NOAAGlobalTemp_v.*.nc'] at ['2022-08-23 10:32:43']"</li>
+                    <li>"Data set created from file ['NOAAGlobalTemp_v*.nc'] downloaded from ['https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/gridded/NOAAGlobalTemp_v.*.nc'] at ['2022-11-21 17:47:59']"</li>
                     
                     <li>"Regridded to 1 degree latitude-longitude resolution"</li>
                     
@@ -1682,11 +2079,11 @@ Global mean temperature is based on measurements made at weather stations over l
                     
                     <li>"Calculated annual average from monthly averages using arithmetic mean"</li>
                     
-                    <li>"Selected year range 1900 to 2021"</li>
+                    <li>"Selected years within the range 1900 to 2022."</li>
                     
                     <li>"Wrote to file wmo_ra_5_NOAAGlobalTemp.csv"</li>
                     
-                    <li>Data set created from file ['wmo_ra_5_NOAAGlobalTemp.csv'] downloaded from [''] at ['2022-09-01 17:56:56']</li>
+                    <li>Data set created from file ['wmo_ra_5_NOAAGlobalTemp.csv'] downloaded from [''] at ['2022-11-23 19:15:05']</li>
                     
                 </ul>
                 
@@ -1715,7 +2112,7 @@ Global mean temperature is based on measurements made at weather stations over l
                 <p>Processing:</p>
                 <ul>
                     
-                    <li>"Data set created from file ['Land_and_Ocean_LatLong1.nc'] downloaded from ['http://berkeleyearth.lbl.gov/auto/Global/Gridded/Land_and_Ocean_LatLong1.nc'] at ['2022-08-23 10:31:29']"</li>
+                    <li>"Data set created from file ['Land_and_Ocean_LatLong1.nc'] downloaded from ['http://berkeleyearth.lbl.gov/auto/Global/Gridded/Land_and_Ocean_LatLong1.nc'] at ['2022-11-15 19:09:18']"</li>
                     
                     <li>"Rebaselined to 1981-2010"</li>
                     
@@ -1723,11 +2120,11 @@ Global mean temperature is based on measurements made at weather stations over l
                     
                     <li>"Calculated annual average from monthly averages using arithmetic mean"</li>
                     
-                    <li>"Selected year range 1900 to 2021"</li>
+                    <li>"Selected years within the range 1900 to 2022."</li>
                     
                     <li>"Wrote to file wmo_ra_6_Berkeley Earth.csv"</li>
                     
-                    <li>Data set created from file ['wmo_ra_6_Berkeley Earth.csv'] downloaded from [''] at ['2022-09-01 17:55:54']</li>
+                    <li>Data set created from file ['wmo_ra_6_Berkeley Earth.csv'] downloaded from [''] at ['2022-11-23 19:13:30']</li>
                     
                 </ul>
                 
@@ -1756,9 +2153,21 @@ Global mean temperature is based on measurements made at weather stations over l
                 <p>Processing:</p>
                 <ul>
                     
-                    <li>"Gridded dataset created from file ['era5_2m_tas_2022.nc'] downloaded from ['']"history,G,"Regridded to 1 degree latitude-longitude resolution"history,G,"Rebaselined to 1981-2010"history,G,"Calculated area-average"history,G,"Calculated annual average from monthly averages using arithmetic mean"history,G,"Selected year range 1900 to 2021"history,G,"Wrote to file wmo_ra_6_ERA5.csv"</li>
+                    <li>"Gridded dataset created from file ['era5_2m_tas_2022.nc'] downloaded from ['']"</li>
                     
-                    <li>Data set created from file ['wmo_ra_6_ERA5.csv'] downloaded from [''] at ['2022-09-01 11:33:12']</li>
+                    <li>"Regridded to 1 degree latitude-longitude resolution"</li>
+                    
+                    <li>"Rebaselined to 1981-2010"</li>
+                    
+                    <li>"Calculated area-average"</li>
+                    
+                    <li>"Calculated annual average from monthly averages using arithmetic mean"</li>
+                    
+                    <li>"Selected years within the range 1900 to 2022."</li>
+                    
+                    <li>"Wrote to file wmo_ra_6_ERA5.csv"</li>
+                    
+                    <li>Data set created from file ['wmo_ra_6_ERA5.csv'] downloaded from [''] at ['2022-11-23 19:13:50']</li>
                     
                 </ul>
                 
@@ -1783,7 +2192,7 @@ Global mean temperature is based on measurements made at weather stations over l
                 
                 
                 <p>
-                    Data citation: GISTEMP Team, 2022: GISS Surface Temperature Analysis (GISTEMP), version 4. NASA Goddard Institute for Space Studies. Dataset accessed 2022-08-23 10:32:28 at data.giss.nasa.gov/gistemp/.
+                    Data citation: GISTEMP Team, 2022: GISS Surface Temperature Analysis (GISTEMP), version 4. NASA Goddard Institute for Space Studies. Dataset accessed 2022-11-15 19:10:16 at data.giss.nasa.gov/gistemp/.
                 </p>
                 
                 
@@ -1791,7 +2200,7 @@ Global mean temperature is based on measurements made at weather stations over l
                 <p>Processing:</p>
                 <ul>
                     
-                    <li>"Data set created from file ['gistemp1200_GHCNv4_ERSSTv5.nc.gz'] downloaded from ['https://data.giss.nasa.gov/pub/gistemp/gistemp1200_GHCNv4_ERSSTv5.nc.gz'] at ['2022-08-23 10:32:28']"</li>
+                    <li>"Data set created from file ['gistemp1200_GHCNv4_ERSSTv5.nc.gz'] downloaded from ['https://data.giss.nasa.gov/pub/gistemp/gistemp1200_GHCNv4_ERSSTv5.nc.gz'] at ['2022-11-15 19:10:16']"</li>
                     
                     <li>"Regridded to 1 degree latitude-longitude resolution"</li>
                     
@@ -1801,11 +2210,11 @@ Global mean temperature is based on measurements made at weather stations over l
                     
                     <li>"Calculated annual average from monthly averages using arithmetic mean"</li>
                     
-                    <li>"Selected year range 1900 to 2021"</li>
+                    <li>"Selected years within the range 1900 to 2022."</li>
                     
                     <li>"Wrote to file wmo_ra_6_GISTEMP.csv"</li>
                     
-                    <li>Data set created from file ['wmo_ra_6_GISTEMP.csv'] downloaded from [''] at ['2022-09-01 17:56:15']</li>
+                    <li>Data set created from file ['wmo_ra_6_GISTEMP.csv'] downloaded from [''] at ['2022-11-23 19:14:04']</li>
                     
                 </ul>
                 
@@ -1831,12 +2240,12 @@ Global mean temperature is based on measurements made at weather stations over l
                 
                 
                 
-                <p>Acknowledgement: HadCRUT.5.0.1.0 data were obtained from http://www.metoffice.gov.uk/hadobs/hadcrut5 on 2022-08-23 10:32:28 and are © British Crown Copyright, Met Office 2022, provided under an Open Government License, http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/</p>
+                <p>Acknowledgement: HadCRUT.5.0.1.0 data were obtained from http://www.metoffice.gov.uk/hadobs/hadcrut5 on 2022-11-15 19:10:18 and are © British Crown Copyright, Met Office 2022, provided under an Open Government License, http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/</p>
                 
                 <p>Processing:</p>
                 <ul>
                     
-                    <li>"Data set created from file ['HadCRUT.5.0.1.0.analysis.anomalies.ensemble_mean.nc'] downloaded from ['https://www.metoffice.gov.uk/hadobs/hadcrut5/data/current/analysis/HadCRUT.5.0.1.0.analysis.anomalies.ensemble_mean.nc'] at ['2022-08-23 10:32:28']"</li>
+                    <li>"Data set created from file ['HadCRUT.5.0.1.0.analysis.anomalies.ensemble_mean.nc'] downloaded from ['https://www.metoffice.gov.uk/hadobs/hadcrut5/data/current/analysis/HadCRUT.5.0.1.0.analysis.anomalies.ensemble_mean.nc'] at ['2022-11-15 19:10:18']"</li>
                     
                     <li>"Regridded to 1 degree latitude-longitude resolution"</li>
                     
@@ -1846,11 +2255,54 @@ Global mean temperature is based on measurements made at weather stations over l
                     
                     <li>"Calculated annual average from monthly averages using arithmetic mean"</li>
                     
-                    <li>"Selected year range 1900 to 2021"</li>
+                    <li>"Selected years within the range 1900 to 2022."</li>
                     
                     <li>"Wrote to file wmo_ra_6_HadCRUT5.csv"</li>
                     
-                    <li>Data set created from file ['wmo_ra_6_HadCRUT5.csv'] downloaded from [''] at ['2022-09-01 17:56:36']</li>
+                    <li>Data set created from file ['wmo_ra_6_HadCRUT5.csv'] downloaded from [''] at ['2022-11-23 19:14:28']</li>
+                    
+                </ul>
+                
+                <h3>JRA-55</h3>
+                <p>
+                    
+                    <a href="" target="_blank"
+                       aria-label="Link to original data file for JRA-55">Original data file (external
+                        link)</a>
+                    
+                </p>
+                
+                
+                <p>
+                    Citation:
+                    
+                    <a href="https://doi.org/10.2151/jmsj.2015-001">Kobayashi, S., Ota, Y., Harada, Y., Ebita, A., Moriya, M., Onoda, H., Onogi, K., Kamahori, H., Kobayashi, C., Endo, H. and Miyaoka, K., (2015). The JRA-55 reanalysis: General specifications and basic characteristics. Journal of the Meteorological Society of Japan. Ser. II, 93(1), pp.5-48.</a>.
+                    
+                </p>
+                
+                
+                
+                
+                
+                
+                <p>Processing:</p>
+                <ul>
+                    
+                    <li>"Data set created from file ['anl_surf125.011_tmp.202201_202212', 'anl_surf125.2022MMMM'] downloaded from ['', ''] at ['2022-11-08 14:59:36']"</li>
+                    
+                    <li>"Regridded to 1 degree latitude-longitude resolution"</li>
+                    
+                    <li>"Rebaselined to 1981-2010"</li>
+                    
+                    <li>"Calculated area-average"</li>
+                    
+                    <li>"Calculated annual average from monthly averages using arithmetic mean"</li>
+                    
+                    <li>"Selected years within the range 1900 to 2022."</li>
+                    
+                    <li>"Wrote to file wmo_ra_6_JRA-55.csv"</li>
+                    
+                    <li>Data set created from file ['wmo_ra_6_JRA-55.csv'] downloaded from [''] at ['2022-11-23 19:14:48']</li>
                     
                 </ul>
                 
@@ -1877,7 +2329,7 @@ Global mean temperature is based on measurements made at weather stations over l
                 
                 
                 <p>
-                    Data citation: Zhang, H.-M., B. Huang, J. Lawrimore, M. Menne, Thomas M. Smith, NOAA Global Surface Temperature Dataset (NOAAGlobalTemp), Version 5 [indicate subset used]. NOAA National Centers for Environmental Information. doi:10.25921/9qth-2p70 Accessed [2022-08-23 10:32:43].
+                    Data citation: Zhang, H.-M., B. Huang, J. Lawrimore, M. Menne, Thomas M. Smith, NOAA Global Surface Temperature Dataset (NOAAGlobalTemp), Version 5 [indicate subset used]. NOAA National Centers for Environmental Information. doi:10.25921/9qth-2p70 Accessed [2022-11-21 17:47:59].
                 </p>
                 
                 
@@ -1885,9 +2337,9 @@ Global mean temperature is based on measurements made at weather stations over l
                 <p>Processing:</p>
                 <ul>
                     
-                    <li>"Data set created from file ['NOAAGlobalTemp_v*.nc'] downloaded from ['https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/gridded/NOAAGlobalTemp_v.*.nc'] at ['2022-08-23 10:32:43']"</li>
+                    <li>"Data set created from file ['NOAAGlobalTemp_v*.nc'] downloaded from ['https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/gridded/NOAAGlobalTemp_v.*.nc'] at ['2022-11-21 17:47:59']"</li>
                     
-                    <li>"Data set created from file ['NOAAGlobalTemp_v*.nc'] downloaded from ['https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/gridded/NOAAGlobalTemp_v.*.nc'] at ['2022-08-23 10:32:43']"</li>
+                    <li>"Data set created from file ['NOAAGlobalTemp_v*.nc'] downloaded from ['https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/gridded/NOAAGlobalTemp_v.*.nc'] at ['2022-11-21 17:47:59']"</li>
                     
                     <li>"Regridded to 1 degree latitude-longitude resolution"</li>
                     
@@ -1897,11 +2349,11 @@ Global mean temperature is based on measurements made at weather stations over l
                     
                     <li>"Calculated annual average from monthly averages using arithmetic mean"</li>
                     
-                    <li>"Selected year range 1900 to 2021"</li>
+                    <li>"Selected years within the range 1900 to 2022."</li>
                     
                     <li>"Wrote to file wmo_ra_6_NOAAGlobalTemp.csv"</li>
                     
-                    <li>Data set created from file ['wmo_ra_6_NOAAGlobalTemp.csv'] downloaded from [''] at ['2022-09-01 17:56:58']</li>
+                    <li>Data set created from file ['wmo_ra_6_NOAAGlobalTemp.csv'] downloaded from [''] at ['2022-11-23 19:15:06']</li>
                     
                 </ul>
                 
@@ -1911,7 +2363,13 @@ Global mean temperature is based on measurements made at weather stations over l
     </div>
     
 
+    <p>
+        Page created on 2022-11-24 using
+        <a href="https://github.com/jjk-code-otter/climate-indicator-manager">climind v0.1</a>
+    </p>
+
 </div>
+
 
 </body>
 </html>

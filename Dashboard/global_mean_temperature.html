@@ -32,28 +32,6 @@ p {
   display: inline-block;
   border-radius: 5px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </style>
 
 <script>
@@ -63,7 +41,6 @@ p {
             navigator.clipboard.writeText
                 (invar);
         }
-
 </script>
 <body>
 
@@ -75,17 +52,22 @@ p {
         </div>
     </div>
 
+    
     <div class="w3-row-padding" style="margin:0 -16px">
 
         
         <div class="w3-third">
 
-            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey"  style="padding-bottom:10px">
                 <p>
-                    <img src="figures/Global_mean_temperature.png" width=100% alt="annual Global mean temperature (degC, difference from the 1850-1900 average)  from 1850-2022. Data are from the following six data sets: Berkeley Earth, ERA5, GISTEMP, HadCRUT5, JRA-55, NOAAGlobalTemp."
+                    <img src="figures/Global_mean_temperature.png" width=100% alt="Annual Global mean temperature (&deg;C, difference from the 1850-1900 average)  from 1850-2022. Data are from the following six data sets: Berkeley Earth, ERA5, GISTEMP, HadCRUT5, JRA-55, NOAAGlobalTemp."
                          title="Graph of Global mean temperature">
                 </p>
                 <h3>Global mean temperature</h3>
+                <p>
+                    Annual Global mean temperature (&deg;C, difference from the 1850-1900 average)  from 1850-2022. Data are from the following six data sets: Berkeley Earth, ERA5, GISTEMP, HadCRUT5, JRA-55, NOAAGlobalTemp.
+                    <button onclick="copyText('Annual Global mean temperature (&deg;C, difference from the 1850-1900 average)  from 1850-2022. Data are from the following six data sets: Berkeley Earth, ERA5, GISTEMP, HadCRUT5, JRA-55, NOAAGlobalTemp.')">Copy caption</button>
+                </p>
                 <p>
                 <div style="float: left;">
                     Image: <a href="figures/Global_mean_temperature.png" target="_blank" aria-label="Figure in png format">png</a>-<a
@@ -111,12 +93,16 @@ p {
         
         <div class="w3-third">
 
-            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey"  style="padding-bottom:10px">
                 <p>
-                    <img src="figures/Land_air_temperature.png" width=100% alt="annual Global mean land temperature (degC, difference from the 1981-2010 average)  from 1750-2022. Data are from the following four data sets: Berkeley Earth LSAT, CLSAT, CRUTEM5, NOAA LSAT."
+                    <img src="figures/Land_air_temperature.png" width=100% alt="Annual Global mean land temperature (&deg;C, difference from the 1981-2010 average)  from 1850-2022. Data are from the following four data sets: Berkeley Earth, CLSAT, CRUTEM5, GHCNv4."
                          title="Graph of Land air temperature">
                 </p>
                 <h3>Land air temperature</h3>
+                <p>
+                    Annual Global mean land temperature (&deg;C, difference from the 1981-2010 average)  from 1850-2022. Data are from the following four data sets: Berkeley Earth, CLSAT, CRUTEM5, GHCNv4.
+                    <button onclick="copyText('Annual Global mean land temperature (&deg;C, difference from the 1981-2010 average)  from 1850-2022. Data are from the following four data sets: Berkeley Earth, CLSAT, CRUTEM5, GHCNv4.')">Copy caption</button>
+                </p>
                 <p>
                 <div style="float: left;">
                     Image: <a href="figures/Land_air_temperature.png" target="_blank" aria-label="Figure in png format">png</a>-<a
@@ -142,12 +128,16 @@ p {
         
         <div class="w3-third">
 
-            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey"  style="padding-bottom:10px">
                 <p>
-                    <img src="figures/Sea-surface_temperature.png" width=100% alt="annual Global mean sea-surface temperature (degC, difference from the 1981-2010 average)  from 1850-2022. Data are from the following two data sets: ERSST, HadSST4."
+                    <img src="figures/Sea-surface_temperature.png" width=100% alt="Annual Global mean sea-surface temperature (&deg;C, difference from the 1981-2010 average)  from 1850-2022. Data are from the following two data sets: ERSST, HadSST4."
                          title="Graph of Sea-surface temperature">
                 </p>
                 <h3>Sea-surface temperature</h3>
+                <p>
+                    Annual Global mean sea-surface temperature (&deg;C, difference from the 1981-2010 average)  from 1850-2022. Data are from the following two data sets: ERSST, HadSST4.
+                    <button onclick="copyText('Annual Global mean sea-surface temperature (&deg;C, difference from the 1981-2010 average)  from 1850-2022. Data are from the following two data sets: ERSST, HadSST4.')">Copy caption</button>
+                </p>
                 <p>
                 <div style="float: left;">
                     Image: <a href="figures/Sea-surface_temperature.png" target="_blank" aria-label="Figure in png format">png</a>-<a
@@ -171,14 +161,24 @@ p {
 
         </div>
         
+
+    </div>
+    
+    <div class="w3-row-padding" style="margin:0 -16px">
+
+        
         <div class="w3-third">
 
-            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey"  style="padding-bottom:10px">
                 <p>
-                    <img src="figures/Temperature_anomaly_map.png" width=100% alt="annual Near surface temperature (degC, difference from the 1981-2010 average)  for 2021. Data shown are the median of the following six data sets: Berkeley Earth_5x5, ERA5_5x5, GISTEMP_5x5, HadCRUT5_5x5, JRA-55_5x5, NOAAGlobalTemp_5x5."
+                    <img src="figures/Temperature_anomaly_map.png" width=100% alt="Annual Near surface temperature anomaly (&deg;C, difference from the 1981-2010 average)  for 2022. Data shown are the median of the following six data sets: Berkeley Earth, ERA5, GISTEMP, HadCRUT5, JRA-55, NOAAGlobalTemp."
                          title="Graph of Temperature anomaly map">
                 </p>
                 <h3>Temperature anomaly map</h3>
+                <p>
+                    Annual Near surface temperature anomaly (&deg;C, difference from the 1981-2010 average)  for 2022. Data shown are the median of the following six data sets: Berkeley Earth, ERA5, GISTEMP, HadCRUT5, JRA-55, NOAAGlobalTemp.
+                    <button onclick="copyText('Annual Near surface temperature anomaly (&deg;C, difference from the 1981-2010 average)  for 2022. Data shown are the median of the following six data sets: Berkeley Earth, ERA5, GISTEMP, HadCRUT5, JRA-55, NOAAGlobalTemp.')">Copy caption</button>
+                </p>
                 <p>
                 <div style="float: left;">
                     Image: <a href="figures/Temperature_anomaly_map.png" target="_blank" aria-label="Figure in png format">png</a>-<a
@@ -204,12 +204,16 @@ p {
         
         <div class="w3-third">
 
-            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey"  style="padding-bottom:10px">
                 <p>
-                    <img src="figures/Temperature_anomaly_uncertainty_map.png" width=100% alt="annual Near surface temperature (degC, difference from the 1981-2010 average)  for 2021. Data shown are the median of the following six data sets: Berkeley Earth_5x5, ERA5_5x5, GISTEMP_5x5, HadCRUT5_5x5, JRA-55_5x5, NOAAGlobalTemp_5x5."
+                    <img src="figures/Temperature_anomaly_uncertainty_map.png" width=100% alt="Annual Near surface temperature uncertainty (&deg;C)  for 2022. Data shown are the half-range of the following six data sets: Berkeley Earth, ERA5, GISTEMP, HadCRUT5, JRA-55, NOAAGlobalTemp."
                          title="Graph of Temperature anomaly uncertainty map">
                 </p>
                 <h3>Temperature anomaly uncertainty map</h3>
+                <p>
+                    Annual Near surface temperature uncertainty (&deg;C)  for 2022. Data shown are the half-range of the following six data sets: Berkeley Earth, ERA5, GISTEMP, HadCRUT5, JRA-55, NOAAGlobalTemp.
+                    <button onclick="copyText('Annual Near surface temperature uncertainty (&deg;C)  for 2022. Data shown are the half-range of the following six data sets: Berkeley Earth, ERA5, GISTEMP, HadCRUT5, JRA-55, NOAAGlobalTemp.')">Copy caption</button>
+                </p>
                 <p>
                 <div style="float: left;">
                     Image: <a href="figures/Temperature_anomaly_uncertainty_map.png" target="_blank" aria-label="Figure in png format">png</a>-<a
@@ -235,12 +239,16 @@ p {
         
         <div class="w3-third">
 
-            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey"  style="padding-bottom:10px">
                 <p>
-                    <img src="figures/Temperature_anomaly_rank_map.png" width=100% alt="annual Near surface temperature (degC, difference from the 1981-2010 average)  for 2021. Data shown are the median of the following six data sets: Berkeley Earth_5x5, ERA5_5x5, GISTEMP_5x5, HadCRUT5_5x5, JRA-55_5x5, NOAAGlobalTemp_5x5."
+                    <img src="figures/Temperature_anomaly_rank_map.png" width=100% alt="Annual Near surface temperature rank (&deg;C)  for 2022. Data shown are the median rank of the following six data sets: Berkeley Earth, ERA5, GISTEMP, HadCRUT5, JRA-55, NOAAGlobalTemp."
                          title="Graph of Temperature anomaly rank map">
                 </p>
                 <h3>Temperature anomaly rank map</h3>
+                <p>
+                    Annual Near surface temperature rank (&deg;C)  for 2022. Data shown are the median rank of the following six data sets: Berkeley Earth, ERA5, GISTEMP, HadCRUT5, JRA-55, NOAAGlobalTemp.
+                    <button onclick="copyText('Annual Near surface temperature rank (&deg;C)  for 2022. Data shown are the median rank of the following six data sets: Berkeley Earth, ERA5, GISTEMP, HadCRUT5, JRA-55, NOAAGlobalTemp.')">Copy caption</button>
+                </p>
                 <p>
                 <div style="float: left;">
                     Image: <a href="figures/Temperature_anomaly_rank_map.png" target="_blank" aria-label="Figure in png format">png</a>-<a
@@ -266,6 +274,7 @@ p {
         
 
     </div>
+    
 
     
     <div class="w3-container" style="margin:0 -16px">
@@ -361,11 +370,11 @@ Global mean temperature is based on measurements made at weather stations over l
                 </p>
                 <p>
                     Data file: <a href="formatted_data/Global_mean_temperature_data_files.zip"
-                                                  aria-label="Bundle of csv data in a zip file">Global_mean_temperature_data_files.zip</a>
-                    <br>Checksum: 125cd63d315b6f86497da414e24e96e7
-                    <button onclick="copyText('125cd63d315b6f86497da414e24e96e7')">Copy</button>
+                                  aria-label="Bundle of csv data in a zip file">Global_mean_temperature_data_files.zip</a>
+                    <br>Checksum: 6996ac88547f35fc0482b69e0e953e0a
+                    <button onclick="copyText('6996ac88547f35fc0482b69e0e953e0a')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
-                       aria-label="extrenal link to data format description">BADC CSV format</a><br>
+                                   aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
 
                 
@@ -394,7 +403,7 @@ Global mean temperature is based on measurements made at weather stations over l
                 <p>Processing:</p>
                 <ul>
                     
-                    <li>Data set created from file ['Land_and_Ocean_complete.txt'] downloaded from ['http://berkeleyearth.lbl.gov/auto/Global/Land_and_Ocean_complete.txt'] at ['2022-11-23 09:15:08']</li>
+                    <li>Data set created from file ['Land_and_Ocean_complete.txt'] downloaded from ['http://berkeleyearth.lbl.gov/auto/Global/Land_and_Ocean_complete.txt'] at ['2022-11-24 09:15:08']</li>
                     
                     <li>Rebaselined to 1981-2010 for each month separately by calculating the arithmetic mean of the data over the baseline period and subtracting the mean from all data values. This is done for each month separately (Januarys, Februarys etc).</li>
                     
@@ -433,7 +442,7 @@ Global mean temperature is based on measurements made at weather stations over l
                 <p>Processing:</p>
                 <ul>
                     
-                    <li>Data set created from file ['ts_1month_anomaly_Global_ERA5_2T_202210_1991-2020_v01.csv'] downloaded from ['https://climate.copernicus.eu/sites/default/files/ftp-data/temperature/2022/10/ERA5_1991-2020/ts_1month_anomaly_Global_ERA5_2T_202210_1991-2020_v01.csv'] at ['2022-11-23 09:15:22']</li>
+                    <li>Data set created from file ['ts_1month_anomaly_Global_ERA5_2T_202210_1991-2020_v01.csv'] downloaded from ['https://climate.copernicus.eu/sites/default/files/ftp-data/temperature/2022/10/ERA5_1991-2020/ts_1month_anomaly_Global_ERA5_2T_202210_1991-2020_v01.csv'] at ['2022-11-24 09:15:23']</li>
                     
                     <li>Rebaselined to 1981-2010 for each month separately by calculating the arithmetic mean of the data over the baseline period and subtracting the mean from all data values. This is done for each month separately (Januarys, Februarys etc).</li>
                     
@@ -468,7 +477,7 @@ Global mean temperature is based on measurements made at weather stations over l
                 
                 
                 <p>
-                    Data citation: GISTEMP Team, 2022: GISS Surface Temperature Analysis (GISTEMP), version 4. NASA Goddard Institute for Space Studies. Dataset accessed 2022-11-23 09:16:19 at data.giss.nasa.gov/gistemp/.
+                    Data citation: GISTEMP Team, 2022: GISS Surface Temperature Analysis (GISTEMP), version 4. NASA Goddard Institute for Space Studies. Dataset accessed 2022-11-24 09:16:30 at data.giss.nasa.gov/gistemp/.
                 </p>
                 
                 
@@ -476,7 +485,7 @@ Global mean temperature is based on measurements made at weather stations over l
                 <p>Processing:</p>
                 <ul>
                     
-                    <li>Data set created from file ['GLB.Ts+dSST.csv'] downloaded from ['https://data.giss.nasa.gov/gistemp/tabledata_v4/GLB.Ts+dSST.csv'] at ['2022-11-23 09:16:19']</li>
+                    <li>Data set created from file ['GLB.Ts+dSST.csv'] downloaded from ['https://data.giss.nasa.gov/gistemp/tabledata_v4/GLB.Ts+dSST.csv'] at ['2022-11-24 09:16:30']</li>
                     
                     <li>Rebaselined to 1981-2010 for each month separately by calculating the arithmetic mean of the data over the baseline period and subtracting the mean from all data values. This is done for each month separately (Januarys, Februarys etc).</li>
                     
@@ -516,12 +525,12 @@ Global mean temperature is based on measurements made at weather stations over l
                 
                 
                 
-                <p>Acknowledgement: HadCRUT.5.0.1.0 data were obtained from http://www.metoffice.gov.uk/hadobs/hadcrut5 on 2022-11-23 09:16:58 and are © British Crown Copyright, Met Office 2022, provided under an Open Government License, http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/</p>
+                <p>Acknowledgement: HadCRUT.5.0.1.0 data were obtained from http://www.metoffice.gov.uk/hadobs/hadcrut5 on 2022-11-24 09:17:13 and are © British Crown Copyright, Met Office 2022, provided under an Open Government License, http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/</p>
                 
                 <p>Processing:</p>
                 <ul>
                     
-                    <li>Data set created from file ['HadCRUT.5.0.1.0.analysis.summary_series.global.monthly.csv', 'HadCRUT.5.0.1.0.analysis.summary_series.global.annual.csv'] downloaded from ['https://www.metoffice.gov.uk/hadobs/hadcrut5/data/current/analysis/diagnostics/HadCRUT.5.0.1.0.analysis.summary_series.global.monthly.csv', 'https://www.metoffice.gov.uk/hadobs/hadcrut5/data/current/analysis/diagnostics/HadCRUT.5.0.1.0.analysis.summary_series.global.annual.csv'] at ['2022-11-23 09:16:58', '2022-11-23 09:16:58']</li>
+                    <li>Data set created from file ['HadCRUT.5.0.1.0.analysis.summary_series.global.monthly.csv', 'HadCRUT.5.0.1.0.analysis.summary_series.global.annual.csv'] downloaded from ['https://www.metoffice.gov.uk/hadobs/hadcrut5/data/current/analysis/diagnostics/HadCRUT.5.0.1.0.analysis.summary_series.global.monthly.csv', 'https://www.metoffice.gov.uk/hadobs/hadcrut5/data/current/analysis/diagnostics/HadCRUT.5.0.1.0.analysis.summary_series.global.annual.csv'] at ['2022-11-24 09:17:13', '2022-11-24 09:17:13']</li>
                     
                     <li>Rebaselined to 1981-2010 for each month separately by calculating the arithmetic mean of the data over the baseline period and subtracting the mean from all data values. This is done for each month separately (Januarys, Februarys etc).</li>
                     
@@ -601,7 +610,7 @@ Global mean temperature is based on measurements made at weather stations over l
                 
                 
                 <p>
-                    Data citation: Zhang, H.-M., B. Huang, J. Lawrimore, M. Menne, Thomas M. Smith, NOAA Global Surface Temperature Dataset (NOAAGlobalTemp), Version 5 [indicate subset used]. NOAA National Centers for Environmental Information. doi:10.25921/9qth-2p70 Accessed [2022-11-23 09:17:18].
+                    Data citation: Zhang, H.-M., B. Huang, J. Lawrimore, M. Menne, Thomas M. Smith, NOAA Global Surface Temperature Dataset (NOAAGlobalTemp), Version 5 [indicate subset used]. NOAA National Centers for Environmental Information. doi:10.25921/9qth-2p70 Accessed [2022-11-24 09:17:33].
                 </p>
                 
                 
@@ -609,7 +618,7 @@ Global mean temperature is based on measurements made at weather stations over l
                 <p>Processing:</p>
                 <ul>
                     
-                    <li>Data set created from file ['aravg.mon.land_ocean.90S.90N.v5.0.0.202210.asc', 'aravg.ann.land_ocean.90S.90N.*.asc'] downloaded from ['https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/timeseries/aravg.mon.land_ocean.90S.90N.v5.0.0.202210.asc', 'https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/timeseries/aravg.ann.land_ocean.90S.90N.*.asc'] at ['2022-11-23 09:17:18']</li>
+                    <li>Data set created from file ['aravg.mon.land_ocean.90S.90N.v5.0.0.202210.asc', 'aravg.ann.land_ocean.90S.90N.*.asc'] downloaded from ['https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/timeseries/aravg.mon.land_ocean.90S.90N.v5.0.0.202210.asc', 'https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/timeseries/aravg.ann.land_ocean.90S.90N.*.asc'] at ['2022-11-24 09:17:33']</li>
                     
                     <li>Rebaselined to 1981-2010 for each month separately by calculating the arithmetic mean of the data over the baseline period and subtracting the mean from all data values. This is done for each month separately (Januarys, Februarys etc).</li>
                     
@@ -645,11 +654,11 @@ Land surface air temperature is the temperature of air approximately 2m above th
                 </p>
                 <p>
                     Data file: <a href="formatted_data/Land_air_temperature_data_files.zip"
-                                                  aria-label="Bundle of csv data in a zip file">Land_air_temperature_data_files.zip</a>
-                    <br>Checksum: 74bcd02ce6315c01e5ac5775da271658
-                    <button onclick="copyText('74bcd02ce6315c01e5ac5775da271658')">Copy</button>
+                                  aria-label="Bundle of csv data in a zip file">Land_air_temperature_data_files.zip</a>
+                    <br>Checksum: be32c69d330b9ffe3065855a2c036943
+                    <button onclick="copyText('be32c69d330b9ffe3065855a2c036943')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
-                       aria-label="extrenal link to data format description">BADC CSV format</a><br>
+                                   aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
 
                 
@@ -678,11 +687,13 @@ Land surface air temperature is the temperature of air approximately 2m above th
                 <p>Processing:</p>
                 <ul>
                     
-                    <li>Data set created from file ['Complete_TAVG_complete.txt'] downloaded from ['http://berkeleyearth.lbl.gov/auto/Global/Complete_TAVG_complete.txt'] at ['2022-11-23 09:15:11']</li>
+                    <li>Data set created from file ['Complete_TAVG_complete.txt'] downloaded from ['http://berkeleyearth.lbl.gov/auto/Global/Complete_TAVG_complete.txt'] at ['2022-11-24 09:15:11']</li>
                     
                     <li>Calculated annual average from monthly averages using arithmetic mean</li>
                     
                     <li>Rebaselined to 1981-2010 by subtracting the arithemtic mean for that period from all data values.</li>
+                    
+                    <li>Selected years within the range 1850 to 2022.</li>
                     
                 </ul>
                 
@@ -719,6 +730,8 @@ Land surface air temperature is the temperature of air approximately 2m above th
                     
                     <li>Rebaselined to 1981-2010 by subtracting the arithemtic mean for that period from all data values.</li>
                     
+                    <li>Selected years within the range 1850 to 2022.</li>
+                    
                 </ul>
                 
                 <h3>CRUTEM5</h3>
@@ -747,16 +760,18 @@ Land surface air temperature is the temperature of air approximately 2m above th
                 
                 
                 
-                <p>Acknowledgement: CRUTEM.5.0.0.0 data were obtained from http://www.metoffice.gov.uk/hadobs/crutem5 on 2022-11-23 09:15:16 and are © British Crown Copyright, Met Office 2022, provided under an Open Government License, http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/</p>
+                <p>Acknowledgement: CRUTEM.5.0.0.0 data were obtained from http://www.metoffice.gov.uk/hadobs/crutem5 on 2022-11-24 09:15:17 and are © British Crown Copyright, Met Office 2022, provided under an Open Government License, http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/</p>
                 
                 <p>Processing:</p>
                 <ul>
                     
-                    <li>Data set created from file ['CRUTEM.5.0.1.0.summary_series.global.monthly.csv', 'CRUTEM.5.0.1.0.summary_series.global.annual.csv'] downloaded from ['https://www.metoffice.gov.uk/hadobs/crutem5/data/CRUTEM.5.0.1.0/diagnostics/CRUTEM.5.0.1.0.summary_series.global.monthly.csv', 'https://www.metoffice.gov.uk/hadobs/crutem5/data/CRUTEM.5.0.1.0/diagnostics/CRUTEM.5.0.1.0.summary_series.global.annual.csv'] at ['2022-11-23 09:15:16', '2022-11-23 09:15:16']</li>
+                    <li>Data set created from file ['CRUTEM.5.0.1.0.summary_series.global.monthly.csv', 'CRUTEM.5.0.1.0.summary_series.global.annual.csv'] downloaded from ['https://www.metoffice.gov.uk/hadobs/crutem5/data/CRUTEM.5.0.1.0/diagnostics/CRUTEM.5.0.1.0.summary_series.global.monthly.csv', 'https://www.metoffice.gov.uk/hadobs/crutem5/data/CRUTEM.5.0.1.0/diagnostics/CRUTEM.5.0.1.0.summary_series.global.annual.csv'] at ['2022-11-24 09:15:17', '2022-11-24 09:15:17']</li>
                     
                     <li>Calculated annual average from monthly averages using arithmetic mean</li>
                     
                     <li>Rebaselined to 1981-2010 by subtracting the arithemtic mean for that period from all data values.</li>
+                    
+                    <li>Selected years within the range 1850 to 2022.</li>
                     
                 </ul>
                 
@@ -789,11 +804,13 @@ Land surface air temperature is the temperature of air approximately 2m above th
                 <p>Processing:</p>
                 <ul>
                     
-                    <li>Data set created from file ['aravg.mon.land.90S.90N.v5.0.0.2022MMMM.asc', 'aravg.ann.land.90S.90N.v5.0.0.2022MMMM.asc'] downloaded from ['https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/timeseries/aravg.mon.land.90S.90N.v5.0.0.2022MMMM.asc', 'https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/timeseries/aravg.ann.land.90S.90N.v5.0.0.2022MMMM.asc'] at ['2022-11-23 09:17:51']</li>
+                    <li>Data set created from file ['aravg.mon.land.90S.90N.v5.0.0.2022MMMM.asc', 'aravg.ann.land.90S.90N.v5.0.0.2022MMMM.asc'] downloaded from ['https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/timeseries/aravg.mon.land.90S.90N.v5.0.0.2022MMMM.asc', 'https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/timeseries/aravg.ann.land.90S.90N.v5.0.0.2022MMMM.asc'] at ['2022-11-24 09:18:04']</li>
                     
                     <li>Calculated annual average from monthly averages using arithmetic mean</li>
                     
                     <li>Rebaselined to 1981-2010 by subtracting the arithemtic mean for that period from all data values.</li>
+                    
+                    <li>Selected years within the range 1850 to 2022.</li>
                     
                 </ul>
                 
@@ -819,11 +836,11 @@ Sea-surface temperature (SST) is the temperature of the surface ocean, typically
                 </p>
                 <p>
                     Data file: <a href="formatted_data/Sea-surface_temperature_data_files.zip"
-                                                  aria-label="Bundle of csv data in a zip file">Sea-surface_temperature_data_files.zip</a>
-                    <br>Checksum: b27b1506fe4e6656b8b5a6c266802b79
-                    <button onclick="copyText('b27b1506fe4e6656b8b5a6c266802b79')">Copy</button>
+                                  aria-label="Bundle of csv data in a zip file">Sea-surface_temperature_data_files.zip</a>
+                    <br>Checksum: 3dfc4ba99795499efd742026b76fe277
+                    <button onclick="copyText('3dfc4ba99795499efd742026b76fe277')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
-                       aria-label="extrenal link to data format description">BADC CSV format</a><br>
+                                   aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
 
                 
@@ -852,7 +869,7 @@ Sea-surface temperature (SST) is the temperature of the surface ocean, typically
                 
                 
                 <p>
-                    Data citation: Boyin Huang, Peter W. Thorne, Viva F. Banzon, Tim Boyer, Gennady Chepurin, Jay H. Lawrimore, Matthew J. Menne, Thomas M. Smith, Russell S. Vose, and Huai-Min Zhang (2017): NOAA Extended Reconstructed Sea Surface Temperature (ERSST), Version 5. [indicate subset used]. NOAA National Centers for Environmental Information. doi:10.7289/V5T72FNM [2022-11-23 09:15:54].
+                    Data citation: Boyin Huang, Peter W. Thorne, Viva F. Banzon, Tim Boyer, Gennady Chepurin, Jay H. Lawrimore, Matthew J. Menne, Thomas M. Smith, Russell S. Vose, and Huai-Min Zhang (2017): NOAA Extended Reconstructed Sea Surface Temperature (ERSST), Version 5. [indicate subset used]. NOAA National Centers for Environmental Information. doi:10.7289/V5T72FNM [2022-11-24 09:16:01].
                 </p>
                 
                 
@@ -860,7 +877,7 @@ Sea-surface temperature (SST) is the temperature of the surface ocean, typically
                 <p>Processing:</p>
                 <ul>
                     
-                    <li>Data set created from file ['aravg.mon.ocean.90S.90N.v5.0.0.2022MMMM.asc', 'aravg.ann.ocean.90S.90N.v5.0.0.2022MMMM.asc'] downloaded from ['https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/timeseries/aravg.mon.ocean.90S.90N.v5.0.0.2022MMMM.asc', 'https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/timeseries/aravg.ann.ocean.90S.90N.v5.0.0.2022MMMM.asc'] at ['2022-11-23 09:15:54']</li>
+                    <li>Data set created from file ['aravg.mon.ocean.90S.90N.v5.0.0.2022MMMM.asc', 'aravg.ann.ocean.90S.90N.v5.0.0.2022MMMM.asc'] downloaded from ['https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/timeseries/aravg.mon.ocean.90S.90N.v5.0.0.2022MMMM.asc', 'https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/timeseries/aravg.ann.ocean.90S.90N.v5.0.0.2022MMMM.asc'] at ['2022-11-24 09:16:01']</li>
                     
                     <li>Calculated annual average from monthly averages using arithmetic mean</li>
                     
@@ -894,12 +911,12 @@ Sea-surface temperature (SST) is the temperature of the surface ocean, typically
                 
                 
                 
-                <p>Acknowledgement: HadSST.4.0.1.0 data were obtained from http://www.metoffice.gov.uk/hadobs/hadsst4 on 2022-11-23 09:16:58 and are © British Crown Copyright, Met Office 2022, provided under an Open Government License, http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/</p>
+                <p>Acknowledgement: HadSST.4.0.1.0 data were obtained from http://www.metoffice.gov.uk/hadobs/hadsst4 on 2022-11-24 09:17:13 and are © British Crown Copyright, Met Office 2022, provided under an Open Government License, http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/</p>
                 
                 <p>Processing:</p>
                 <ul>
                     
-                    <li>Data set created from file ['HadSST.4.0.1.0_monthly_GLOBE.csv', 'HadSST.4.0.1.0_annual_GLOBE.csv'] downloaded from ['https://www.metoffice.gov.uk/hadobs/hadsst4/data/csv/HadSST.4.0.1.0_monthly_GLOBE.csv', 'https://www.metoffice.gov.uk/hadobs/hadsst4/data/csv/HadSST.4.0.1.0_annual_GLOBE.csv'] at ['2022-11-23 09:16:58', '2022-11-23 09:16:59']</li>
+                    <li>Data set created from file ['HadSST.4.0.1.0_monthly_GLOBE.csv', 'HadSST.4.0.1.0_annual_GLOBE.csv'] downloaded from ['https://www.metoffice.gov.uk/hadobs/hadsst4/data/csv/HadSST.4.0.1.0_monthly_GLOBE.csv', 'https://www.metoffice.gov.uk/hadobs/hadsst4/data/csv/HadSST.4.0.1.0_annual_GLOBE.csv'] at ['2022-11-24 09:17:13', '2022-11-24 09:17:13']</li>
                     
                     <li>Calculated annual average from monthly averages using arithmetic mean</li>
                     
@@ -929,11 +946,11 @@ Global mean temperature is based on measurements made at weather stations over l
                 </p>
                 <p>
                     Data file: <a href="formatted_data/Temperature_anomaly_map_data_files.zip"
-                                                  aria-label="Bundle of csv data in a zip file">Temperature_anomaly_map_data_files.zip</a>
+                                  aria-label="Bundle of csv data in a zip file">Temperature_anomaly_map_data_files.zip</a>
                     <br>Checksum: 76cdb2bad9582d23c1f6f4d868218d6c
                     <button onclick="copyText('76cdb2bad9582d23c1f6f4d868218d6c')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
-                       aria-label="extrenal link to data format description">BADC CSV format</a><br>
+                                   aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
 
                 
@@ -1213,11 +1230,11 @@ Global mean temperature is based on measurements made at weather stations over l
                 </p>
                 <p>
                     Data file: <a href="formatted_data/Temperature_anomaly_uncertainty_map_data_files.zip"
-                                                  aria-label="Bundle of csv data in a zip file">Temperature_anomaly_uncertainty_map_data_files.zip</a>
+                                  aria-label="Bundle of csv data in a zip file">Temperature_anomaly_uncertainty_map_data_files.zip</a>
                     <br>Checksum: 76cdb2bad9582d23c1f6f4d868218d6c
                     <button onclick="copyText('76cdb2bad9582d23c1f6f4d868218d6c')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
-                       aria-label="extrenal link to data format description">BADC CSV format</a><br>
+                                   aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
 
                 
@@ -1497,11 +1514,11 @@ Global mean temperature is based on measurements made at weather stations over l
                 </p>
                 <p>
                     Data file: <a href="formatted_data/Temperature_anomaly_rank_map_data_files.zip"
-                                                  aria-label="Bundle of csv data in a zip file">Temperature_anomaly_rank_map_data_files.zip</a>
+                                  aria-label="Bundle of csv data in a zip file">Temperature_anomaly_rank_map_data_files.zip</a>
                     <br>Checksum: 76cdb2bad9582d23c1f6f4d868218d6c
                     <button onclick="copyText('76cdb2bad9582d23c1f6f4d868218d6c')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
-                       aria-label="extrenal link to data format description">BADC CSV format</a><br>
+                                   aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
 
                 
@@ -1778,7 +1795,7 @@ Global mean temperature is based on measurements made at weather stations over l
     
 
     <p>
-        Page created on 2022-11-23 using
+        Page created on 2022-11-24 using
         <a href="https://github.com/jjk-code-otter/climate-indicator-manager">climind v0.1</a>
     </p>
 
