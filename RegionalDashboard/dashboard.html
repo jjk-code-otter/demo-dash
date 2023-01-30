@@ -32,6 +32,60 @@ p {
   display: inline-block;
   border-radius: 5px;
 }
+.navbar {
+  margin-bottom: 12px;
+  margin-top: 0px;
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 8px 10px;
+  text-decoration: none;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 8px 10px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #ddd;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 8px 10px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 </style>
 
 <script>
@@ -41,10 +95,35 @@ p {
             navigator.clipboard.writeText
                 (invar);
         }
+
 </script>
 <body>
 
 <div class="w3-container w3-padding-32 w3-light-grey">
+
+    <div class="w3-card navbar w3-margin-bottom ">
+        <a href="dashboard.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                
+                <a href="dashboard.html">Regional Temperature Indicators</a>
+                
+                <a href="wmo_ra_i.html">Africa</a>
+                
+                <a href="wmo_ra_ii.html">Asia</a>
+                
+                <a href="wmo_ra_iii.html">South America</a>
+                
+                <a href="wmo_ra_iv.html">North America, Central America and the Caribbean</a>
+                
+                <a href="wmo_ra_v.html">Southwest Pacific</a>
+                
+                <a href="wmo_ra_vi.html">Europe</a>
+                
+            </div>
+        </div>
+    </div>
 
     <div class="w3-container" style="margin:0 -16px">
         <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
@@ -59,7 +138,7 @@ p {
         
         <div class="w3-third">
 
-            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey"  style="padding-bottom:10px">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
                 <p>
                     <img src="figures/WMO_RA_I_Africa.png" width=100% alt="Annual Regional mean temperature for WMO RA 1 Africa (&deg;C, difference from the 1991-2020 average)  from 1900-2022. Data are from the following six data sets: Berkeley Earth, ERA5, GISTEMP, HadCRUT5, JRA-55, NOAAGlobalTemp."
                          title="Graph of WMO RA I Africa">
@@ -82,7 +161,7 @@ p {
                 </div>
                 <div style="float: right;">
                     
-                    <a href="wmo_ra_i.html" class="button_link w3-right ">Click to read more</a>
+                    <a href="wmo_ra_i.html" class="button_link w3-right ">Click for more indicators</a>
                     
                 </div>
                 </p>
@@ -94,7 +173,7 @@ p {
         
         <div class="w3-third">
 
-            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey"  style="padding-bottom:10px">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
                 <p>
                     <img src="figures/WMO_RA_II_Asia.png" width=100% alt="Annual Regional mean temperature for WMO RA 2 Asia (&deg;C, difference from the 1991-2020 average)  from 1900-2022. Data are from the following six data sets: Berkeley Earth, ERA5, GISTEMP, HadCRUT5, JRA-55, NOAAGlobalTemp."
                          title="Graph of WMO RA II Asia">
@@ -117,7 +196,7 @@ p {
                 </div>
                 <div style="float: right;">
                     
-                    <a href="wmo_ra_ii.html" class="button_link w3-right ">Click to read more</a>
+                    <a href="wmo_ra_ii.html" class="button_link w3-right ">Click for more indicators</a>
                     
                 </div>
                 </p>
@@ -129,7 +208,7 @@ p {
         
         <div class="w3-third">
 
-            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey"  style="padding-bottom:10px">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
                 <p>
                     <img src="figures/WMO_RA_III_South_America.png" width=100% alt="Annual Regional mean temperature for WMO RA 3 South America (&deg;C, difference from the 1991-2020 average)  from 1900-2022. Data are from the following six data sets: Berkeley Earth, ERA5, GISTEMP, HadCRUT5, JRA-55, NOAAGlobalTemp."
                          title="Graph of WMO RA III South America">
@@ -152,7 +231,7 @@ p {
                 </div>
                 <div style="float: right;">
                     
-                    <a href="wmo_ra_iii.html" class="button_link w3-right ">Click to read more</a>
+                    <a href="wmo_ra_iii.html" class="button_link w3-right ">Click for more indicators</a>
                     
                 </div>
                 </p>
@@ -170,7 +249,7 @@ p {
         
         <div class="w3-third">
 
-            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey"  style="padding-bottom:10px">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
                 <p>
                     <img src="figures/WMO_RA_IV_North_America.png" width=100% alt="Annual Regional mean temperature for WMO RA 4 North America (&deg;C, difference from the 1991-2020 average)  from 1900-2022. Data are from the following six data sets: Berkeley Earth, ERA5, GISTEMP, HadCRUT5, JRA-55, NOAAGlobalTemp."
                          title="Graph of WMO RA IV North America">
@@ -193,7 +272,7 @@ p {
                 </div>
                 <div style="float: right;">
                     
-                    <a href="wmo_ra_iv.html" class="button_link w3-right ">Click to read more</a>
+                    <a href="wmo_ra_iv.html" class="button_link w3-right ">Click for more indicators</a>
                     
                 </div>
                 </p>
@@ -205,7 +284,7 @@ p {
         
         <div class="w3-third">
 
-            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey"  style="padding-bottom:10px">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
                 <p>
                     <img src="figures/WMO_RA_V_Southwest_Pacific.png" width=100% alt="Annual Regional mean temperature for WMO RA 5 South-West Pacific (&deg;C, difference from the 1991-2020 average)  from 1900-2022. Data are from the following six data sets: Berkeley Earth, ERA5, GISTEMP, HadCRUT5, JRA-55, NOAAGlobalTemp."
                          title="Graph of WMO RA V Southwest Pacific">
@@ -228,7 +307,7 @@ p {
                 </div>
                 <div style="float: right;">
                     
-                    <a href="wmo_ra_v.html" class="button_link w3-right ">Click to read more</a>
+                    <a href="wmo_ra_v.html" class="button_link w3-right ">Click for more indicators</a>
                     
                 </div>
                 </p>
@@ -240,7 +319,7 @@ p {
         
         <div class="w3-third">
 
-            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey"  style="padding-bottom:10px">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
                 <p>
                     <img src="figures/WMO_RA_VI_Europe.png" width=100% alt="Annual Regional mean temperature for WMO RA 6 Europe (&deg;C, difference from the 1991-2020 average)  from 1900-2022. Data are from the following six data sets: Berkeley Earth, ERA5, GISTEMP, HadCRUT5, JRA-55, NOAAGlobalTemp."
                          title="Graph of WMO RA VI Europe">
@@ -263,7 +342,7 @@ p {
                 </div>
                 <div style="float: right;">
                     
-                    <a href="wmo_ra_vi.html" class="button_link w3-right ">Click to read more</a>
+                    <a href="wmo_ra_vi.html" class="button_link w3-right ">Click for more indicators</a>
                     
                 </div>
                 </p>
@@ -350,8 +429,8 @@ p {
                 <p>
                     Data file: <a href="formatted_data/WMO_RA_I_Africa_data_files.zip"
                                   aria-label="Bundle of csv data in a zip file">WMO_RA_I_Africa_data_files.zip</a>
-                    <br>Checksum: ff88755e55681aede3eb0131a5099e23
-                    <button onclick="copyText('ff88755e55681aede3eb0131a5099e23')">Copy</button>
+                    <br>Checksum: 13a0a765c4f054e12f93b8c5893e2ad0
+                    <button onclick="copyText('13a0a765c4f054e12f93b8c5893e2ad0')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
                                    aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
@@ -647,8 +726,8 @@ p {
                 <p>
                     Data file: <a href="formatted_data/WMO_RA_II_Asia_data_files.zip"
                                   aria-label="Bundle of csv data in a zip file">WMO_RA_II_Asia_data_files.zip</a>
-                    <br>Checksum: 475f8d5a83d330889f99612f7537b70a
-                    <button onclick="copyText('475f8d5a83d330889f99612f7537b70a')">Copy</button>
+                    <br>Checksum: 7a22d9c865f9e5d1f8059a942aabbcb1
+                    <button onclick="copyText('7a22d9c865f9e5d1f8059a942aabbcb1')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
                                    aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
@@ -944,8 +1023,8 @@ p {
                 <p>
                     Data file: <a href="formatted_data/WMO_RA_III_South_America_data_files.zip"
                                   aria-label="Bundle of csv data in a zip file">WMO_RA_III_South_America_data_files.zip</a>
-                    <br>Checksum: 5ef9325b567a83a2c8d84c8ca73fab06
-                    <button onclick="copyText('5ef9325b567a83a2c8d84c8ca73fab06')">Copy</button>
+                    <br>Checksum: 5e388ec943014d968484b0e6dccdb937
+                    <button onclick="copyText('5e388ec943014d968484b0e6dccdb937')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
                                    aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
@@ -1241,8 +1320,8 @@ p {
                 <p>
                     Data file: <a href="formatted_data/WMO_RA_IV_North_America_data_files.zip"
                                   aria-label="Bundle of csv data in a zip file">WMO_RA_IV_North_America_data_files.zip</a>
-                    <br>Checksum: f8f0988dd4328ae668a4602883cff32c
-                    <button onclick="copyText('f8f0988dd4328ae668a4602883cff32c')">Copy</button>
+                    <br>Checksum: 0059fef2ad9b8ba1ee1b0f8993fcccd2
+                    <button onclick="copyText('0059fef2ad9b8ba1ee1b0f8993fcccd2')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
                                    aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
@@ -1538,8 +1617,8 @@ p {
                 <p>
                     Data file: <a href="formatted_data/WMO_RA_V_Southwest_Pacific_data_files.zip"
                                   aria-label="Bundle of csv data in a zip file">WMO_RA_V_Southwest_Pacific_data_files.zip</a>
-                    <br>Checksum: 8b4d1e4d454250f00d3f307d3ac66dad
-                    <button onclick="copyText('8b4d1e4d454250f00d3f307d3ac66dad')">Copy</button>
+                    <br>Checksum: 89dbc734c119e1a05f1e6bea0befa4d4
+                    <button onclick="copyText('89dbc734c119e1a05f1e6bea0befa4d4')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
                                    aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
@@ -1835,8 +1914,8 @@ p {
                 <p>
                     Data file: <a href="formatted_data/WMO_RA_VI_Europe_data_files.zip"
                                   aria-label="Bundle of csv data in a zip file">WMO_RA_VI_Europe_data_files.zip</a>
-                    <br>Checksum: b7bc9f50b77032d20616965036f10b07
-                    <button onclick="copyText('b7bc9f50b77032d20616965036f10b07')">Copy</button>
+                    <br>Checksum: 2b9b47b6dbe66224b4e77334345a5e32
+                    <button onclick="copyText('2b9b47b6dbe66224b4e77334345a5e32')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
                                    aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>

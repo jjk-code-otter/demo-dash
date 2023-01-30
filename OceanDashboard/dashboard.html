@@ -32,18 +32,59 @@ p {
   display: inline-block;
   border-radius: 5px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
+.navbar {
+  margin-bottom: 12px;
+  margin-top: 0px;
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 8px 10px;
+  text-decoration: none;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 8px 10px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #ddd;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 8px 10px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 </style>
 
@@ -60,20 +101,34 @@ p {
 
 <div class="w3-container w3-padding-32 w3-light-grey">
 
+    <div class="w3-card navbar w3-margin-bottom ">
+        <a href="dashboard.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                
+                <a href="dashboard.html">Ocean Indicators</a>
+                
+            </div>
+        </div>
+    </div>
+
     <div class="w3-container" style="margin:0 -16px">
         <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
             <h1>Ocean Indicators</h1>
         </div>
     </div>
 
+    
     <div class="w3-row-padding" style="margin:0 -16px">
 
         
+        
         <div class="w3-third">
 
-            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
                 <p>
-                    <img src="figures/Ocean_Indicators.png" width=100% alt="annual Global ocean heat content (zJ, difference from the 1981-2010 average)  from 1960-2020. Data are from GCOS."
+                    <img src="figures/Ocean_Indicators.png" width=100% alt="Annual Global ocean heat content (zJ, difference from the 1981-2010 average)  from 1940-2022. Data are from the following three data sets: Cheng et al, GCOS, Levitus."
                          title="Graph of Ocean Indicators">
                 </p>
                 <h3>Ocean Indicators</h3>
@@ -100,11 +155,13 @@ p {
 
         </div>
         
+        
+        
         <div class="w3-third">
 
-            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
                 <p>
-                    <img src="figures/Sea_level.png" width=100% alt="monthly Global mean sea level (mm)  from 1993-2022. Data are from the following two data sets: AVISO, AVISO ftp."
+                    <img src="figures/Sea_level.png" width=100% alt="Monthly Global mean sea level (mm)  from 1993-2022. Data are from the following two data sets: AVISO, AVISO CNES."
                          title="Graph of Sea level">
                 </p>
                 <h3>Sea level</h3>
@@ -131,11 +188,13 @@ p {
 
         </div>
         
+        
+        
         <div class="w3-third">
 
-            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
                 <p>
-                    <img src="figures/Sea_ice.png" width=100% alt="Arctic sea ice extent (shown as differences from the 1981-2010 average) from 1979 to present. Two months are shown - March and September - at the annual maximum and minimum extents respectively."
+                    <img src="figures/Sea_ice.png" width=100% alt="Arctic sea ice extent (shown as differences from the 1981-2010 average) from 1979 to 2022. Two months are shown - March and September - at the annual maximum and minimum extents respectively."
                          title="Graph of Sea ice">
                 </p>
                 <h3>Sea ice</h3>
@@ -162,11 +221,19 @@ p {
 
         </div>
         
+        
+
+    </div>
+    
+    <div class="w3-row-padding" style="margin:0 -16px">
+
+        
+        
         <div class="w3-third">
 
-            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
                 <p>
-                    <img src="figures/Ocean_pH.png" width=100% alt="annual Global ocean pH (ph)  from 1985-2020. Data are from CMEMS."
+                    <img src="figures/Ocean_pH.png" width=100% alt="Annual Global ocean pH (pH)  from 1985-2020. Data are from CMEMS."
                          title="Graph of Ocean pH">
                 </p>
                 <h3>Ocean pH</h3>
@@ -193,9 +260,11 @@ p {
 
         </div>
         
+        
+        
         <div class="w3-third">
 
-            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
                 <p>
                     <img src="figures/Marine_heat_waves.png" width=100% alt="Figure showing the percentage of ocean area affected by marine heatwaves and marine cold spells each year since 1982"
                          title="Graph of Marine heat waves">
@@ -224,11 +293,13 @@ p {
 
         </div>
         
+        
+        
         <div class="w3-third">
 
-            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
                 <p>
-                    <img src="figures/Sea-surface_temperature.png" width=100% alt="annual Global mean sea-surface temperature (degC, difference from the 1981-2010 average)  from 1850-2022. Data are from the following two data sets: ERSST, HadSST4."
+                    <img src="figures/Sea-surface_temperature.png" width=100% alt="Annual Global mean sea-surface temperature (&deg;C, difference from the 1981-2010 average)  from 1850-2022. Data are from the following two data sets: ERSST, HadSST4."
                          title="Graph of Sea-surface temperature">
                 </p>
                 <h3>Sea-surface temperature</h3>
@@ -255,8 +326,10 @@ p {
 
         </div>
         
+        
 
     </div>
+    
 
     
 
@@ -275,7 +348,7 @@ p {
                 
                 <h2>Global ocean heat content</h2>
                 <p>
-                    The most recent available year is 2020. The year 2020 was ranked the 1st highest on record. The mean value for 2020 was 136.20zJ relative to the 1981-2010 average (136.20-136.20zJ depending on the data set used). 1 data sets were used in this assessment: GCOS.The most recent available year is 2020. </p><p>The year 2020 was ranked the 1st highest on record. The mean value for 2020 was 136.20zJ relative to the 1981-2010 average (136.20-136.20zJ depending on the data set used). 1 data sets were used in this assessment: GCOS.
+                    The year 2021 was ranked between the 1st and 2nd highest on record. The mean value for 2021 was 154.90zJ relative to the 1981-2010 average (148.59-161.22zJ depending on the data set used). 3 data sets were used in this assessment: Cheng et al, GCOS, and Levitus.2021 is joint highest on record together with 2020, 2021, and 2022.</p><p>The year 2020 was ranked between the 1st and 4th highest on record. The mean value for 2020 was 141.28zJ relative to the 1981-2010 average (136.20-151.15zJ depending on the data set used). 3 data sets were used in this assessment: Cheng et al, GCOS, and Levitus.
                 </p>
                 
                 <h2>Global mean sea level</h2>
@@ -290,7 +363,7 @@ p {
                 
                 <h2>Global mean sea-surface temperature</h2>
                 <p>
-                    The year 2021 was ranked between the 7th and 8th highest on record. The mean value for 2021 was 0.31&deg;C relative to the 1981-2010 average (0.29-0.34&deg;C depending on the data set used). 2 data sets were used in this assessment: ERSST and HadSST4.The highest year on record was 2016 with a value between 0.43 and 0.43 &deg;C.</p><p>The year 2020 was ranked the 3rd highest on record. The mean value for 2020 was 0.40&deg;C relative to the 1981-2010 average (0.39-0.42&deg;C depending on the data set used). 2 data sets were used in this assessment: ERSST and HadSST4.
+                    The year 2021 was ranked between the 7th and 8th highest on record. The mean value for 2021 was 0.32&deg;C relative to the 1981-2010 average (0.29-0.34&deg;C depending on the data set used). 2 data sets were used in this assessment: ERSST and HadSST4.The highest year on record was 2016 with a value between 0.43 and 0.43 &deg;C.</p><p>The year 2020 was ranked the 3rd highest on record. The mean value for 2020 was 0.41&deg;C relative to the 1981-2010 average (0.39-0.42&deg;C depending on the data set used). 2 data sets were used in this assessment: ERSST and HadSST4.
                 </p>
                 
             </div>
@@ -301,7 +374,7 @@ p {
     <div class="w3-container" style="margin:0 -16px">
         <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
             <div class="w3-content">
-                <h1>Dataset details</h1>
+                <h1>Dataset and processing details</h1>
             </div>
         </div>
     </div>
@@ -324,12 +397,45 @@ Ocean heat content is a measure of the change in heat energy stored in the subsu
                 <p>
                     Data file: <a href="formatted_data/Ocean_Indicators_data_files.zip"
                                   aria-label="Bundle of csv data in a zip file">Ocean_Indicators_data_files.zip</a>
-                    <br>Checksum: e9bb71f6045eb3c45a15d33d575a5837
-                    <button onclick="copyText('e9bb71f6045eb3c45a15d33d575a5837')">Copy</button>
+                    <br>Checksum: 118a34844421d6f8b1b7aa7478efce26
+                    <button onclick="copyText('118a34844421d6f8b1b7aa7478efce26')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
                                    aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
 
+                
+                <h3>Cheng et al</h3>
+                <p>
+                    
+                    <a href="http://159.226.119.60/cheng/images_files/IAP_OHC_estimate_update.txt" target="_blank"
+                       aria-label="Link to original data file for Cheng et al">Original data file (external
+                        link)</a>
+                    
+                </p>
+                
+                
+                <p>
+                    Citation:
+                    
+                    <a href="https://doi.org/10.1126/science.aav7619">Cheng, Lijing, John Abraham, Zeke Hausfather, and Kevin E. Trenberth. 'How fast are the oceans warming?.' Science 363, no. 6423 (2019): 128-129. doi:10.1126/science.aav7619</a>.
+                    
+                </p>
+                
+                
+                
+                
+                
+                
+                <p>To produce the plot, the following processing steps were performed:</p>
+                <ul>
+                    
+                    <li>Data set created from file ['IAP_OHC_estimate_update.txt'] downloaded from ['http://159.226.119.60/cheng/images_files/IAP_OHC_estimate_update.txt'] at ['2023-01-17 09:16:56']</li>
+                    
+                    <li>Calculated annual average from monthly averages using arithmetic mean</li>
+                    
+                    <li>Rebaselined to 1981-2010 by subtracting the arithemtic mean for that period from all data values.</li>
+                    
+                </ul>
                 
                 <h3>GCOS</h3>
                 <p>
@@ -344,7 +450,7 @@ Ocean heat content is a measure of the change in heat energy stored in the subsu
                 <p>
                     Citation:
                     
-                    <a href="https://doi.org/10.5194/essd-12-2013-2020">von Schuckmann, K., Cheng, L., Palmer, M. D., Hansen, J., Tassone, C., Aich, V., Adusumilli, S., Beltrami, H., Boyer, T., Cuesta-Valero, F. J., Desbruyères, D., Domingues, C., García-García, A., Gentine, P., Gilson, J., Gorfer, M., Haimberger, L., Ishii, M., Johnson, G. C., Killick, R., King, B. A., Kirchengast, G., Kolodziejczyk, N., Lyman, J., Marzeion, B., Mayer, M., Monier, M., Monselesan, D. P., Purkey, S., Roemmich, D., Schweiger, A., Seneviratne, S. I., Shepherd, A., Slater, D. A., Steiner, A. K., Straneo, F., Timmermans, M.-L., and Wijffels, S. E.: Heat stored in the Earth system: where does the energy go?, Earth Syst. Sci. Data, 12, 2013–2041, https://doi.org/10.5194/essd-12-2013-2020, 2020.</a>.
+                    <a href="https://doi.org/10.5194/essd-12-2013-2020">von Schuckmann, K., Cheng, L., Palmer, M. D., Hansen, J., Tassone, C., Aich, V., Adusumilli, S., Beltrami, H., Boyer, T., Cuesta-Valero, F. J., Desbruyères, D., Domingues, C., García-García, A., Gentine, P., Gilson, J., Gorfer, M., Haimberger, L., Ishii, M., Johnson, G. C., Killick, R., King, B. A., Kirchengast, G., Kolodziejczyk, N., Lyman, J., Marzeion, B., Mayer, M., Monier, M., Monselesan, D. P., Purkey, S., Roemmich, D., Schweiger, A., Seneviratne, S. I., Shepherd, A., Slater, D. A., Steiner, A. K., Straneo, F., Timmermans, M.-L., and Wijffels, S. E.: Heat stored in the Earth system: where does the energy go?, Earth Syst. Sci. Data, 12, 2013-2041, https://doi.org/10.5194/essd-12-2013-2020, 2020.</a>.
                     
                 </p>
                 
@@ -357,10 +463,41 @@ Ocean heat content is a measure of the change in heat energy stored in the subsu
                 
                 
                 
-                <p>Processing:</p>
+                <p>To produce the plot, the following processing steps were performed:</p>
                 <ul>
                     
                     <li>Data set created from file ['GCOS_EHI_1960-2020_Earth_Heat_Inventory_Ocean_Heat_Content_data.nc'] downloaded from ['https://www.wdc-climate.de/WDCC/ui/download/transferArchive?acronym=GCOS_EHI_1960-2020_OHC_d&rmin=0&rmax=0'] at ['2022-10-18 10:35:28']</li>
+                    
+                    <li>Rebaselined to 1981-2010 by subtracting the arithemtic mean for that period from all data values.</li>
+                    
+                </ul>
+                
+                <h3>Levitus</h3>
+                <p>
+                    
+                    <a href="https://www.ncei.noaa.gov/data/oceans/woa/DATA_ANALYSIS/3M_HEAT_CONTENT/DATA/basin/yearly/h22-w0-700m.dat" target="_blank"
+                       aria-label="Link to original data file for Levitus">Original data file (external
+                        link)</a>
+                    
+                </p>
+                
+                
+                <p>
+                    Citation:
+                    
+                    <a href="https://doi.org/10.1029/2012GL051106">Levitus, S., et al. (2012), World ocean heat content and thermosteric sea level change (0–2000 m), 1955–2010, Geophys. Res. Lett., 39, L10603, doi:10.1029/2012GL051106</a>.
+                    
+                </p>
+                
+                
+                
+                
+                
+                
+                <p>To produce the plot, the following processing steps were performed:</p>
+                <ul>
+                    
+                    <li>Data set created from file ['h22-w0-700m.dat'] downloaded from ['https://www.ncei.noaa.gov/data/oceans/woa/DATA_ANALYSIS/3M_HEAT_CONTENT/DATA/basin/yearly/h22-w0-700m.dat'] at ['2023-01-17 09:19:36']</li>
                     
                     <li>Rebaselined to 1981-2010 by subtracting the arithemtic mean for that period from all data values.</li>
                     
@@ -388,8 +525,8 @@ Global mean sea level is a measured by satellites using radar altimeters that re
                 <p>
                     Data file: <a href="formatted_data/Sea_level_data_files.zip"
                                   aria-label="Bundle of csv data in a zip file">Sea_level_data_files.zip</a>
-                    <br>Checksum: 045b6ef4e6c3a182089891dee65f4a0d
-                    <button onclick="copyText('045b6ef4e6c3a182089891dee65f4a0d')">Copy</button>
+                    <br>Checksum: df297b20dbdcf317255511f44a9836ea
+                    <button onclick="copyText('df297b20dbdcf317255511f44a9836ea')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
                                    aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
@@ -419,7 +556,7 @@ Global mean sea level is a measured by satellites using radar altimeters that re
                 
                 <p>Acknowledgement: Generated using AVISO+ Products</p>
                 
-                <p>Processing:</p>
+                <p>To produce the plot, the following processing steps were performed:</p>
                 <ul>
                     
                     <li>Data set created from file ['GMSL_Aviso_Merged_NRTJ3_Ablain_drift_corrected_ts.txt'] downloaded from [''] at ['2022-07-29 17:40:00']</li>
@@ -450,10 +587,10 @@ Global mean sea level is a measured by satellites using radar altimeters that re
                 
                 <p>Acknowledgement: Generated using AVISO+ Products</p>
                 
-                <p>Processing:</p>
+                <p>To produce the plot, the following processing steps were performed:</p>
                 <ul>
                     
-                    <li>Data set created from file ['MSL_Serie_MERGED_Global_AVISO_GIA_Adjust_Filter6m_NRT.nc'] downloaded from ['ftp://ftp.aviso.altimetry.fr/pub/oceano/AVISO/indicators/msl/MSL_Serie_MERGED_Global_AVISO_GIA_Adjust_Filter6m_NRT.nc'] at ['2022-11-23 09:15:06']</li>
+                    <li>Data set created from file ['MSL_Serie_MERGED_Global_AVISO_GIA_Adjust_Filter6m_NRT.nc'] downloaded from ['ftp://ftp.aviso.altimetry.fr/pub/oceano/AVISO/indicators/msl/MSL_Serie_MERGED_Global_AVISO_GIA_Adjust_Filter6m_NRT.nc'] at ['2023-01-28 11:48:36']</li>
                     
                 </ul>
                 
@@ -479,8 +616,8 @@ Sea-ice concentrations are estimated from microwave radiances measured from sate
                 <p>
                     Data file: <a href="formatted_data/Sea_ice_data_files.zip"
                                   aria-label="Bundle of csv data in a zip file">Sea_ice_data_files.zip</a>
-                    <br>Checksum: 1278bce3a2f2d6f656e4f55e0d11274c
-                    <button onclick="copyText('1278bce3a2f2d6f656e4f55e0d11274c')">Copy</button>
+                    <br>Checksum: 5fe1704661090881ce0b7a01437c3674
+                    <button onclick="copyText('5fe1704661090881ce0b7a01437c3674')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
                                    aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
@@ -544,17 +681,17 @@ Sea-ice concentrations are estimated from microwave radiances measured from sate
                 
                 
                 <p>
-                    Data citation: Fetterer, F., K. Knowles, W. N. Meier, M. Savoie, and A. K. Windnagel. 2017, updated daily. Sea Ice Index, Version 3. 1979-present. Boulder, Colorado USA. NSIDC: National Snow and Ice Data Center. doi: https://doi.org/10.7265/N5K072F8. [2022-11-23 09:18:32].
+                    Data citation: Fetterer, F., K. Knowles, W. N. Meier, M. Savoie, and A. K. Windnagel. 2017, updated daily. Sea Ice Index, Version 3. 1979-present. Boulder, Colorado USA. NSIDC: National Snow and Ice Data Center. doi: https://doi.org/10.7265/N5K072F8. [2023-01-17 09:21:48].
                 </p>
                 
                 
                 
-                <p>Acknowledgement: Fetterer, F., K. Knowles, W. N. Meier, M. Savoie, and A. K. Windnagel. 2017, updated daily. Sea Ice Index, Version 3. 1979-present. Boulder, Colorado USA. NSIDC: National Snow and Ice Data Center. doi: https://doi.org/10.7265/N5K072F8. [2022-11-23 09:18:32].</p>
+                <p>Acknowledgement: Fetterer, F., K. Knowles, W. N. Meier, M. Savoie, and A. K. Windnagel. 2017, updated daily. Sea Ice Index, Version 3. 1979-present. Boulder, Colorado USA. NSIDC: National Snow and Ice Data Center. doi: https://doi.org/10.7265/N5K072F8. [2023-01-17 09:21:48].</p>
                 
-                <p>Processing:</p>
+                <p>To produce the plot, the following processing steps were performed:</p>
                 <ul>
                     
-                    <li>Data set created from file ['N_01_extent_v3.0.csv', 'N_02_extent_v3.0.csv', 'N_03_extent_v3.0.csv', 'N_04_extent_v3.0.csv', 'N_05_extent_v3.0.csv', 'N_06_extent_v3.0.csv', 'N_07_extent_v3.0.csv', 'N_08_extent_v3.0.csv', 'N_09_extent_v3.0.csv', 'N_10_extent_v3.0.csv', 'N_11_extent_v3.0.csv', 'N_12_extent_v3.0.csv'] downloaded from ['ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/north/monthly/data/N_01_extent_v3.0.csv', 'ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/north/monthly/data/N_02_extent_v3.0.csv', 'ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/north/monthly/data/N_03_extent_v3.0.csv', 'ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/north/monthly/data/N_04_extent_v3.0.csv', 'ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/north/monthly/data/N_05_extent_v3.0.csv', 'ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/north/monthly/data/N_06_extent_v3.0.csv', 'ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/north/monthly/data/N_07_extent_v3.0.csv', 'ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/north/monthly/data/N_08_extent_v3.0.csv', 'ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/north/monthly/data/N_09_extent_v3.0.csv', 'ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/north/monthly/data/N_10_extent_v3.0.csv', 'ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/north/monthly/data/N_11_extent_v3.0.csv', 'ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/north/monthly/data/N_12_extent_v3.0.csv'] at ['2022-11-23 09:18:32', '2022-11-23 09:18:33', '2022-11-23 09:18:34', '2022-11-23 09:18:36', '2022-11-23 09:18:37', '2022-11-23 09:18:38', '2022-11-23 09:18:39', '2022-11-23 09:18:40', '2022-11-23 09:18:41', '2022-11-23 09:18:42', '2022-11-23 09:18:44', '2022-11-23 09:18:45']</li>
+                    <li>Data set created from file ['N_01_extent_v3.0.csv', 'N_02_extent_v3.0.csv', 'N_03_extent_v3.0.csv', 'N_04_extent_v3.0.csv', 'N_05_extent_v3.0.csv', 'N_06_extent_v3.0.csv', 'N_07_extent_v3.0.csv', 'N_08_extent_v3.0.csv', 'N_09_extent_v3.0.csv', 'N_10_extent_v3.0.csv', 'N_11_extent_v3.0.csv', 'N_12_extent_v3.0.csv'] downloaded from ['ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/north/monthly/data/N_01_extent_v3.0.csv', 'ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/north/monthly/data/N_02_extent_v3.0.csv', 'ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/north/monthly/data/N_03_extent_v3.0.csv', 'ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/north/monthly/data/N_04_extent_v3.0.csv', 'ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/north/monthly/data/N_05_extent_v3.0.csv', 'ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/north/monthly/data/N_06_extent_v3.0.csv', 'ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/north/monthly/data/N_07_extent_v3.0.csv', 'ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/north/monthly/data/N_08_extent_v3.0.csv', 'ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/north/monthly/data/N_09_extent_v3.0.csv', 'ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/north/monthly/data/N_10_extent_v3.0.csv', 'ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/north/monthly/data/N_11_extent_v3.0.csv', 'ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/north/monthly/data/N_12_extent_v3.0.csv'] at ['2023-01-17 09:21:48', '2023-01-17 09:21:50', '2023-01-17 09:21:51', '2023-01-17 09:21:52', '2023-01-17 09:21:53', '2023-01-17 09:21:54', '2023-01-17 09:21:55', '2023-01-17 09:21:56', '2023-01-17 09:21:57', '2023-01-17 09:21:59', '2023-01-17 09:22:00', '2023-01-17 09:22:01']</li>
                     
                     <li>Rebaselined to 1981-2010 for each month separately by calculating the arithmetic mean of the data over the baseline period and subtracting the mean from all data values. This is done for each month separately (Januarys, Februarys etc).</li>
                     
@@ -585,17 +722,17 @@ Sea-ice concentrations are estimated from microwave radiances measured from sate
                 
                 
                 <p>
-                    Data citation: EUMETSAT Ocean and Sea Ice Satellite Application Facility, Sea ice index 1979-onwards (v2.1, 2020), OSI-420, Data extracted from OSI SAF FTP server: 1979-present, Northern Hemisphere, accessed 2022-11-23 09:18:46
+                    Data citation: EUMETSAT Ocean and Sea Ice Satellite Application Facility, Sea ice index 1979-onwards (v2.1, 2020), OSI-420, Data extracted from OSI SAF FTP server: 1979-present, Northern Hemisphere, accessed 2023-01-17 09:22:02
                 </p>
                 
                 
                 
                 <p>Acknowledgement: The OSI SAF Sea Ice Index v2.1 is made available at https://osisaf-hl.met.no/v2p1-sea-ice-index.  The OSI SAF Sea Ice Index v2p1 is prepared using EUMETSAT OSI SAF Sea Ice Concentration data, with R&D input from the ESA Climate Change Initiative (ESA CCI) (Lavergne et al. 2019)</p>
                 
-                <p>Processing:</p>
+                <p>To produce the plot, the following processing steps were performed:</p>
                 <ul>
                     
-                    <li>Data set created from file ['osisaf_nh_sie_monthly.txt'] downloaded from ['ftp://osisaf.met.no/prod_test/ice/index/v2p1/nh/osisaf_nh_sie_monthly.txt'] at ['2022-11-23 09:18:46']</li>
+                    <li>Data set created from file ['osisaf_nh_sie_monthly.txt'] downloaded from ['ftp://osisaf.met.no/prod_test/ice/index/v2p1/nh/osisaf_nh_sie_monthly.txt'] at ['2023-01-17 09:22:02']</li>
                     
                     <li>Rebaselined to 1981-2010 for each month separately by calculating the arithmetic mean of the data over the baseline period and subtracting the mean from all data values. This is done for each month separately (Januarys, Februarys etc).</li>
                     
@@ -627,8 +764,8 @@ Ocean pH is a measure of how acid/alkaline the ocean surface water is. The ocean
                 <p>
                     Data file: <a href="formatted_data/Ocean_pH_data_files.zip"
                                   aria-label="Bundle of csv data in a zip file">Ocean_pH_data_files.zip</a>
-                    <br>Checksum: a3ea075cb92840a6a42c48311acb03ad
-                    <button onclick="copyText('a3ea075cb92840a6a42c48311acb03ad')">Copy</button>
+                    <br>Checksum: 908d7ad6defb2e4cfde1531cab54e5b1
+                    <button onclick="copyText('908d7ad6defb2e4cfde1531cab54e5b1')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
                                    aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
@@ -660,10 +797,10 @@ Ocean pH is a measure of how acid/alkaline the ocean surface water is. The ocean
                 
                 
                 
-                <p>Processing:</p>
+                <p>To produce the plot, the following processing steps were performed:</p>
                 <ul>
                     
-                    <li>Data set created from file ['global_omi_health_carbon_ph_area_averaged_1985_P*.nc'] downloaded from ['ftp://my.cmems-du.eu/Core/GLOBAL_OMI_HEALTH_carbon_ph_area_averaged/global_omi_health_carbon_ph_area_averaged/global_omi_health_carbon_ph_area_averaged_1985_P*.nc'] at ['2022-11-23 09:15:16']</li>
+                    <li>Data set created from file ['global_omi_health_carbon_ph_area_averaged_1985_P*.nc'] downloaded from ['ftp://my.cmems-du.eu/Core/GLOBAL_OMI_HEALTH_carbon_ph_area_averaged/global_omi_health_carbon_ph_area_averaged/global_omi_health_carbon_ph_area_averaged_1985_P*.nc'] at ['2023-01-17 09:17:03']</li>
                     
                 </ul>
                 
@@ -695,8 +832,8 @@ Marine cold spells (MCSs) are categorized as moderate when the sea-surface tempe
                 <p>
                     Data file: <a href="formatted_data/Marine_heat_waves_data_files.zip"
                                   aria-label="Bundle of csv data in a zip file">Marine_heat_waves_data_files.zip</a>
-                    <br>Checksum: ebffe8e82a954a5f9aed9659b4bc985b
-                    <button onclick="copyText('ebffe8e82a954a5f9aed9659b4bc985b')">Copy</button>
+                    <br>Checksum: dfc79631ebc1e8ef3c3b247f7d3d7a35
+                    <button onclick="copyText('dfc79631ebc1e8ef3c3b247f7d3d7a35')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
                                    aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
@@ -724,10 +861,10 @@ Marine cold spells (MCSs) are categorized as moderate when the sea-surface tempe
                 
                 
                 
-                <p>Processing:</p>
+                <p>To produce the plot, the following processing steps were performed:</p>
                 <ul>
                     
-                    <li>Data set created from file ['OISST_MCS_cat_daily_1982-2011_total.csv'] downloaded from ['https://raw.githubusercontent.com/robwschlegel/MHWapp/master/data/annual_summary/OISST_MCS_cat_daily_1982-2011_total.csv'] at ['2022-11-23 09:17:11']</li>
+                    <li>Data set created from file ['OISST_MCS_cat_daily_1982-2011_total.csv'] downloaded from ['https://raw.githubusercontent.com/robwschlegel/MHWapp/master/data/annual_summary/OISST_MCS_cat_daily_1982-2011_total.csv'] at ['2023-01-17 09:19:41']</li>
                     
                 </ul>
                 
@@ -753,10 +890,10 @@ Marine cold spells (MCSs) are categorized as moderate when the sea-surface tempe
                 
                 
                 
-                <p>Processing:</p>
+                <p>To produce the plot, the following processing steps were performed:</p>
                 <ul>
                     
-                    <li>Data set created from file ['OISST_cat_daily_1982-2011_total.csv'] downloaded from ['https://raw.githubusercontent.com/robwschlegel/MHWapp/master/data/annual_summary/OISST_cat_daily_1982-2011_total.csv'] at ['2022-11-23 09:17:12']</li>
+                    <li>Data set created from file ['OISST_cat_daily_1982-2011_total.csv'] downloaded from ['https://raw.githubusercontent.com/robwschlegel/MHWapp/master/data/annual_summary/OISST_cat_daily_1982-2011_total.csv'] at ['2023-01-17 09:19:41']</li>
                     
                 </ul>
                 
@@ -772,7 +909,7 @@ Marine cold spells (MCSs) are categorized as moderate when the sea-surface tempe
 
                 
                 <p>
-Sea-surface temperature (SST) is the temperature of the surface ocean, typically measured in the upper metre, or metres, by ships and buoys.
+Sea-surface temperature (SST) is the temperature of the surface ocean, typically measured in the upper metre, or metres of the ocean, by ships, buoys and satellites.
 </p>
                 
 
@@ -782,8 +919,8 @@ Sea-surface temperature (SST) is the temperature of the surface ocean, typically
                 <p>
                     Data file: <a href="formatted_data/Sea-surface_temperature_data_files.zip"
                                   aria-label="Bundle of csv data in a zip file">Sea-surface_temperature_data_files.zip</a>
-                    <br>Checksum: 7ebb3347ce33402b4eaa612e28710203
-                    <button onclick="copyText('7ebb3347ce33402b4eaa612e28710203')">Copy</button>
+                    <br>Checksum: 8fbd30b148daeaef79fe47aed786a1a9
+                    <button onclick="copyText('8fbd30b148daeaef79fe47aed786a1a9')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
                                    aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
@@ -792,11 +929,11 @@ Sea-surface temperature (SST) is the temperature of the surface ocean, typically
                 <h3>ERSST</h3>
                 <p>
                     
-                    <a href="https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/timeseries/aravg.mon.ocean.90S.90N.v5.0.0.2022MMMM.asc" target="_blank"
+                    <a href="https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/timeseries/aravg.mon.ocean.90S.90N.v5.0.0.2023MMMM.asc" target="_blank"
                        aria-label="Link to original data file for ERSST">Original data file (external
                         link)</a>
                     
-                    <a href="https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/timeseries/aravg.ann.ocean.90S.90N.v5.0.0.2022MMMM.asc" target="_blank"
+                    <a href="https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/timeseries/aravg.ann.ocean.90S.90N.v5.0.0.2023MMMM.asc" target="_blank"
                        aria-label="Link to original data file for ERSST">Original data file (external
                         link)</a>
                     
@@ -814,15 +951,15 @@ Sea-surface temperature (SST) is the temperature of the surface ocean, typically
                 
                 
                 <p>
-                    Data citation: Boyin Huang, Peter W. Thorne, Viva F. Banzon, Tim Boyer, Gennady Chepurin, Jay H. Lawrimore, Matthew J. Menne, Thomas M. Smith, Russell S. Vose, and Huai-Min Zhang (2017): NOAA Extended Reconstructed Sea Surface Temperature (ERSST), Version 5. [indicate subset used]. NOAA National Centers for Environmental Information. doi:10.7289/V5T72FNM [2022-11-23 09:15:54].
+                    Data citation: Boyin Huang, Peter W. Thorne, Viva F. Banzon, Tim Boyer, Gennady Chepurin, Jay H. Lawrimore, Matthew J. Menne, Thomas M. Smith, Russell S. Vose, and Huai-Min Zhang (2017): NOAA Extended Reconstructed Sea Surface Temperature (ERSST), Version 5. [indicate subset used]. NOAA National Centers for Environmental Information. doi:10.7289/V5T72FNM [2023-01-17 09:17:44].
                 </p>
                 
                 
                 
-                <p>Processing:</p>
+                <p>To produce the plot, the following processing steps were performed:</p>
                 <ul>
                     
-                    <li>Data set created from file ['aravg.mon.ocean.90S.90N.v5.0.0.2022MMMM.asc', 'aravg.ann.ocean.90S.90N.v5.0.0.2022MMMM.asc'] downloaded from ['https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/timeseries/aravg.mon.ocean.90S.90N.v5.0.0.2022MMMM.asc', 'https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/timeseries/aravg.ann.ocean.90S.90N.v5.0.0.2022MMMM.asc'] at ['2022-11-23 09:15:54']</li>
+                    <li>Data set created from file ['aravg.mon.ocean.90S.90N.v5.0.0.2023MMMM.asc', 'aravg.ann.ocean.90S.90N.v5.0.0.2023MMMM.asc'] downloaded from ['https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/timeseries/aravg.mon.ocean.90S.90N.v5.0.0.2023MMMM.asc', 'https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/timeseries/aravg.ann.ocean.90S.90N.v5.0.0.2023MMMM.asc'] at ['2023-01-17 09:17:44']</li>
                     
                     <li>Calculated annual average from monthly averages using arithmetic mean</li>
                     
@@ -856,12 +993,12 @@ Sea-surface temperature (SST) is the temperature of the surface ocean, typically
                 
                 
                 
-                <p>Acknowledgement: HadSST.4.0.1.0 data were obtained from http://www.metoffice.gov.uk/hadobs/hadsst4 on 2022-11-23 09:16:58 and are © British Crown Copyright, Met Office 2022, provided under an Open Government License, http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/</p>
+                <p>Acknowledgement: HadSST.4.0.1.0 data were obtained from http://www.metoffice.gov.uk/hadobs/hadsst4 on 2023-01-17 09:19:17 and are © British Crown Copyright, Met Office 2023, provided under an Open Government License, http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/</p>
                 
-                <p>Processing:</p>
+                <p>To produce the plot, the following processing steps were performed:</p>
                 <ul>
                     
-                    <li>Data set created from file ['HadSST.4.0.1.0_monthly_GLOBE.csv', 'HadSST.4.0.1.0_annual_GLOBE.csv'] downloaded from ['https://www.metoffice.gov.uk/hadobs/hadsst4/data/csv/HadSST.4.0.1.0_monthly_GLOBE.csv', 'https://www.metoffice.gov.uk/hadobs/hadsst4/data/csv/HadSST.4.0.1.0_annual_GLOBE.csv'] at ['2022-11-23 09:16:58', '2022-11-23 09:16:59']</li>
+                    <li>Data set created from file ['HadSST.4.0.1.0_monthly_GLOBE.csv', 'HadSST.4.0.1.0_annual_GLOBE.csv'] downloaded from ['https://www.metoffice.gov.uk/hadobs/hadsst4/data/csv/HadSST.4.0.1.0_monthly_GLOBE.csv', 'https://www.metoffice.gov.uk/hadobs/hadsst4/data/csv/HadSST.4.0.1.0_annual_GLOBE.csv'] at ['2023-01-17 09:19:17', '2023-01-17 09:19:18']</li>
                     
                     <li>Calculated annual average from monthly averages using arithmetic mean</li>
                     
@@ -876,7 +1013,7 @@ Sea-surface temperature (SST) is the temperature of the surface ocean, typically
     
 
     <p>
-        Page created on 2022-11-23 using
+        Page created on 2023-01-30 using
         <a href="https://github.com/jjk-code-otter/climate-indicator-manager">climind v0.1</a>
     </p>
 

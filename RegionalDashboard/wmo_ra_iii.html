@@ -32,6 +32,60 @@ p {
   display: inline-block;
   border-radius: 5px;
 }
+.navbar {
+  margin-bottom: 12px;
+  margin-top: 0px;
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 8px 10px;
+  text-decoration: none;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 8px 10px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #ddd;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 8px 10px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 </style>
 
 <script>
@@ -41,10 +95,36 @@ p {
             navigator.clipboard.writeText
                 (invar);
         }
+
 </script>
 <body>
 
 <div class="w3-container w3-padding-32 w3-light-grey">
+
+    <div class="w3-card navbar w3-margin-bottom ">
+        <a href="dashboard.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                
+                <a href="dashboard.html">Regional Temperature Indicators</a>
+                
+                <a href="wmo_ra_i.html">Africa</a>
+                
+                <a href="wmo_ra_ii.html">Asia</a>
+                
+                <a href="wmo_ra_iii.html">South America</a>
+                
+                <a href="wmo_ra_iv.html">North America, Central America and the Caribbean</a>
+                
+                <a href="wmo_ra_v.html">Southwest Pacific</a>
+                
+                <a href="wmo_ra_vi.html">Europe</a>
+                
+            </div>
+        </div>
+    </div>
+
 
     <div class="w3-container" style="margin:0 -16px">
         <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
@@ -59,7 +139,7 @@ p {
         
         <div class="w3-third">
 
-            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey"  style="padding-bottom:10px">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
                 <p>
                     <img src="figures/WMO_RA_III_South_America.png" width=100% alt="Annual Regional mean temperature for WMO RA 3 South America (&deg;C, difference from the 1991-2020 average)  from 1900-2022. Data are from the following six data sets: Berkeley Earth, ERA5, GISTEMP, HadCRUT5, JRA-55, NOAAGlobalTemp."
                          title="Graph of WMO RA III South America">
@@ -96,7 +176,7 @@ p {
         
         <div class="w3-third">
 
-            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey"  style="padding-bottom:10px">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
                 <p>
                     <img src="figures/Mexico.png" width=100% alt="Annual Regional mean temperature for Mexico (&deg;C, difference from the 1991-2020 average)  from 1900-2022. Data are from the following six data sets: Berkeley Earth, ERA5, GISTEMP, HadCRUT5, JRA-55, NOAAGlobalTemp."
                          title="Graph of Mexico">
@@ -133,7 +213,7 @@ p {
         
         <div class="w3-third">
 
-            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey"  style="padding-bottom:10px">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
                 <p>
                     <img src="figures/Caribbean.png" width=100% alt="Annual Regional mean temperature for Caribbean (&deg;C, difference from the 1991-2020 average)  from 1900-2022. Data are from the following six data sets: Berkeley Earth, ERA5, GISTEMP, HadCRUT5, JRA-55, NOAAGlobalTemp."
                          title="Graph of Caribbean">
@@ -176,7 +256,7 @@ p {
         
         <div class="w3-third">
 
-            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey"  style="padding-bottom:10px">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
                 <p>
                     <img src="figures/Continental_trends.png" width=100% alt="Figure shows the trends for four sub-periods (1901-1930, 1931-1960, 1961-1990 and 1991-2022. Coloured bars show the mean trend for each region and the black vertical lines indicate the range of different estimates."
                          title="Graph of Continental trends">
@@ -213,7 +293,7 @@ p {
         
         <div class="w3-third">
 
-            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey"  style="padding-bottom:10px">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
                 <p>
                     <img src="figures/Regional_trends_LAC.png" width=100% alt="Figure shows the trends for four sub-periods (1901-1930, 1931-1960, 1961-1990 and 1991-2022. Coloured bars show the mean trend for each region and the black vertical lines indicate the range of different estimates."
                          title="Graph of Regional trends LAC">
@@ -311,8 +391,8 @@ p {
                 <p>
                     Data file: <a href="formatted_data/WMO_RA_III_South_America_data_files.zip"
                                   aria-label="Bundle of csv data in a zip file">WMO_RA_III_South_America_data_files.zip</a>
-                    <br>Checksum: 456bdbba565902e5d24d43e1c05ab75d
-                    <button onclick="copyText('456bdbba565902e5d24d43e1c05ab75d')">Copy</button>
+                    <br>Checksum: 6d206443975be65ba5a7cbfe009a41f1
+                    <button onclick="copyText('6d206443975be65ba5a7cbfe009a41f1')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
                                    aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
@@ -609,8 +689,8 @@ p {
                 <p>
                     Data file: <a href="formatted_data/Mexico_data_files.zip"
                                   aria-label="Bundle of csv data in a zip file">Mexico_data_files.zip</a>
-                    <br>Checksum: daaad7ac8b26e7c5c1c3ae3d8d31fa09
-                    <button onclick="copyText('daaad7ac8b26e7c5c1c3ae3d8d31fa09')">Copy</button>
+                    <br>Checksum: 5a1f13790cc96c8dae61293970e6f799
+                    <button onclick="copyText('5a1f13790cc96c8dae61293970e6f799')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
                                    aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
@@ -907,8 +987,8 @@ p {
                 <p>
                     Data file: <a href="formatted_data/Caribbean_data_files.zip"
                                   aria-label="Bundle of csv data in a zip file">Caribbean_data_files.zip</a>
-                    <br>Checksum: ed505b6a4e432fd9629e9555cba4b765
-                    <button onclick="copyText('ed505b6a4e432fd9629e9555cba4b765')">Copy</button>
+                    <br>Checksum: 595f5190c8c50ad2c02781058265a628
+                    <button onclick="copyText('595f5190c8c50ad2c02781058265a628')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
                                    aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
@@ -1221,8 +1301,8 @@ Global mean temperature is based on measurements made at weather stations over l
                 <p>
                     Data file: <a href="formatted_data/Continental_trends_data_files.zip"
                                   aria-label="Bundle of csv data in a zip file">Continental_trends_data_files.zip</a>
-                    <br>Checksum: be7fcbafa6a06fbb40bc16a44c42daca
-                    <button onclick="copyText('be7fcbafa6a06fbb40bc16a44c42daca')">Copy</button>
+                    <br>Checksum: 188a820ddfb20ff94b745ff4fbf67cfb
+                    <button onclick="copyText('188a820ddfb20ff94b745ff4fbf67cfb')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
                                    aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
@@ -3073,8 +3153,8 @@ Global mean temperature is based on measurements made at weather stations over l
                 <p>
                     Data file: <a href="formatted_data/Regional_trends_LAC_data_files.zip"
                                   aria-label="Bundle of csv data in a zip file">Regional_trends_LAC_data_files.zip</a>
-                    <br>Checksum: aa0a189a91d30812386509b34bbf6b0b
-                    <button onclick="copyText('aa0a189a91d30812386509b34bbf6b0b')">Copy</button>
+                    <br>Checksum: 42e8a33417aed5d3eb7c4997b6497db0
+                    <button onclick="copyText('42e8a33417aed5d3eb7c4997b6497db0')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
                                    aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>

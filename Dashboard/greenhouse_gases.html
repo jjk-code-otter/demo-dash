@@ -32,6 +32,60 @@ p {
   display: inline-block;
   border-radius: 5px;
 }
+.navbar {
+  margin-bottom: 12px;
+  margin-top: 0px;
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 8px 10px;
+  text-decoration: none;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 8px 10px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #ddd;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 8px 10px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 </style>
 
 <script>
@@ -41,10 +95,36 @@ p {
             navigator.clipboard.writeText
                 (invar);
         }
+
 </script>
 <body>
 
 <div class="w3-container w3-padding-32 w3-light-grey">
+
+    <div class="w3-card navbar w3-margin-bottom ">
+        <a href="dashboard.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                
+                <a href="dashboard.html">Key Climate Indicators</a>
+                
+                <a href="greenhouse_gases.html">Greenhouse gases</a>
+                
+                <a href="global_mean_temperature.html">Global mean temperature</a>
+                
+                <a href="ocean_heat_content.html">Ocean Indicators</a>
+                
+                <a href="sea_level.html">Sea Level</a>
+                
+                <a href="sea_ice_extent.html">Sea ice extent</a>
+                
+                <a href="glaciers_and_ice_sheets.html">Glaciers and Ice Sheets</a>
+                
+            </div>
+        </div>
+    </div>
+
 
     <div class="w3-container" style="margin:0 -16px">
         <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
@@ -59,7 +139,7 @@ p {
         
         <div class="w3-third">
 
-            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey"  style="padding-bottom:10px">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
                 <p>
                     <img src="figures/Carbon_dioxide.png" width=100% alt="Monthly Atmospheric concentration of carbon dioxide (ppm)  from 1984-2021. Data are from WDCGG."
                          title="Graph of Carbon dioxide">
@@ -96,7 +176,7 @@ p {
         
         <div class="w3-third">
 
-            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey"  style="padding-bottom:10px">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
                 <p>
                     <img src="figures/Methane.png" width=100% alt="Monthly Atmospheric concentration of methane (ppb)  from 1984-2021. Data are from WDCGG."
                          title="Graph of Methane">
@@ -133,7 +213,7 @@ p {
         
         <div class="w3-third">
 
-            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey"  style="padding-bottom:10px">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
                 <p>
                     <img src="figures/Nitrous_Oxide.png" width=100% alt="Monthly Atmospheric concentration of nitrous oxide (ppb)  from 1984-2021. Data are from WDCGG."
                          title="Graph of Nitrous Oxide">
@@ -176,7 +256,7 @@ p {
         
         <div class="w3-third">
 
-            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey"  style="padding-bottom:10px">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
                 <p>
                     <img src="figures/Carbon_dioxide_growth_rate.png" width=100% alt="Annual Growth rate of of carbon dioxide concentration (ppm/year)  from 1984-2021. Data are from WDCGG."
                          title="Graph of Carbon dioxide growth rate">
@@ -213,7 +293,7 @@ p {
         
         <div class="w3-third">
 
-            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey"  style="padding-bottom:10px">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
                 <p>
                     <img src="figures/Methane_growth_rate.png" width=100% alt="Annual Grwoth rate of methane concentration (ppb/year)  from 1984-2021. Data are from WDCGG."
                          title="Graph of Methane growth rate">
@@ -250,7 +330,7 @@ p {
         
         <div class="w3-third">
 
-            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey"  style="padding-bottom:10px">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
                 <p>
                     <img src="figures/Nitrous_oxide_growth_rate.png" width=100% alt="Annual Growth rate of nitrous oxide concentration (ppb/year)  from 1984-2021. Data are from WDCGG."
                          title="Graph of Nitrous oxide growth rate">
@@ -370,8 +450,8 @@ Carbon dioxide (CO<sub>2</sub>) is one of the most important greenhouse gases. T
                 <p>
                     Data file: <a href="formatted_data/Carbon_dioxide_data_files.zip"
                                   aria-label="Bundle of csv data in a zip file">Carbon_dioxide_data_files.zip</a>
-                    <br>Checksum: 5c7b98d394a5ccc71968a6e3bc270e3e
-                    <button onclick="copyText('5c7b98d394a5ccc71968a6e3bc270e3e')">Copy</button>
+                    <br>Checksum: bd9f23ff19b9490f93c4e57ac483eadb
+                    <button onclick="copyText('bd9f23ff19b9490f93c4e57ac483eadb')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
                                    aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
@@ -429,8 +509,8 @@ Methane (CH<sub>4</sub>) is an important greenhouse gas. The concentration of CH
                 <p>
                     Data file: <a href="formatted_data/Methane_data_files.zip"
                                   aria-label="Bundle of csv data in a zip file">Methane_data_files.zip</a>
-                    <br>Checksum: 92bba622982d3e15e984ffeac0a4fc96
-                    <button onclick="copyText('92bba622982d3e15e984ffeac0a4fc96')">Copy</button>
+                    <br>Checksum: 1a1285a7789c85868896eacd2256fe6a
+                    <button onclick="copyText('1a1285a7789c85868896eacd2256fe6a')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
                                    aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
@@ -488,8 +568,8 @@ Nitrous oxide (N<sub>2</sub>O) is an important greenhouse gas. The concentration
                 <p>
                     Data file: <a href="formatted_data/Nitrous_Oxide_data_files.zip"
                                   aria-label="Bundle of csv data in a zip file">Nitrous_Oxide_data_files.zip</a>
-                    <br>Checksum: 95825ac168e90d4c1f3abc8284b17690
-                    <button onclick="copyText('95825ac168e90d4c1f3abc8284b17690')">Copy</button>
+                    <br>Checksum: 281842e5dace085ee403d7bf7fa87731
+                    <button onclick="copyText('281842e5dace085ee403d7bf7fa87731')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
                                    aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
@@ -545,8 +625,8 @@ Nitrous oxide (N<sub>2</sub>O) is an important greenhouse gas. The concentration
                 <p>
                     Data file: <a href="formatted_data/Carbon_dioxide_growth_rate_data_files.zip"
                                   aria-label="Bundle of csv data in a zip file">Carbon_dioxide_growth_rate_data_files.zip</a>
-                    <br>Checksum: bedb7e3ff835a18452ae29a744d586bd
-                    <button onclick="copyText('bedb7e3ff835a18452ae29a744d586bd')">Copy</button>
+                    <br>Checksum: d04929cd6fa470acbf99a741b8a524bc
+                    <button onclick="copyText('d04929cd6fa470acbf99a741b8a524bc')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
                                    aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
@@ -602,8 +682,8 @@ Nitrous oxide (N<sub>2</sub>O) is an important greenhouse gas. The concentration
                 <p>
                     Data file: <a href="formatted_data/Methane_growth_rate_data_files.zip"
                                   aria-label="Bundle of csv data in a zip file">Methane_growth_rate_data_files.zip</a>
-                    <br>Checksum: 161ce2f82808ac3a4347a4d55652639d
-                    <button onclick="copyText('161ce2f82808ac3a4347a4d55652639d')">Copy</button>
+                    <br>Checksum: c52fdf4eaa00ada7c4782ea3883b95e3
+                    <button onclick="copyText('c52fdf4eaa00ada7c4782ea3883b95e3')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
                                    aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
@@ -659,8 +739,8 @@ Nitrous oxide (N<sub>2</sub>O) is an important greenhouse gas. The concentration
                 <p>
                     Data file: <a href="formatted_data/Nitrous_oxide_growth_rate_data_files.zip"
                                   aria-label="Bundle of csv data in a zip file">Nitrous_oxide_growth_rate_data_files.zip</a>
-                    <br>Checksum: b7dc32c6c9ab63e2cff2c2a669eca207
-                    <button onclick="copyText('b7dc32c6c9ab63e2cff2c2a669eca207')">Copy</button>
+                    <br>Checksum: e248b6dad0a1522087a83fce68300524
+                    <button onclick="copyText('e248b6dad0a1522087a83fce68300524')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
                                    aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
@@ -702,7 +782,7 @@ Nitrous oxide (N<sub>2</sub>O) is an important greenhouse gas. The concentration
     
 
     <p>
-        Page created on 2023-01-17 using
+        Page created on 2023-01-30 using
         <a href="https://github.com/jjk-code-otter/climate-indicator-manager">climind v0.1</a>
     </p>
 

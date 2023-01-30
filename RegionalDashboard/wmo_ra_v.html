@@ -32,6 +32,60 @@ p {
   display: inline-block;
   border-radius: 5px;
 }
+.navbar {
+  margin-bottom: 12px;
+  margin-top: 0px;
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 8px 10px;
+  text-decoration: none;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 8px 10px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #ddd;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 8px 10px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 </style>
 
 <script>
@@ -41,10 +95,36 @@ p {
             navigator.clipboard.writeText
                 (invar);
         }
+
 </script>
 <body>
 
 <div class="w3-container w3-padding-32 w3-light-grey">
+
+    <div class="w3-card navbar w3-margin-bottom ">
+        <a href="dashboard.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                
+                <a href="dashboard.html">Regional Temperature Indicators</a>
+                
+                <a href="wmo_ra_i.html">Africa</a>
+                
+                <a href="wmo_ra_ii.html">Asia</a>
+                
+                <a href="wmo_ra_iii.html">South America</a>
+                
+                <a href="wmo_ra_iv.html">North America, Central America and the Caribbean</a>
+                
+                <a href="wmo_ra_v.html">Southwest Pacific</a>
+                
+                <a href="wmo_ra_vi.html">Europe</a>
+                
+            </div>
+        </div>
+    </div>
+
 
     <div class="w3-container" style="margin:0 -16px">
         <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
@@ -59,7 +139,7 @@ p {
         
         <div class="w3-third">
 
-            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey"  style="padding-bottom:10px">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
                 <p>
                     <img src="figures/WMO_RA_V_Southwest_Pacific.png" width=100% alt="Annual Regional mean temperature for WMO RA 5 South-West Pacific (&deg;C, difference from the 1991-2020 average)  from 1900-2022. Data are from the following six data sets: Berkeley Earth, ERA5, GISTEMP, HadCRUT5, JRA-55, NOAAGlobalTemp."
                          title="Graph of WMO RA V Southwest Pacific">
@@ -96,7 +176,7 @@ p {
         
         <div class="w3-third">
 
-            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey"  style="padding-bottom:10px">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
                 <p>
                     <img src="figures/Continental_trends.png" width=100% alt="Figure shows the trends for four sub-periods (1901-1930, 1931-1960, 1961-1990 and 1991-2022. Coloured bars show the mean trend for each region and the black vertical lines indicate the range of different estimates."
                          title="Graph of Continental trends">
@@ -184,8 +264,8 @@ p {
                 <p>
                     Data file: <a href="formatted_data/WMO_RA_V_Southwest_Pacific_data_files.zip"
                                   aria-label="Bundle of csv data in a zip file">WMO_RA_V_Southwest_Pacific_data_files.zip</a>
-                    <br>Checksum: 27ed504392dcf4aa72317340e587b9da
-                    <button onclick="copyText('27ed504392dcf4aa72317340e587b9da')">Copy</button>
+                    <br>Checksum: ba8f01b29dc333f71590d3f2fa8dd4bd
+                    <button onclick="copyText('ba8f01b29dc333f71590d3f2fa8dd4bd')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
                                    aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
@@ -498,8 +578,8 @@ Global mean temperature is based on measurements made at weather stations over l
                 <p>
                     Data file: <a href="formatted_data/Continental_trends_data_files.zip"
                                   aria-label="Bundle of csv data in a zip file">Continental_trends_data_files.zip</a>
-                    <br>Checksum: bee6bd2c783d69cabdab48e4780ff9b8
-                    <button onclick="copyText('bee6bd2c783d69cabdab48e4780ff9b8')">Copy</button>
+                    <br>Checksum: 26e9f1be1e4f718c774d4cacefdad608
+                    <button onclick="copyText('26e9f1be1e4f718c774d4cacefdad608')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
                                    aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>

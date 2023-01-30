@@ -32,6 +32,60 @@ p {
   display: inline-block;
   border-radius: 5px;
 }
+.navbar {
+  margin-bottom: 12px;
+  margin-top: 0px;
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 8px 10px;
+  text-decoration: none;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 8px 10px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #ddd;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 8px 10px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 </style>
 
 <script>
@@ -41,10 +95,36 @@ p {
             navigator.clipboard.writeText
                 (invar);
         }
+
 </script>
 <body>
 
 <div class="w3-container w3-padding-32 w3-light-grey">
+
+    <div class="w3-card navbar w3-margin-bottom ">
+        <a href="dashboard.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                
+                <a href="dashboard.html">Key Climate Indicators</a>
+                
+                <a href="greenhouse_gases.html">Greenhouse gases</a>
+                
+                <a href="global_mean_temperature.html">Global mean temperature</a>
+                
+                <a href="ocean_heat_content.html">Ocean Indicators</a>
+                
+                <a href="sea_level.html">Sea Level</a>
+                
+                <a href="sea_ice_extent.html">Sea ice extent</a>
+                
+                <a href="glaciers_and_ice_sheets.html">Glaciers and Ice Sheets</a>
+                
+            </div>
+        </div>
+    </div>
+
 
     <div class="w3-container" style="margin:0 -16px">
         <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
@@ -59,7 +139,7 @@ p {
         
         <div class="w3-third">
 
-            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey"  style="padding-bottom:10px">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
                 <p>
                     <img src="figures/Glacier_mass_balance.png" width=100% alt="Annual Mountain glacier cumulative mass balance (m w.e.)  from 1950-2021. Data are from World Glacier Monitoring Service."
                          title="Graph of Glacier mass balance">
@@ -96,7 +176,7 @@ p {
         
         <div class="w3-third">
 
-            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey"  style="padding-bottom:10px">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
                 <p>
                     <img src="figures/Greenland_ice_sheet.png" width=100% alt="Monthly Greenland ice sheet cumulative mass balance (Gt, difference from the 2005-2005 average)  from 1986-2023. Data are from the following three data sets: NASA GRACE, IMBIE 2021, Mankoff et al. 2021."
                          title="Graph of Greenland ice sheet">
@@ -133,7 +213,7 @@ p {
         
         <div class="w3-third">
 
-            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey"  style="padding-bottom:10px">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
                 <p>
                     <img src="figures/Antarctic_ice_sheet.png" width=100% alt="Monthly Antarctic ice sheet cumulative mass balance (Gt, difference from the 2005-2005 average)  from 1992-2022. Data are from the following two data sets: NASA GRACE, IMBIE 2021."
                          title="Graph of Antarctic ice sheet">
@@ -255,8 +335,8 @@ Glaciers are measured using a variety of different techniques. Glacier mass bala
                 <p>
                     Data file: <a href="formatted_data/Glacier_mass_balance_data_files.zip"
                                   aria-label="Bundle of csv data in a zip file">Glacier_mass_balance_data_files.zip</a>
-                    <br>Checksum: d66e4c2c510246b1e72604275b23813b
-                    <button onclick="copyText('d66e4c2c510246b1e72604275b23813b')">Copy</button>
+                    <br>Checksum: 2fe33f45d7a42cbf72171ab5d0d84400
+                    <button onclick="copyText('2fe33f45d7a42cbf72171ab5d0d84400')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
                                    aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
@@ -318,8 +398,8 @@ The Greenland ice sheet mass balance measures the change in ice mass of the Gree
                 <p>
                     Data file: <a href="formatted_data/Greenland_ice_sheet_data_files.zip"
                                   aria-label="Bundle of csv data in a zip file">Greenland_ice_sheet_data_files.zip</a>
-                    <br>Checksum: 9ad67a9655f9e22bc253059078b3138f
-                    <button onclick="copyText('9ad67a9655f9e22bc253059078b3138f')">Copy</button>
+                    <br>Checksum: 9cf78b07fd3ec31ea879ec7d22a25eb8
+                    <button onclick="copyText('9cf78b07fd3ec31ea879ec7d22a25eb8')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
                                    aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
@@ -465,8 +545,8 @@ The Antarctic ice sheet mass balance measures the change in ice mass of the Anta
                 <p>
                     Data file: <a href="formatted_data/Antarctic_ice_sheet_data_files.zip"
                                   aria-label="Bundle of csv data in a zip file">Antarctic_ice_sheet_data_files.zip</a>
-                    <br>Checksum: 0f885ed749c39cea87ac0a4092c9adad
-                    <button onclick="copyText('0f885ed749c39cea87ac0a4092c9adad')">Copy</button>
+                    <br>Checksum: 11859d81be7bfb38156cfebe2f14678b
+                    <button onclick="copyText('11859d81be7bfb38156cfebe2f14678b')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
                                    aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
@@ -557,7 +637,7 @@ The Antarctic ice sheet mass balance measures the change in ice mass of the Anta
     
 
     <p>
-        Page created on 2023-01-17 using
+        Page created on 2023-01-30 using
         <a href="https://github.com/jjk-code-otter/climate-indicator-manager">climind v0.1</a>
     </p>
 

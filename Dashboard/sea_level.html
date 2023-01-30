@@ -32,6 +32,60 @@ p {
   display: inline-block;
   border-radius: 5px;
 }
+.navbar {
+  margin-bottom: 12px;
+  margin-top: 0px;
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 8px 10px;
+  text-decoration: none;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 8px 10px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #ddd;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 8px 10px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 </style>
 
 <script>
@@ -41,10 +95,36 @@ p {
             navigator.clipboard.writeText
                 (invar);
         }
+
 </script>
 <body>
 
 <div class="w3-container w3-padding-32 w3-light-grey">
+
+    <div class="w3-card navbar w3-margin-bottom ">
+        <a href="dashboard.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                
+                <a href="dashboard.html">Key Climate Indicators</a>
+                
+                <a href="greenhouse_gases.html">Greenhouse gases</a>
+                
+                <a href="global_mean_temperature.html">Global mean temperature</a>
+                
+                <a href="ocean_heat_content.html">Ocean Indicators</a>
+                
+                <a href="sea_level.html">Sea Level</a>
+                
+                <a href="sea_ice_extent.html">Sea ice extent</a>
+                
+                <a href="glaciers_and_ice_sheets.html">Glaciers and Ice Sheets</a>
+                
+            </div>
+        </div>
+    </div>
+
 
     <div class="w3-container" style="margin:0 -16px">
         <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
@@ -59,7 +139,7 @@ p {
         
         <div class="w3-third">
 
-            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey"  style="padding-bottom:10px">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
                 <p>
                     <img src="figures/Sea_level.png" width=100% alt="Monthly Global mean sea level (mm)  from 1993-2022. Data are from the following two data sets: AVISO, AVISO CNES."
                          title="Graph of Sea level">
@@ -96,7 +176,7 @@ p {
         
         <div class="w3-third">
 
-            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey"  style="padding-bottom:10px">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
                 <p>
                     <img src="figures/Ocean_heat_content.png" width=100% alt="Annual Global ocean heat content (zJ, difference from the 2005-2020 average)  from 1940.0-2022.0. Data are from the following three data sets: Cheng et al, GCOS, Levitus."
                          title="Graph of Ocean heat content">
@@ -133,7 +213,7 @@ p {
         
         <div class="w3-third">
 
-            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey"  style="padding-bottom:10px">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
                 <p>
                     <img src="figures/Sea-surface_temperature.png" width=100% alt="Annual Global mean sea-surface temperature (&deg;C, difference from the 1991-2020 average)  from 1850-2022. Data are from the following two data sets: ERSST, HadSST4."
                          title="Graph of Sea-surface temperature">
@@ -264,8 +344,8 @@ Global mean sea level is a measured by satellites using radar altimeters that re
                 <p>
                     Data file: <a href="formatted_data/Sea_level_data_files.zip"
                                   aria-label="Bundle of csv data in a zip file">Sea_level_data_files.zip</a>
-                    <br>Checksum: 9ce4ff6a94d8fb9fdb6f0db174d15e2f
-                    <button onclick="copyText('9ce4ff6a94d8fb9fdb6f0db174d15e2f')">Copy</button>
+                    <br>Checksum: 2988ed352e37c5165fed9e74948d188d
+                    <button onclick="copyText('2988ed352e37c5165fed9e74948d188d')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
                                    aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
@@ -329,7 +409,7 @@ Global mean sea level is a measured by satellites using radar altimeters that re
                 <p>To produce the plot, the following processing steps were performed:</p>
                 <ul>
                     
-                    <li>Data set created from file ['MSL_Serie_MERGED_Global_AVISO_GIA_Adjust_Filter6m_NRT.nc'] downloaded from ['ftp://ftp.aviso.altimetry.fr/pub/oceano/AVISO/indicators/msl/MSL_Serie_MERGED_Global_AVISO_GIA_Adjust_Filter6m_NRT.nc'] at ['2023-01-17 09:16:48']</li>
+                    <li>Data set created from file ['MSL_Serie_MERGED_Global_AVISO_GIA_Adjust_Filter6m_NRT.nc'] downloaded from ['ftp://ftp.aviso.altimetry.fr/pub/oceano/AVISO/indicators/msl/MSL_Serie_MERGED_Global_AVISO_GIA_Adjust_Filter6m_NRT.nc'] at ['2023-01-28 11:48:36']</li>
                     
                 </ul>
                 
@@ -356,8 +436,8 @@ Ocean heat content is a measure of the change in heat energy stored in the subsu
                 <p>
                     Data file: <a href="formatted_data/Ocean_heat_content_data_files.zip"
                                   aria-label="Bundle of csv data in a zip file">Ocean_heat_content_data_files.zip</a>
-                    <br>Checksum: 0a84a7d3b4e7672f9f4beb3206208d3d
-                    <button onclick="copyText('0a84a7d3b4e7672f9f4beb3206208d3d')">Copy</button>
+                    <br>Checksum: 94925d601132923f48bb8c19a9afe022
+                    <button onclick="copyText('94925d601132923f48bb8c19a9afe022')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
                                    aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
@@ -485,8 +565,8 @@ Sea-surface temperature (SST) is the temperature of the surface ocean, typically
                 <p>
                     Data file: <a href="formatted_data/Sea-surface_temperature_data_files.zip"
                                   aria-label="Bundle of csv data in a zip file">Sea-surface_temperature_data_files.zip</a>
-                    <br>Checksum: c19030f1e1abed1d140861ee0eb0e343
-                    <button onclick="copyText('c19030f1e1abed1d140861ee0eb0e343')">Copy</button>
+                    <br>Checksum: 18e242760ebe53dd5c89c0597a3cd8f7
+                    <button onclick="copyText('18e242760ebe53dd5c89c0597a3cd8f7')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
                                    aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
@@ -579,7 +659,7 @@ Sea-surface temperature (SST) is the temperature of the surface ocean, typically
     
 
     <p>
-        Page created on 2023-01-17 using
+        Page created on 2023-01-30 using
         <a href="https://github.com/jjk-code-otter/climate-indicator-manager">climind v0.1</a>
     </p>
 

@@ -32,6 +32,60 @@ p {
   display: inline-block;
   border-radius: 5px;
 }
+.navbar {
+  margin-bottom: 12px;
+  margin-top: 0px;
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 8px 10px;
+  text-decoration: none;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 8px 10px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #ddd;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 8px 10px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 </style>
 
 <script>
@@ -41,10 +95,36 @@ p {
             navigator.clipboard.writeText
                 (invar);
         }
+
 </script>
 <body>
 
 <div class="w3-container w3-padding-32 w3-light-grey">
+
+    <div class="w3-card navbar w3-margin-bottom ">
+        <a href="dashboard.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                
+                <a href="dashboard.html">Regional Temperature Indicators</a>
+                
+                <a href="wmo_ra_i.html">Africa</a>
+                
+                <a href="wmo_ra_ii.html">Asia</a>
+                
+                <a href="wmo_ra_iii.html">South America</a>
+                
+                <a href="wmo_ra_iv.html">North America, Central America and the Caribbean</a>
+                
+                <a href="wmo_ra_v.html">Southwest Pacific</a>
+                
+                <a href="wmo_ra_vi.html">Europe</a>
+                
+            </div>
+        </div>
+    </div>
+
 
     <div class="w3-container" style="margin:0 -16px">
         <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
@@ -59,7 +139,7 @@ p {
         
         <div class="w3-third">
 
-            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey"  style="padding-bottom:10px">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
                 <p>
                     <img src="figures/WMO_RA_I_Africa.png" width=100% alt="Annual Regional mean temperature for WMO RA 1 Africa (&deg;C, difference from the 1991-2020 average)  from 1900-2022. Data are from the following six data sets: Berkeley Earth, ERA5, GISTEMP, HadCRUT5, JRA-55, NOAAGlobalTemp."
                          title="Graph of WMO RA I Africa">
@@ -96,7 +176,7 @@ p {
         
         <div class="w3-third">
 
-            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey"  style="padding-bottom:10px">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
                 <p>
                     <img src="figures/North_Africa.png" width=100% alt="Annual Regional mean temperature for North Africa (&deg;C, difference from the 1991-2020 average)  from 1900-2022. Data are from the following six data sets: Berkeley Earth, ERA5, GISTEMP, HadCRUT5, JRA-55, NOAAGlobalTemp."
                          title="Graph of North Africa">
@@ -133,7 +213,7 @@ p {
         
         <div class="w3-third">
 
-            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey"  style="padding-bottom:10px">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
                 <p>
                     <img src="figures/West_Africa.png" width=100% alt="Annual Regional mean temperature for West Africa (&deg;C, difference from the 1991-2020 average)  from 1900-2022. Data are from the following six data sets: Berkeley Earth, ERA5, GISTEMP, HadCRUT5, JRA-55, NOAAGlobalTemp."
                          title="Graph of West Africa">
@@ -176,7 +256,7 @@ p {
         
         <div class="w3-third">
 
-            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey"  style="padding-bottom:10px">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
                 <p>
                     <img src="figures/Central_Africa.png" width=100% alt="Annual Regional mean temperature for Central Africa (&deg;C, difference from the 1991-2020 average)  from 1900-2022. Data are from the following six data sets: Berkeley Earth, ERA5, GISTEMP, HadCRUT5, JRA-55, NOAAGlobalTemp."
                          title="Graph of Central Africa">
@@ -213,7 +293,7 @@ p {
         
         <div class="w3-third">
 
-            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey"  style="padding-bottom:10px">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
                 <p>
                     <img src="figures/Eastern_Africa.png" width=100% alt="Annual Regional mean temperature for Eastern Africa (&deg;C, difference from the 1991-2020 average)  from 1900-2022. Data are from the following six data sets: Berkeley Earth, ERA5, GISTEMP, HadCRUT5, JRA-55, NOAAGlobalTemp."
                          title="Graph of Eastern Africa">
@@ -250,7 +330,7 @@ p {
         
         <div class="w3-third">
 
-            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey"  style="padding-bottom:10px">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
                 <p>
                     <img src="figures/Southern_Africa.png" width=100% alt="Annual Regional mean temperature for Southern Africa (&deg;C, difference from the 1991-2020 average)  from 1900-2022. Data are from the following six data sets: Berkeley Earth, ERA5, GISTEMP, HadCRUT5, JRA-55, NOAAGlobalTemp."
                          title="Graph of Southern Africa">
@@ -293,7 +373,7 @@ p {
         
         <div class="w3-third">
 
-            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey"  style="padding-bottom:10px">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
                 <p>
                     <img src="figures/Indian_Ocean.png" width=100% alt="Annual Regional mean temperature for Indian Ocean (&deg;C, difference from the 1991-2020 average)  from 1900-2022. Data are from the following six data sets: Berkeley Earth, ERA5, GISTEMP, HadCRUT5, JRA-55, NOAAGlobalTemp."
                          title="Graph of Indian Ocean">
@@ -330,7 +410,7 @@ p {
         
         <div class="w3-third">
 
-            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey"  style="padding-bottom:10px">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
                 <p>
                     <img src="figures/Continental_trends.png" width=100% alt="Figure shows the trends for four sub-periods (1901-1930, 1931-1960, 1961-1990 and 1991-2022. Coloured bars show the mean trend for each region and the black vertical lines indicate the range of different estimates."
                          title="Graph of Continental trends">
@@ -367,7 +447,7 @@ p {
         
         <div class="w3-third">
 
-            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey"  style="padding-bottom:10px">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
                 <p>
                     <img src="figures/Regional_trends_Africa.png" width=100% alt="Figure shows the trends for four sub-periods (1901-1930, 1931-1960, 1961-1990 and 1991-2022. Coloured bars show the mean trend for each region and the black vertical lines indicate the range of different estimates."
                          title="Graph of Regional trends Africa">
@@ -485,8 +565,8 @@ p {
                 <p>
                     Data file: <a href="formatted_data/WMO_RA_I_Africa_data_files.zip"
                                   aria-label="Bundle of csv data in a zip file">WMO_RA_I_Africa_data_files.zip</a>
-                    <br>Checksum: 477edc6f41300bd18f52398cb46819b4
-                    <button onclick="copyText('477edc6f41300bd18f52398cb46819b4')">Copy</button>
+                    <br>Checksum: 97b0c08fced5b13de54f919a57f81521
+                    <button onclick="copyText('97b0c08fced5b13de54f919a57f81521')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
                                    aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
@@ -783,8 +863,8 @@ p {
                 <p>
                     Data file: <a href="formatted_data/North_Africa_data_files.zip"
                                   aria-label="Bundle of csv data in a zip file">North_Africa_data_files.zip</a>
-                    <br>Checksum: 62aba315f94a1c279f913fa9dc9e67dd
-                    <button onclick="copyText('62aba315f94a1c279f913fa9dc9e67dd')">Copy</button>
+                    <br>Checksum: d8576dd71c8499de2e262a6f68dacd2d
+                    <button onclick="copyText('d8576dd71c8499de2e262a6f68dacd2d')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
                                    aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
@@ -1081,8 +1161,8 @@ p {
                 <p>
                     Data file: <a href="formatted_data/West_Africa_data_files.zip"
                                   aria-label="Bundle of csv data in a zip file">West_Africa_data_files.zip</a>
-                    <br>Checksum: 399c1bc7f8e0670f0d5a253e41144912
-                    <button onclick="copyText('399c1bc7f8e0670f0d5a253e41144912')">Copy</button>
+                    <br>Checksum: 00c166ae3c739059ae944438343b4ac3
+                    <button onclick="copyText('00c166ae3c739059ae944438343b4ac3')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
                                    aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
@@ -1379,8 +1459,8 @@ p {
                 <p>
                     Data file: <a href="formatted_data/Central_Africa_data_files.zip"
                                   aria-label="Bundle of csv data in a zip file">Central_Africa_data_files.zip</a>
-                    <br>Checksum: 3fe302e08712f9987c9d0cb7a570c56b
-                    <button onclick="copyText('3fe302e08712f9987c9d0cb7a570c56b')">Copy</button>
+                    <br>Checksum: 8245d7adae08324f7180b7fc66f115cf
+                    <button onclick="copyText('8245d7adae08324f7180b7fc66f115cf')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
                                    aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
@@ -1677,8 +1757,8 @@ p {
                 <p>
                     Data file: <a href="formatted_data/Eastern_Africa_data_files.zip"
                                   aria-label="Bundle of csv data in a zip file">Eastern_Africa_data_files.zip</a>
-                    <br>Checksum: d442fb4f80088296106e1dd217bdd661
-                    <button onclick="copyText('d442fb4f80088296106e1dd217bdd661')">Copy</button>
+                    <br>Checksum: 2a1cb203004baef42095cb65b1dfead9
+                    <button onclick="copyText('2a1cb203004baef42095cb65b1dfead9')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
                                    aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
@@ -1975,8 +2055,8 @@ p {
                 <p>
                     Data file: <a href="formatted_data/Southern_Africa_data_files.zip"
                                   aria-label="Bundle of csv data in a zip file">Southern_Africa_data_files.zip</a>
-                    <br>Checksum: 7aa2ead472ebea4d2f852f38616e78e3
-                    <button onclick="copyText('7aa2ead472ebea4d2f852f38616e78e3')">Copy</button>
+                    <br>Checksum: c92cff545e8f83815acdfc2bd0ece003
+                    <button onclick="copyText('c92cff545e8f83815acdfc2bd0ece003')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
                                    aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
@@ -2273,8 +2353,8 @@ p {
                 <p>
                     Data file: <a href="formatted_data/Indian_Ocean_data_files.zip"
                                   aria-label="Bundle of csv data in a zip file">Indian_Ocean_data_files.zip</a>
-                    <br>Checksum: 59880ba40693a1e95f20ef47186b446c
-                    <button onclick="copyText('59880ba40693a1e95f20ef47186b446c')">Copy</button>
+                    <br>Checksum: 836116d830ce32734fda44632a5448b7
+                    <button onclick="copyText('836116d830ce32734fda44632a5448b7')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
                                    aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
@@ -2587,8 +2667,8 @@ Global mean temperature is based on measurements made at weather stations over l
                 <p>
                     Data file: <a href="formatted_data/Continental_trends_data_files.zip"
                                   aria-label="Bundle of csv data in a zip file">Continental_trends_data_files.zip</a>
-                    <br>Checksum: 4bfe6d44ecfb60456492084e0225896a
-                    <button onclick="copyText('4bfe6d44ecfb60456492084e0225896a')">Copy</button>
+                    <br>Checksum: f1cd9f2171e037eda5e56e0dbf96a858
+                    <button onclick="copyText('f1cd9f2171e037eda5e56e0dbf96a858')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
                                    aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
@@ -4447,8 +4527,8 @@ Global mean temperature is based on measurements made at weather stations over l
                 <p>
                     Data file: <a href="formatted_data/Regional_trends_Africa_data_files.zip"
                                   aria-label="Bundle of csv data in a zip file">Regional_trends_Africa_data_files.zip</a>
-                    <br>Checksum: 385936ba9a61c7a74be2a45dbffb75e8
-                    <button onclick="copyText('385936ba9a61c7a74be2a45dbffb75e8')">Copy</button>
+                    <br>Checksum: 8d551414016934ac9773c656c19a1529
+                    <button onclick="copyText('8d551414016934ac9773c656c19a1529')">Copy</button>
                     <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
                                    aria-label="extrenal link to data format description">BADC CSV format</a><br>
                 </p>
