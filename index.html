@@ -1,8 +1,225 @@
-<html>
-<h1>Some demonstration dashboards</h1>
-<ul>
-<li><a href="Dashboard/dashboard.html">Key indicators</a></li>
-<li><a href="OceanDashboard/dashboard.html">Ocean indicators</a></li>
-<li><a href="RegionalDashboard/dashboard.html">Regional indicators</a></li>
-</ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>WMO Climate Dashboards</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<style>
+h1, h2, h3, h4, h5, h6 {
+		font-weight: 600;
+	}
+h3 {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+p {
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+.button_link {
+  background-color: #777777;
+  color: white;
+  padding: 14px 25px;
+  margin-bottom: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+}
+.navbar {
+  margin-bottom: 12px;
+  margin-top: 0px;
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 8px 10px;
+  text-decoration: none;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 8px 10px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #ddd;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 8px 10px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+#burj {
+	position: relative;
+	width: 100%;
+	padding-bottom: 55%;
+	vertical-align: middle;
+	margin: 0;
+	overflow: hidden;
+}
+#burj svg { 
+	display: inline-block;
+	position: absolute;
+	top: 0; left: 0;
+}
+</style>
+<body>
+
+<div class="w3-container w3-padding-32 w3-light-grey">
+
+    <div class="w3-card navbar w3-margin-bottom ">
+        <a href="index.html">Home</a>
+		<a href="Dashboard/dashboard.html">Key Indicators</a>
+		<a href="RegionalDashboard/dashboard.html">Regional Temperatures</a>
+    </div>
+
+
+    <div class="w3-container" style="margin:0 -16px">
+        <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
+            <h1>WMO Climate Monitoring Dashboards</h1>
+			<p>
+			The WMO generates a set of climate indicators based on global data sets. The links below show these indicators in 
+			a set of dashboards covering key indicators and regional temperature indicators.
+			</p>
+			<p>
+			The dashboard are created to support production of the 
+			<a href="https://public.wmo.int/en/our-mandate/climate/wmo-statement-state-of-global-climate">WMO State 
+			of the Global Climate</a> reports and the WMO Regional 
+			State of the Climate reports.
+			</p>
+        </div>
+    </div>
+
+    
+    <div class="w3-row-padding" style="margin:0 -16px">
+
+       <div class="w3-third">
+			<div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
+				<p>
+                <figure id=burj>
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1528 810" preserveAspectRatio="xMinYMin meet" >
+					<image width="1528" height="810" xlink:href="Indicator.png">
+					</image>
+					<a xlink:href="Dashboard/greenhouse_gases.html">
+					  <polygon points="0,0 510,0 510,405 0,405" fill="#fff" opacity="0" stroke="none"/>
+					</a>
+					<a xlink:href="Dashboard/global_mean_temperature.html">
+					  <polygon points="510,0 1020,0 1020,405 510,405" fill="#fff" opacity="0" stroke="none"/>
+					</a>
+					<a xlink:href="Dashboard/ocean_heat_content.html">
+					  <polygon points="1020,0 1528,0 1528,405 1020,405" fill="#fff" opacity="0" stroke="none"/>
+					</a>
+					<a xlink:href="Dashboard/sea_level.html">
+					  <polygon points="0,405 510,405 510,810 0,810" fill="#fff" opacity="0" stroke="none"/>
+					</a>
+					<a xlink:href="Dashboard/sea_ice_extent.html">
+					  <polygon points="510,405 1020,405 1020,810 510,810" fill="#fff" opacity="0" stroke="none"/>
+					</a>
+					<a xlink:href="Dashboard/glaciers_and_ice_sheets.html">
+					  <polygon points="1020,405 1528,405 1528,810 1020,810" fill="#fff" opacity="0" stroke="none"/>
+					</a>
+					</svg>
+				</figure>
+				</p>
+				<h3>
+				Key indicators
+				</h3>
+				<p>
+				<div style="float: left;">
+					The global climate indicators provide an overview of changes in the 
+					climate system at the broadest scale.
+				</div>
+                <div style="float: right;">
+                    <a href="Dashboard/dashboard.html" class="button_link w3-right ">View dashboard</a>
+                </div>
+				</p>
+			</div>
+		</div>
+
+        <div class="w3-third">
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
+				<p>
+				<figure id=burj>
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1528 810" preserveAspectRatio="xMinYMin meet" >
+					<image width="1528" height="810" xlink:href="WMO_RA_map.png">
+					</image>
+					<a xlink:href="RegionalDashboard/wmo_ra_i.html">
+					  <polygon points="618,250 753,250 806,239 818,259 896,259 909,280 947,353 973,350 1011,349 1011,426 1095,427 1095,617 1052,617 1052,662 681,662 679,382 618,382" fill="#fff" opacity="0" stroke="none"/>
+					</a>
+					<a xlink:href="RegionalDashboard/wmo_ra_ii.html">
+					  <polygon points="1508,20 1508,304 1281,304 1218,362 1181,378 1136,426 1011,426 1011,349 973,350 947,353 909,280 970,231 970,108 929,61 929,20" fill="#fff" opacity="0" stroke="none"/>
+					</a>
+					<a xlink:href="RegionalDashboard/wmo_ra_iii.html">
+					  <polygon points="618,382 679,382 681,662 268,662 268,384 432,384 467,351 503,361 618,361" fill="#fff" opacity="0" stroke="none"/>
+					</a>
+					<a xlink:href="RegionalDashboard/wmo_ra_iv.html">
+					  <polygon points="20,20 529,20 511,53 458,68 461,84 488,94 518,111 536,153 618,152 618, 361 503,361 467,351 432,384 268,384 185,277 20,275" fill="#fff" opacity="0" stroke="none"/>
+					</a>
+					<a xlink:href="RegionalDashboard/wmo_ra_v.html">
+					  <polygon points="1508,662 1052,662 1052,617 1095,617 1095,427 1136,426 1136,378 1181,378 1218,362 1281,304 1508,304" fill="#fff" opacity="0" stroke="none"/>
+					</a>
+					<a xlink:href="RegionalDashboard/wmo_ra_v.html">
+					  <polygon points="20,275 185,277 268,384 268,662 20,662" fill="#fff" opacity="0" stroke="none"/>
+					</a>
+					<a xlink:href="RegionalDashboard/wmo_ra_vi.html">
+					  <polygon points="929,20 929,61 970,108 970,231 909,280 896,259 818,259 806,239 753,250 618,250 618,152 536,153 518,111 488,94 461,84 458,68 511,53 529,20" fill="#fff" opacity="0" stroke="none"/>
+					</a>
+					</svg>
+				</figure>
+				</p>
+				<h3>
+				Regional Temperatures
+				</h3>
+				<p>
+				<div style="float: left;">
+					Access regional temperature indicators for the six WMO Regional Associations
+				</div>
+                <div style="float: right;">
+                    <a href="RegionalDashboard/dashboard.html" class="button_link w3-right ">View dashboard</a>
+                </div>
+				</p>
+            </div>
+        </div>
+		
+    </div>
+
+
+
+
 </html>
