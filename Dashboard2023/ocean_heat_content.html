@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ocean Indicators</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<style>
+h1, h2, h3, h4, h5, h6 {
+		font-weight: 600;
+	}
+h3 {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+p {
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+.button_link {
+  background-color: #777777;
+  color: white;
+  padding: 14px 25px;
+  margin-bottom: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+}
+.navbar {
+  margin-bottom: 12px;
+  margin-top: 0px;
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 8px 10px;
+  text-decoration: none;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 8px 10px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #ddd;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 8px 10px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+</style>
+
+<script>
+        function copyText(invar) {
+
+            /* Copy text into clipboard */
+            navigator.clipboard.writeText
+                (invar);
+        }
+
+</script>
+<body>
+
+<div class="w3-container w3-padding-32 w3-light-grey">
+
+    <div class="w3-card navbar w3-margin-bottom ">
+        <a href="dashboard.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                
+                <a href="dashboard.html">Key Climate Indicators</a>
+                
+                <a href="greenhouse_gases.html">Greenhouse gases</a>
+                
+                <a href="global_mean_temperature.html">Global mean temperature</a>
+                
+                <a href="ocean_heat_content.html">Ocean Indicators</a>
+                
+                <a href="sea_level.html">Sea Level</a>
+                
+                <a href="sea_ice_extent.html">Sea ice extent</a>
+                
+                <a href="glaciers_and_ice_sheets.html">Glaciers and Ice Sheets</a>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div class="w3-container" style="margin:0 -16px">
+        <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
+            <h1>Ocean Indicators</h1>
+        </div>
+    </div>
+
+    
+    <div class="w3-row-padding" style="margin:0 -16px">
+
+        
+        
+        <div class="w3-third">
+
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
+                <p>
+                    <img src="figures/Ocean_heat_content.png" width=100% alt="Annual Global ocean heat content (zJ, difference from the 2005-2021 average)  from 1960.0-2022.0. Data are from GCOS."
+                         title="Graph of Ocean heat content">
+                </p>
+                <h3>Ocean heat content</h3>
+                <p>
+                    Annual Global ocean heat content (zJ, difference from the 2005-2021 average)  from 1960.0-2022.0. Data are from GCOS.
+                    <button onclick="copyText('Annual Global ocean heat content (zJ, difference from the 2005-2021 average)  from 1960.0-2022.0. Data are from GCOS.')">Copy caption</button>
+                </p>
+                <p>
+                <div style="float: left;">
+                    Image: <a href="figures/Ocean_heat_content.png" target="_blank" aria-label="Figure in png format">png</a>-<a
+                        href="figures/Ocean_heat_content.pdf" target="_blank"
+                        aria-label="Figure in pdf format">pdf</a>-<a
+                        href="figures/Ocean_heat_content.svg" target="_blank"
+                        aria-label="Figure in svg format">svg</a><br>
+                    Formatted data: <a href="formatted_data/Ocean_heat_content_data_files.zip"
+                                       aria-label="Bundle of csv data in a zip file">csv</a>
+                    (<a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
+                        aria-label="extrenal link to data format description">format</a>)<br>
+                    <a href="#Ocean heat content"
+                       aria-label="link to references, acknowledgements and processing details">References and
+                        processing</a><br>
+                </div>
+                <div style="float: right;">
+                    
+                </div>
+                </p>
+            </div>
+
+        </div>
+        
+        
+        
+        <div class="w3-third">
+
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
+                <p>
+                    <img src="figures/Ocean_heat_content_to_2000m.png" width=100% alt="Annual Global ocean heat content (zJ, difference from the 2005-2021 average)  from 1960.0-2022.0. Data are from GCOS."
+                         title="Graph of Ocean heat content to 2000m">
+                </p>
+                <h3>Ocean heat content to 2000m</h3>
+                <p>
+                    Annual Global ocean heat content (zJ, difference from the 2005-2021 average)  from 1960.0-2022.0. Data are from GCOS.
+                    <button onclick="copyText('Annual Global ocean heat content (zJ, difference from the 2005-2021 average)  from 1960.0-2022.0. Data are from GCOS.')">Copy caption</button>
+                </p>
+                <p>
+                <div style="float: left;">
+                    Image: <a href="figures/Ocean_heat_content_to_2000m.png" target="_blank" aria-label="Figure in png format">png</a>-<a
+                        href="figures/Ocean_heat_content_to_2000m.pdf" target="_blank"
+                        aria-label="Figure in pdf format">pdf</a>-<a
+                        href="figures/Ocean_heat_content_to_2000m.svg" target="_blank"
+                        aria-label="Figure in svg format">svg</a><br>
+                    Formatted data: <a href="formatted_data/Ocean_heat_content_to_2000m_data_files.zip"
+                                       aria-label="Bundle of csv data in a zip file">csv</a>
+                    (<a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
+                        aria-label="extrenal link to data format description">format</a>)<br>
+                    <a href="#Ocean heat content to 2000m"
+                       aria-label="link to references, acknowledgements and processing details">References and
+                        processing</a><br>
+                </div>
+                <div style="float: right;">
+                    
+                </div>
+                </p>
+            </div>
+
+        </div>
+        
+        
+        
+        <div class="w3-third">
+
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
+                <p>
+                    <img src="figures/Ocean_pH.png" width=100% alt="Annual Global ocean pH (pH)  from 1985-2021. Data are from CMEMS."
+                         title="Graph of Ocean pH">
+                </p>
+                <h3>Ocean pH</h3>
+                <p>
+                    Annual Global ocean pH (pH)  from 1985-2021. Data are from CMEMS.
+                    <button onclick="copyText('Annual Global ocean pH (pH)  from 1985-2021. Data are from CMEMS.')">Copy caption</button>
+                </p>
+                <p>
+                <div style="float: left;">
+                    Image: <a href="figures/Ocean_pH.png" target="_blank" aria-label="Figure in png format">png</a>-<a
+                        href="figures/Ocean_pH.pdf" target="_blank"
+                        aria-label="Figure in pdf format">pdf</a>-<a
+                        href="figures/Ocean_pH.svg" target="_blank"
+                        aria-label="Figure in svg format">svg</a><br>
+                    Formatted data: <a href="formatted_data/Ocean_pH_data_files.zip"
+                                       aria-label="Bundle of csv data in a zip file">csv</a>
+                    (<a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
+                        aria-label="extrenal link to data format description">format</a>)<br>
+                    <a href="#Ocean pH"
+                       aria-label="link to references, acknowledgements and processing details">References and
+                        processing</a><br>
+                </div>
+                <div style="float: right;">
+                    
+                </div>
+                </p>
+            </div>
+
+        </div>
+        
+        
+
+    </div>
+    
+    <div class="w3-row-padding" style="margin:0 -16px">
+
+        
+        
+        <div class="w3-third">
+
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
+                <p>
+                    <img src="figures/Sea_level.png" width=100% alt="Monthly Global mean sea level (mm)  from 1993-2023. Data are from the following two data sets: AVISO, AVISO CNES."
+                         title="Graph of Sea level">
+                </p>
+                <h3>Sea level</h3>
+                <p>
+                    Monthly Global mean sea level (mm)  from 1993-2023. Data are from the following two data sets: AVISO, AVISO CNES.
+                    <button onclick="copyText('Monthly Global mean sea level (mm)  from 1993-2023. Data are from the following two data sets: AVISO, AVISO CNES.')">Copy caption</button>
+                </p>
+                <p>
+                <div style="float: left;">
+                    Image: <a href="figures/Sea_level.png" target="_blank" aria-label="Figure in png format">png</a>-<a
+                        href="figures/Sea_level.pdf" target="_blank"
+                        aria-label="Figure in pdf format">pdf</a>-<a
+                        href="figures/Sea_level.svg" target="_blank"
+                        aria-label="Figure in svg format">svg</a><br>
+                    Formatted data: <a href="formatted_data/Sea_level_data_files.zip"
+                                       aria-label="Bundle of csv data in a zip file">csv</a>
+                    (<a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
+                        aria-label="extrenal link to data format description">format</a>)<br>
+                    <a href="#Sea level"
+                       aria-label="link to references, acknowledgements and processing details">References and
+                        processing</a><br>
+                </div>
+                <div style="float: right;">
+                    
+                </div>
+                </p>
+            </div>
+
+        </div>
+        
+        
+        
+        <div class="w3-third">
+
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
+                <p>
+                    <img src="figures/Marine_heat_waves.png" width=100% alt="Figure showing the percentage of ocean area affected by marine heatwaves and marine cold spells each year since 1982"
+                         title="Graph of Marine heat waves">
+                </p>
+                <h3>Marine heat waves</h3>
+                <p>
+                    Figure showing the percentage of ocean area affected by marine heatwaves and marine cold spells each year since 1982
+                    <button onclick="copyText('Figure showing the percentage of ocean area affected by marine heatwaves and marine cold spells each year since 1982')">Copy caption</button>
+                </p>
+                <p>
+                <div style="float: left;">
+                    Image: <a href="figures/Marine_heat_waves.png" target="_blank" aria-label="Figure in png format">png</a>-<a
+                        href="figures/Marine_heat_waves.pdf" target="_blank"
+                        aria-label="Figure in pdf format">pdf</a>-<a
+                        href="figures/Marine_heat_waves.svg" target="_blank"
+                        aria-label="Figure in svg format">svg</a><br>
+                    Formatted data: <a href="formatted_data/Marine_heat_waves_data_files.zip"
+                                       aria-label="Bundle of csv data in a zip file">csv</a>
+                    (<a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
+                        aria-label="extrenal link to data format description">format</a>)<br>
+                    <a href="#Marine heat waves"
+                       aria-label="link to references, acknowledgements and processing details">References and
+                        processing</a><br>
+                </div>
+                <div style="float: right;">
+                    
+                </div>
+                </p>
+            </div>
+
+        </div>
+        
+        
+
+    </div>
+    
+
+    
+    <div class="w3-container" style="margin:0 -16px">
+        <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
+            <div class="w3-content">
+                <h1>Introduction</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container" style="margin:0 -16px">
+        <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
+            <div class="w3-content">
+                <p>
+The ocean covers nearly 70% of the Earth's surface. Most of the excess energy that accumulates in the Earth system due to increasing concentrations of greenhouse gases is taken up by the ocean. The added energy warms the ocean and this warming causes the water to expand, which in turn leads to sea-level rise. The melting of ice on the land also adds to sea level rise. The surface layers of the ocean have warmed more rapidly than the deeper interior, mirrored in the rise of global mean sea-surface temperature and in the increased incidence of marine heatwaves.
+</p>
+<p>
+As the concentration of CO<sub>2</sub> in the atmosphere increases, so too does the concentration of CO<sub>2</sub> in the ocean. This affects ocean chemistry, lowering the average pH of the water, a process known as ocean acidification, though it should be noted that the ocean remains, on average, slightly alkaline. All these changes have a broad range of impacts and interactions in the ocean and coastal areas.
+</p>
+<h2>
+What the IPCC says
+</h2>
+<p>
+<a href="https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_SPM.pdf" target="_blank"  rel="noopener">A1.6</a> It is virtually certain that the global upper ocean (0-700 m) has warmed since the 1970s and extremely likely that human influence is the main driver. It is virtually certain that human-caused CO<sub>2</sub> emissions are the main driver of current global acidification of the surface open ocean. There is high confidence that oxygen levels have dropped in many upper ocean regions since the mid-20th century and medium confidence that human influence contributed to this drop.
+</p>
+<p>
+<a href="https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_SPM.pdf" target="_blank"  rel="noopener">A1.7</a> Global mean sea level increased by 0.20 [0.15 to 0.25] m between 1901 and 2018. The average rate of sea level rise was 1.3 [0.6 to 2.1] mm.yr<sup>-1</sup> between 1901 and 1971, increasing to 1.9 [0.8 to 2.9] mm.yr<sup>-1</sup> between 1971 and 2006, and further increasing to 3.7 [3.2 to 4.2] mm.yr<sup>-1</sup> between 2006 and 2018 (high confidence). Human influence was very likely the main driver of these increases since at least 1971.
+</p>
+<p>
+<a href="https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_Chapter02.pdf" target="_blank"  rel="noopener">Chapter 2</a> Ocean pH has declined globally at the surface over the past four decades (virtually certain) and in all ocean basins in the ocean interior (high confidence) over the past 2-3 decades. A long-term increase in surface open ocean pH occurred over the past 50 million years (high confidence), and surface ocean pH as low as recent times is uncommon in the last 2 million years (medium confidence)
+</p>
+<p>
+<a href="https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_Chapter09.pdf" target="_blank"  rel="noopener">Chapter 9</a> Since the 1980s [marine heatwaves] have also become more intense and longer. Satellite observations and reanalyses of SST show an increase in intensity of 0.04&deg;C per decade from 1982 to 2016, an increase in spatial extent of 19% per decade from 1982 to 2016, and an increase in annual MHW days of 54% between the 1987-2016 period compared to 1925-1954. The SROCC assessed that 84-90% of all MHWs that occurred between 2006 and 2015 are very likely caused by anthropogenic warming. There is new evidence since SROCC that the frequency of the most impactful marine heatwaves over the last few decades has increased more than 20-fold because of anthropogenic global warming. In summary, there is high confidence that MHWs have increased in frequency over the 20th century, with an approximate doubling from 1982 to 2016, and medium confidence that they have become more intense and longer since the 1980s
+</p>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="w3-container" style="margin:0 -16px">
+        <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
+            <div class="w3-content">
+                <h1>Key messages</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container" style="margin:0 -16px">
+        <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
+            <div class="w3-content">
+
+                
+                <h2>Global ocean heat content</h2>
+                <p>
+                    The most recent available year is 2022.0. The year 2022.0 was ranked the 1st highest on record. The mean value for 2022.0 was 66.91zJ relative to the 2005-2021 average (66.91-66.91zJ depending on the data set used). 1 data sets were used in this assessment: GCOS.The most recent available year is 2022.0. </p><p>The year 2022 was ranked the 1st highest on record. The mean value for 2022 was 66.91zJ relative to the 2005-2021 average (66.91-66.91zJ depending on the data set used). 1 data sets were used in this assessment: GCOS.
+                </p>
+                
+                <h2>Global ocean heat content</h2>
+                <p>
+                    The most recent available year is 2022.0. The year 2022.0 was ranked the 1st highest on record. The mean value for 2022.0 was 96.75zJ relative to the 2005-2021 average (96.75-96.75zJ depending on the data set used). 1 data sets were used in this assessment: GCOS.The most recent available year is 2022.0. </p><p>The year 2022 was ranked the 1st highest on record. The mean value for 2022 was 96.75zJ relative to the 2005-2021 average (96.75-96.75zJ depending on the data set used). 1 data sets were used in this assessment: GCOS.
+                </p>
+                
+                <h2>Global ocean area affected by marine heatwaves</h2>
+                <p>
+                    The most recent available year is 2022. In 2022, 57.7% of the ocean was affected by at least one marine heatwave. The 14th highest on record. The highest ocean area affected in any year was 65.0% in 2016. 
+                </p>
+                
+                <h2>Global ocean area affected by marine cold spells</h2>
+                <p>
+                    The most recent available year is 2022. The area of the ocean affected by at least one marine cold spells was 20.8%. The 41st highest on record. The highest area affected in any year by marine cold spells was 61.0% in 1985.
+                </p>
+                
+                <h2>Global mean sea level</h2>
+                <p>
+                    The rate of change in the AVISO data set is 3.3 mm/yr between 1993 and 2022.The rate of change in the AVISO CNES data set is 3.4 mm/yr between 1993 and 2023.
+                </p>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div class="w3-container" style="margin:0 -16px">
+        <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
+            <div class="w3-content">
+                <h1>Dataset and processing details</h1>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="w3-container" style="margin:0 -16px">
+        <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
+            <div class="w3-content">
+
+                <h2><a id="Ocean heat content">Ocean heat content</a></h2>
+
+                
+                <p>
+Ocean heat content is a measure of the change in heat energy stored in the subsurface ocean. It is based on temperature measurements made by research vessels (since the 1950s), moorings, and automated profiling floats (known as Argo floats) since the 2000s.
+</p>
+                
+
+                <p>
+                    The data in the above plot are available in a zip file containing a csv file for each data set.
+                </p>
+                <p>
+                    Data file: <a href="formatted_data/Ocean_heat_content_data_files.zip"
+                                  aria-label="Bundle of csv data in a zip file">Ocean_heat_content_data_files.zip</a>
+                    <br>Checksum: 3a87a7528ea71d27dd9ee89e6a837baf
+                    <button onclick="copyText('3a87a7528ea71d27dd9ee89e6a837baf')">Copy</button>
+                    <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
+                                   aria-label="extrenal link to data format description">BADC CSV format</a><br>
+                </p>
+
+                
+                <h3>GCOS</h3>
+                <p>
+                    
+                    <a href="https://www.wdc-climate.de/WDCC/ui/download/transferArchive?acronym=GCOS_EHI_1960-2020_OHC_d&rmin=0&rmax=0" target="_blank"
+                       aria-label="Link to original data file for GCOS">Original data file (external
+                        link)</a>
+                    
+                    <a href="" target="_blank"
+                       aria-label="Link to original data file for GCOS">Original data file (external
+                        link)</a>
+                    
+                </p>
+                
+                
+                <p>
+                    Citation:
+                    
+                    <a href="https://doi.org/10.5194/essd-12-2013-2020">von Schuckmann, K., Cheng, L., Palmer, M. D., Hansen, J., Tassone, C., Aich, V., Adusumilli, S., Beltrami, H., Boyer, T., Cuesta-Valero, F. J., Desbruyères, D., Domingues, C., García-García, A., Gentine, P., Gilson, J., Gorfer, M., Haimberger, L., Ishii, M., Johnson, G. C., Killick, R., King, B. A., Kirchengast, G., Kolodziejczyk, N., Lyman, J., Marzeion, B., Mayer, M., Monier, M., Monselesan, D. P., Purkey, S., Roemmich, D., Schweiger, A., Seneviratne, S. I., Shepherd, A., Slater, D. A., Steiner, A. K., Straneo, F., Timmermans, M.-L., and Wijffels, S. E.: Heat stored in the Earth system: where does the energy go?, Earth Syst. Sci. Data, 12, 2013-2041, https://doi.org/10.5194/essd-12-2013-2020, 2020.</a>.
+                    
+                </p>
+                
+                
+                
+                
+                <p>
+                    Data citation: von Schuckmann, Karina; Minière, Audrey; Gues, Flora; Cuesta-Valero, Francisco; Kirchengast, Gottfried; Adusumilli, Susheel; Straneo, Fiammetta; Allan, Richard; Barker, Paul M.; Beltrami, Hugo; Boyer, Tim; Cheng, Lijing; Church, John; Desbruyeres, Damien; Dolman, Han; Domingues, Catia; García-García, Almudena; Giglio, Donata; Gilson, John; Gorfer, Maximilian; Haimberger, Leopold; Hendricks, Stefan; Hosoda, Shigeki; Johnson, Gregory; Killick, Rachel; King, Brian; Kolodziejczyk, Nicolas; Korosov, Anton; Krinner, Gerhard; Kuusela, Mikael; Langer, Moritz; Lavergne, Thomas; Li, Yuehua; Lyman, John; Marzeion, Ben; Mayer, Michael; MacDougall, Andrew; Lawrence, Isobel; McDougall, Trevor; Monselesan, Didier; Nitzbon, Jean; Otosaka, Inès; Peng, Jian; Purkey, Sarah; Roemmich, Dean; Sato, Kanako; Sato, Katsunari; Savita, Abhishek; Schweiger, Axel; Shepherd, Andrew; Seneviratne, Sonia; Simons, Leon; Slater, Donald; Slater, Thomas; Smith, Noah; Steiner, Andrea; Suga, Toshio; Szekely, Tanguy; Thiery, Wim; Timmermanns, Mary-Louise; Vanderkelen, Inne; Wijffels, Susan; Wu, Tonghua; Zemp, Michael (2022). Heat stored in the Earth system 1960-2020: Where does the energy go?. World Data Center for Climate (WDCC) at DKRZ. https://www.wdc-climate.de/ui/entry?acronym=GCOS_EHI_1960-2020
+                </p>
+                
+                
+                
+                <p>To produce the plot, the following processing steps were performed:</p>
+                <ul>
+                    
+                    <li>Data set created from file ['GCOS_EHI_1960-2020_Earth_Heat_Inventory_Ocean_Heat_Content_data.nc', 'WMO_global_OHC_60N60S_mean_spread_1960-2021_ZJ.nc'] downloaded from ['https://www.wdc-climate.de/WDCC/ui/download/transferArchive?acronym=GCOS_EHI_1960-2020_OHC_d&rmin=0&rmax=0', ''] at ['2023-02-13 17:48:00']</li>
+                    
+                </ul>
+                
+
+            </div>
+        </div>
+    </div>
+    
+    <div class="w3-container" style="margin:0 -16px">
+        <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
+            <div class="w3-content">
+
+                <h2><a id="Ocean heat content to 2000m">Ocean heat content to 2000m</a></h2>
+
+                
+                
+                
+
+                <p>
+                    The data in the above plot are available in a zip file containing a csv file for each data set.
+                </p>
+                <p>
+                    Data file: <a href="formatted_data/Ocean_heat_content_to_2000m_data_files.zip"
+                                  aria-label="Bundle of csv data in a zip file">Ocean_heat_content_to_2000m_data_files.zip</a>
+                    <br>Checksum: 929cf22e056c553282bbf51ea64ff8ab
+                    <button onclick="copyText('929cf22e056c553282bbf51ea64ff8ab')">Copy</button>
+                    <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
+                                   aria-label="extrenal link to data format description">BADC CSV format</a><br>
+                </p>
+
+                
+                <h3>GCOS</h3>
+                <p>
+                    
+                    <a href="https://www.wdc-climate.de/WDCC/ui/download/transferArchive?acronym=GCOS_EHI_1960-2020_OHC_d&rmin=0&rmax=0" target="_blank"
+                       aria-label="Link to original data file for GCOS">Original data file (external
+                        link)</a>
+                    
+                    <a href="" target="_blank"
+                       aria-label="Link to original data file for GCOS">Original data file (external
+                        link)</a>
+                    
+                </p>
+                
+                
+                <p>
+                    Citation:
+                    
+                    <a href="https://doi.org/10.5194/essd-12-2013-2020">von Schuckmann, K., Cheng, L., Palmer, M. D., Hansen, J., Tassone, C., Aich, V., Adusumilli, S., Beltrami, H., Boyer, T., Cuesta-Valero, F. J., Desbruyères, D., Domingues, C., García-García, A., Gentine, P., Gilson, J., Gorfer, M., Haimberger, L., Ishii, M., Johnson, G. C., Killick, R., King, B. A., Kirchengast, G., Kolodziejczyk, N., Lyman, J., Marzeion, B., Mayer, M., Monier, M., Monselesan, D. P., Purkey, S., Roemmich, D., Schweiger, A., Seneviratne, S. I., Shepherd, A., Slater, D. A., Steiner, A. K., Straneo, F., Timmermans, M.-L., and Wijffels, S. E.: Heat stored in the Earth system: where does the energy go?, Earth Syst. Sci. Data, 12, 2013–2041, https://doi.org/10.5194/essd-12-2013-2020, 2020.</a>.
+                    
+                </p>
+                
+                
+                
+                
+                <p>
+                    Data citation: von Schuckmann, Karina; Minière, Audrey; Gues, Flora; Cuesta-Valero, Francisco; Kirchengast, Gottfried; Adusumilli, Susheel; Straneo, Fiammetta; Allan, Richard; Barker, Paul M.; Beltrami, Hugo; Boyer, Tim; Cheng, Lijing; Church, John; Desbruyeres, Damien; Dolman, Han; Domingues, Catia; García-García, Almudena; Giglio, Donata; Gilson, John; Gorfer, Maximilian; Haimberger, Leopold; Hendricks, Stefan; Hosoda, Shigeki; Johnson, Gregory; Killick, Rachel; King, Brian; Kolodziejczyk, Nicolas; Korosov, Anton; Krinner, Gerhard; Kuusela, Mikael; Langer, Moritz; Lavergne, Thomas; Li, Yuehua; Lyman, John; Marzeion, Ben; Mayer, Michael; MacDougall, Andrew; Lawrence, Isobel; McDougall, Trevor; Monselesan, Didier; Nitzbon, Jean; Otosaka, Inès; Peng, Jian; Purkey, Sarah; Roemmich, Dean; Sato, Kanako; Sato, Katsunari; Savita, Abhishek; Schweiger, Axel; Shepherd, Andrew; Seneviratne, Sonia; Simons, Leon; Slater, Donald; Slater, Thomas; Smith, Noah; Steiner, Andrea; Suga, Toshio; Szekely, Tanguy; Thiery, Wim; Timmermanns, Mary-Louise; Vanderkelen, Inne; Wijffels, Susan; Wu, Tonghua; Zemp, Michael (2022). Heat stored in the Earth system 1960-2020: Where does the energy go?. World Data Center for Climate (WDCC) at DKRZ. https://www.wdc-climate.de/ui/entry?acronym=GCOS_EHI_1960-2020
+                </p>
+                
+                
+                
+                <p>To produce the plot, the following processing steps were performed:</p>
+                <ul>
+                    
+                    <li>Data set created from file ['GCOS_EHI_1960-2020_Earth_Heat_Inventory_Ocean_Heat_Content_data.nc', 'WMO_global_OHC_60N60S_mean_spread_1960-2021_ZJ.nc'] downloaded from ['https://www.wdc-climate.de/WDCC/ui/download/transferArchive?acronym=GCOS_EHI_1960-2020_OHC_d&rmin=0&rmax=0', ''] at ['2023-02-13 17:48:00']</li>
+                    
+                </ul>
+                
+
+            </div>
+        </div>
+    </div>
+    
+    <div class="w3-container" style="margin:0 -16px">
+        <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
+            <div class="w3-content">
+
+                <h2><a id="Ocean pH">Ocean pH</a></h2>
+
+                
+                <p>
+Ocean pH is a measure of how acid/alkaline the ocean surface water is. The ocean surface is typically slightly alkaline, however, increasing concentration of CO<sub>2</sub> in the water is driving a decline in pH known as ocean acidification.
+</p>
+                
+
+                <p>
+                    The data in the above plot are available in a zip file containing a csv file for each data set.
+                </p>
+                <p>
+                    Data file: <a href="formatted_data/Ocean_pH_data_files.zip"
+                                  aria-label="Bundle of csv data in a zip file">Ocean_pH_data_files.zip</a>
+                    <br>Checksum: 135b633ed7d97c831094647594f6a7a0
+                    <button onclick="copyText('135b633ed7d97c831094647594f6a7a0')">Copy</button>
+                    <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
+                                   aria-label="extrenal link to data format description">BADC CSV format</a><br>
+                </p>
+
+                
+                <h3>CMEMS</h3>
+                <p>
+                    
+                    <a href="ftp://my.cmems-du.eu/Core/GLOBAL_OMI_HEALTH_carbon_ph_area_averaged/global_omi_health_carbon_ph_area_averaged/global_omi_health_carbon_ph_area_averaged_1985_P*.nc" target="_blank"
+                       aria-label="Link to original data file for CMEMS">Original data file (external
+                        link)</a>
+                    
+                </p>
+                
+                
+                <p>
+                    Citation:
+                    
+                    <a href="https://doi.org/10.1080/1755876X.2020.1785097">Gehlen M., Thi Tuyet Trang Chau, Anna Conchon, Anna Denvil-Sommer, Frédéric Chevallier, Mathieu Vrac, Carlos Mejia (2020). Ocean acidification. In: Copernicus Marine Service Ocean State Report, Issue 4, Journal of Operational Oceanography, 13:sup1, s88–s91; DOI: 10.1080/1755876X.2020.1785097</a>.
+                    
+                </p>
+                
+                
+                
+                
+                <p>
+                    Data citation: https://doi.org/10.48670/moi-00224
+                </p>
+                
+                
+                
+                <p>To produce the plot, the following processing steps were performed:</p>
+                <ul>
+                    
+                    <li>Data set created from file ['global_omi_health_carbon_ph_area_averaged_1985_P*.nc'] downloaded from ['ftp://my.cmems-du.eu/Core/GLOBAL_OMI_HEALTH_carbon_ph_area_averaged/global_omi_health_carbon_ph_area_averaged/global_omi_health_carbon_ph_area_averaged_1985_P*.nc'] at ['2023-08-01 17:02:48']</li>
+                    
+                </ul>
+                
+
+            </div>
+        </div>
+    </div>
+    
+    <div class="w3-container" style="margin:0 -16px">
+        <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
+            <div class="w3-content">
+
+                <h2><a id="Sea level">Sea level</a></h2>
+
+                
+                <p>
+Global mean sea level is a measured by satellites using radar altimeters that record the time taken for a radar signal to reach the sea-surface and return to the satellite. Longer records of sea level (not shown here) exist based on tide gauge measurements made along coastlines around the world since the late 19th century.
+</p>
+                
+
+                <p>
+                    The data in the above plot are available in a zip file containing a csv file for each data set.
+                </p>
+                <p>
+                    Data file: <a href="formatted_data/Sea_level_data_files.zip"
+                                  aria-label="Bundle of csv data in a zip file">Sea_level_data_files.zip</a>
+                    <br>Checksum: 3ccd503f783c73bde4edd8a152682198
+                    <button onclick="copyText('3ccd503f783c73bde4edd8a152682198')">Copy</button>
+                    <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
+                                   aria-label="extrenal link to data format description">BADC CSV format</a><br>
+                </p>
+
+                
+                <h3>AVISO</h3>
+                <p>
+                    
+                    <a href="" target="_blank"
+                       aria-label="Link to original data file for AVISO">Original data file (external
+                        link)</a>
+                    
+                </p>
+                
+                
+                <p>
+                    Citation:
+                    
+                    <a href="https://doi.org/10.5194/essd-10-281-2018">Legeais, J.-F., Ablain, M., Zawadzki, L., Zuo, H., Johannessen, J. A., Scharffenberg, M. G., Fenoglio-Marc, L., Fernandes, M. J., Andersen, O. B., Rudenko, S., Cipollini, P., Quartly, G. D., Passaro, M., Cazenave, A., and Benveniste, J. (2018). An improved and homogeneous altimeter sea level record from the ESA Climate Change Initiative. Earth System Science Data, 10, 281-301. DOI: 10.5194/essd-10-281-2018</a>.
+                    
+                </p>
+                
+                
+                
+                
+                
+                
+                <p>Acknowledgement: Generated using AVISO+ Products</p>
+                
+                <p>To produce the plot, the following processing steps were performed:</p>
+                <ul>
+                    
+                    <li>Data set created from file ['GMSL_Aviso_Merged_NRTJ3_Ablain_drift_corrected_ts.txt'] downloaded from [''] at ['2022-07-29 17:40:00']</li>
+                    
+                </ul>
+                
+                <h3>AVISO CNES</h3>
+                <p>
+                    
+                    <a href="ftp://ftp.aviso.altimetry.fr/pub/oceano/AVISO/indicators/msl/MSL_Serie_MERGED_Global_AVISO_GIA_Adjust_Filter6m_NRT.nc" target="_blank"
+                       aria-label="Link to original data file for AVISO CNES">Original data file (external
+                        link)</a>
+                    
+                </p>
+                
+                
+                <p>
+                    Citation:
+                    
+                    <a href="https://doi.org/10.5194/essd-10-281-2018">Legeais, J.-F., Ablain, M., Zawadzki, L., Zuo, H., Johannessen, J. A., Scharffenberg, M. G., Fenoglio-Marc, L., Fernandes, M. J., Andersen, O. B., Rudenko, S., Cipollini, P., Quartly, G. D., Passaro, M., Cazenave, A., and Benveniste, J. (2018). An improved and homogeneous altimeter sea level record from the ESA Climate Change Initiative. Earth System Science Data, 10, 281-301. DOI: 10.5194/essd-10-281-2018</a>.
+                    
+                </p>
+                
+                
+                
+                
+                
+                
+                <p>Acknowledgement: Generated using AVISO+ Products</p>
+                
+                <p>To produce the plot, the following processing steps were performed:</p>
+                <ul>
+                    
+                    <li>Data set created from file ['MSL_Serie_MERGED_Global_AVISO_GIA_Adjust_Filter6m_NRT.nc'] downloaded from ['ftp://ftp.aviso.altimetry.fr/pub/oceano/AVISO/indicators/msl/MSL_Serie_MERGED_Global_AVISO_GIA_Adjust_Filter6m_NRT.nc'] at ['2023-08-01 17:01:35']</li>
+                    
+                </ul>
+                
+
+            </div>
+        </div>
+    </div>
+    
+    <div class="w3-container" style="margin:0 -16px">
+        <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
+            <div class="w3-content">
+
+                <h2><a id="Marine heat waves">Marine heat waves</a></h2>
+
+                
+                
+                <p>
+Marine heatwaves (MHWs) are categorized as moderate when the sea-surface temperature (SST) is above the 90th percentile of the climatological distribution for five days or longer; the subsequent categories are defined with respect to the difference between the SST and the climatological distribution average: strong, severe or extreme, if that difference is, respectively, more than two, three or four times the difference between the 90th percentile and the climatological distribution average (Hobday et al., 2018).
+</p>
+                
+                <p>
+Marine cold spells (MCSs) are categorized as moderate when the sea-surface temperature (SST) is below the 10th percentile of the climatological distribution for five days or longer; the subsequent categories are defined with respect to the difference between the SST and the climatological distribution average: strong, severe or extreme, if that difference is, respectively, more than two, three or four times the difference between the 10th percentile and the climatological distribution average (Hobday et al., 2018).
+</p>
+                
+                
+
+                <p>
+                    The data in the above plot are available in a zip file containing a csv file for each data set.
+                </p>
+                <p>
+                    Data file: <a href="formatted_data/Marine_heat_waves_data_files.zip"
+                                  aria-label="Bundle of csv data in a zip file">Marine_heat_waves_data_files.zip</a>
+                    <br>Checksum: 0d7b09bb9c89dbf71f8c914341d960e1
+                    <button onclick="copyText('0d7b09bb9c89dbf71f8c914341d960e1')">Copy</button>
+                    <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
+                                   aria-label="extrenal link to data format description">BADC CSV format</a><br>
+                </p>
+
+                
+                <h3>Marine cold spells</h3>
+                <p>
+                    
+                    <a href="https://raw.githubusercontent.com/robwschlegel/MHWapp/master/data/annual_summary/OISST_MCS_cat_daily_1982-2011_total.csv" target="_blank"
+                       aria-label="Link to original data file for Marine cold spells">Original data file (external
+                        link)</a>
+                    
+                </p>
+                
+                
+                <p>
+                    Citation:
+                    
+                    <a href="https://doi.org/10.5670/oceanog.2018.205">Hobday, A.J.; Oliver, E. C. J.; Sen Gupta, A. et al. Categorizing and naming marine heatwaves. Oceanography 2018, 31 (2), 1–13. https://doi.org/10.5670/oceanog.2018.205.</a>.
+                    
+                </p>
+                
+                
+                
+                
+                
+                
+                <p>To produce the plot, the following processing steps were performed:</p>
+                <ul>
+                    
+                    <li>Data set created from file ['OISST_MCS_cat_daily_1982-2011_total.csv'] downloaded from ['https://raw.githubusercontent.com/robwschlegel/MHWapp/master/data/annual_summary/OISST_MCS_cat_daily_1982-2011_total.csv'] at ['2023-08-01 17:04:50']</li>
+                    
+                </ul>
+                
+                <h3>Marine heatwaves</h3>
+                <p>
+                    
+                    <a href="https://raw.githubusercontent.com/robwschlegel/MHWapp/master/data/annual_summary/OISST_cat_daily_1982-2011_total.csv" target="_blank"
+                       aria-label="Link to original data file for Marine heatwaves">Original data file (external
+                        link)</a>
+                    
+                </p>
+                
+                
+                <p>
+                    Citation:
+                    
+                    <a href="https://doi.org/10.5670/oceanog.2018.205">Hobday, A.J.; Oliver, E. C. J.; Sen Gupta, A. et al. Categorizing and naming marine heatwaves. Oceanography 2018, 31 (2), 1–13. https://doi.org/10.5670/oceanog.2018.205.</a>.
+                    
+                </p>
+                
+                
+                
+                
+                
+                
+                <p>To produce the plot, the following processing steps were performed:</p>
+                <ul>
+                    
+                    <li>Data set created from file ['OISST_cat_daily_1982-2011_total.csv'] downloaded from ['https://raw.githubusercontent.com/robwschlegel/MHWapp/master/data/annual_summary/OISST_cat_daily_1982-2011_total.csv'] at ['2023-08-01 17:04:50']</li>
+                    
+                </ul>
+                
+
+            </div>
+        </div>
+    </div>
+    
+
+    <p>
+        Page created on 2023-08-01 using
+        <a href="https://github.com/jjk-code-otter/climate-indicator-manager">climind v0.1</a>
+    </p>
+
+</div>
+
+
+</body>
+</html>

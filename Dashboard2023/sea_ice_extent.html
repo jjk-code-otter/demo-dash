@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sea ice extent</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<style>
+h1, h2, h3, h4, h5, h6 {
+		font-weight: 600;
+	}
+h3 {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+p {
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+.button_link {
+  background-color: #777777;
+  color: white;
+  padding: 14px 25px;
+  margin-bottom: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+}
+.navbar {
+  margin-bottom: 12px;
+  margin-top: 0px;
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 8px 10px;
+  text-decoration: none;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 8px 10px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #ddd;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 8px 10px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+</style>
+
+<script>
+        function copyText(invar) {
+
+            /* Copy text into clipboard */
+            navigator.clipboard.writeText
+                (invar);
+        }
+
+</script>
+<body>
+
+<div class="w3-container w3-padding-32 w3-light-grey">
+
+    <div class="w3-card navbar w3-margin-bottom ">
+        <a href="dashboard.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                
+                <a href="dashboard.html">Key Climate Indicators</a>
+                
+                <a href="greenhouse_gases.html">Greenhouse gases</a>
+                
+                <a href="global_mean_temperature.html">Global mean temperature</a>
+                
+                <a href="ocean_heat_content.html">Ocean Indicators</a>
+                
+                <a href="sea_level.html">Sea Level</a>
+                
+                <a href="sea_ice_extent.html">Sea ice extent</a>
+                
+                <a href="glaciers_and_ice_sheets.html">Glaciers and Ice Sheets</a>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div class="w3-container" style="margin:0 -16px">
+        <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
+            <h1>Sea ice extent</h1>
+        </div>
+    </div>
+
+    
+    <div class="w3-row-padding" style="margin:0 -16px">
+
+        
+        
+        <div class="w3-third">
+
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
+                <p>
+                    <img src="figures/Arctic_sea_ice.png" width=100% alt="Arctic sea ice extent (shown as differences from the 1991-2020 average) from 1979 to 2022. Two months are shown - March and September - at the annual maximum and minimum extents respectively."
+                         title="Graph of Arctic sea ice">
+                </p>
+                <h3>Arctic sea ice</h3>
+                <p>
+                    Arctic sea ice extent (shown as differences from the 1991-2020 average) from 1979 to 2022. Two months are shown - March and September - at the annual maximum and minimum extents respectively.
+                    <button onclick="copyText('Arctic sea ice extent (shown as differences from the 1991-2020 average) from 1979 to 2022. Two months are shown - March and September - at the annual maximum and minimum extents respectively.')">Copy caption</button>
+                </p>
+                <p>
+                <div style="float: left;">
+                    Image: <a href="figures/Arctic_sea_ice.png" target="_blank" aria-label="Figure in png format">png</a>-<a
+                        href="figures/Arctic_sea_ice.pdf" target="_blank"
+                        aria-label="Figure in pdf format">pdf</a>-<a
+                        href="figures/Arctic_sea_ice.svg" target="_blank"
+                        aria-label="Figure in svg format">svg</a><br>
+                    Formatted data: <a href="formatted_data/Arctic_sea_ice_data_files.zip"
+                                       aria-label="Bundle of csv data in a zip file">csv</a>
+                    (<a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
+                        aria-label="extrenal link to data format description">format</a>)<br>
+                    <a href="#Arctic sea ice"
+                       aria-label="link to references, acknowledgements and processing details">References and
+                        processing</a><br>
+                </div>
+                <div style="float: right;">
+                    
+                </div>
+                </p>
+            </div>
+
+        </div>
+        
+        
+        
+        <div class="w3-third">
+
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
+                <p>
+                    <img src="figures/Antarctic_sea_ice.png" width=100% alt="Antarctic sea ice extent (shown as differences from the 1991-2020 average) from 1979 to 2022. Two months are shown - September and February - at the annual maximum and minimum extents respectively."
+                         title="Graph of Antarctic sea ice">
+                </p>
+                <h3>Antarctic sea ice</h3>
+                <p>
+                    Antarctic sea ice extent (shown as differences from the 1991-2020 average) from 1979 to 2022. Two months are shown - September and February - at the annual maximum and minimum extents respectively.
+                    <button onclick="copyText('Antarctic sea ice extent (shown as differences from the 1991-2020 average) from 1979 to 2022. Two months are shown - September and February - at the annual maximum and minimum extents respectively.')">Copy caption</button>
+                </p>
+                <p>
+                <div style="float: left;">
+                    Image: <a href="figures/Antarctic_sea_ice.png" target="_blank" aria-label="Figure in png format">png</a>-<a
+                        href="figures/Antarctic_sea_ice.pdf" target="_blank"
+                        aria-label="Figure in pdf format">pdf</a>-<a
+                        href="figures/Antarctic_sea_ice.svg" target="_blank"
+                        aria-label="Figure in svg format">svg</a><br>
+                    Formatted data: <a href="formatted_data/Antarctic_sea_ice_data_files.zip"
+                                       aria-label="Bundle of csv data in a zip file">csv</a>
+                    (<a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
+                        aria-label="extrenal link to data format description">format</a>)<br>
+                    <a href="#Antarctic sea ice"
+                       aria-label="link to references, acknowledgements and processing details">References and
+                        processing</a><br>
+                </div>
+                <div style="float: right;">
+                    
+                </div>
+                </p>
+            </div>
+
+        </div>
+        
+        
+        
+        <div class="w3-third">
+
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
+                <p>
+                    <img src="figures/Sea-surface_temperature.png" width=100% alt="Annual Global mean sea-surface temperature (&deg;C, difference from the 1991-2020 average)  from 1850-2023. Data are from the following two data sets: ERSST, HadSST4."
+                         title="Graph of Sea-surface temperature">
+                </p>
+                <h3>Sea-surface temperature</h3>
+                <p>
+                    Annual Global mean sea-surface temperature (&deg;C, difference from the 1991-2020 average)  from 1850-2023. Data are from the following two data sets: ERSST, HadSST4.
+                    <button onclick="copyText('Annual Global mean sea-surface temperature (&deg;C, difference from the 1991-2020 average)  from 1850-2023. Data are from the following two data sets: ERSST, HadSST4.')">Copy caption</button>
+                </p>
+                <p>
+                <div style="float: left;">
+                    Image: <a href="figures/Sea-surface_temperature.png" target="_blank" aria-label="Figure in png format">png</a>-<a
+                        href="figures/Sea-surface_temperature.pdf" target="_blank"
+                        aria-label="Figure in pdf format">pdf</a>-<a
+                        href="figures/Sea-surface_temperature.svg" target="_blank"
+                        aria-label="Figure in svg format">svg</a><br>
+                    Formatted data: <a href="formatted_data/Sea-surface_temperature_data_files.zip"
+                                       aria-label="Bundle of csv data in a zip file">csv</a>
+                    (<a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
+                        aria-label="extrenal link to data format description">format</a>)<br>
+                    <a href="#Sea-surface temperature"
+                       aria-label="link to references, acknowledgements and processing details">References and
+                        processing</a><br>
+                </div>
+                <div style="float: right;">
+                    
+                </div>
+                </p>
+            </div>
+
+        </div>
+        
+        
+
+    </div>
+    
+
+    
+    <div class="w3-container" style="margin:0 -16px">
+        <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
+            <div class="w3-content">
+                <h1>Introduction</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container" style="margin:0 -16px">
+        <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
+            <div class="w3-content">
+                <p>
+Sea ice is ice that floats on the surface of the ocean. It affects the transfer of heat, energy, momentum and gases between the atmosphere and ocean. Sea ice also plays an important role in many polar ecosystems. Sea-ice extent is a measure of the area of the ocean covered by sea ice.
+</p>
+<p>
+Sea ice reflects sunlight and absorbs relatively little compared to dark ocean water. If sea ice cover is reduced, the surface absorbs far more sunlight and warms up. In turn the warming can reduce sea ice cover. This feedback is one reason that the Arctic has warmed faster than the global average.
+</p>
+<p>
+The formation and persistence of sea ice is different in the northern and southern hemispheres. In the northern hemisphere, ice forms largely within the confines of the Arctic ocean, which is enclosed by the coasts of the northern land masses, and other partly enclosed seas. In the southern hemisphere, the ice forms around the edge of the Antarctic continent.
+</p>
+<p>
+Because sea ice is floating ice, melting and growth of sea ice have little effect on sea level.
+</p>
+<h2>
+What the IPCC says
+</h2>
+<p>
+<a href="https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_SPM.pdf" target="_blank"  rel="noopener">A1.5</a> Human influence is very likely the main driver of the global retreat of glaciers since the 1990s and the decrease in Arctic sea ice area between 1979-1988 and 2010-2019 (decreases of about 40% in September and about 10% in March). There has been no significant trend in Antarctic sea ice area from 1979 to 2020 due to regionally opposing trends and large internal variability.
+</p>
+<p>
+<a href="https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_Chapter02.pdf" target="_blank"  rel="noopener">Chapter 2</a> Current Arctic sea ice coverage levels are the lowest since at least 1850 for both annual mean and late-summer values (high confidence) and for the past 1000 years for late-summer values (medium confidence). Between 1979 and 2019, Arctic sea ice area has decreased in both summer and winter, with sea ice becoming younger, thinner and more dynamic (very high confidence). Decadal means for Arctic sea ice area decreased from 6.23 million km<sup>2</sup> in 1979-1988 to 3.76 million km<sup>2</sup> in 2010-2019 for September and from 14.52 to 13.42 million km<sup>2</sup> for March. Antarctic sea ice area has experienced little net change since 1979 (high confidence), with only minor differences between sea ice area decadal means for 1979-1988 (2.04 million km<sup>2</sup> for February, 15.39 million km<sup>2</sup> for September) and 2010-2019 (2.17 million km<sup>2</sup> for February, 15.75 million km<sup>2</sup> for September)
+</p>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="w3-container" style="margin:0 -16px">
+        <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
+            <div class="w3-content">
+                <h1>Key messages</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container" style="margin:0 -16px">
+        <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
+            <div class="w3-content">
+
+                
+                <h2>Arctic sea-ice extent</h2>
+                <p>
+                    Arctic sea ice extent in March 2023 was between 14.44 and 14.49million km<sup>2</sup>. This was between the 4th and 6th lowest extent on record. September data are not available for 2023.
+                </p>
+                
+                <h2>Antarctic sea-ice extent</h2>
+                <p>
+                    Antarctic sea ice extent in February 2023 was between 1.91 and 2.25million km<sup>2</sup>. This was the 1st lowest extent on record. No data available for September. Data sets used were: NSIDC and OSI SAF v2.1
+                </p>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div class="w3-container" style="margin:0 -16px">
+        <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
+            <div class="w3-content">
+                <h1>Dataset and processing details</h1>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="w3-container" style="margin:0 -16px">
+        <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
+            <div class="w3-content">
+
+                <h2><a id="Arctic sea ice">Arctic sea ice</a></h2>
+
+                
+                <p>
+Sea-ice concentrations are estimated from microwave radiances measured from satellites (from 1979). Sea-ice extent is calculated as the area of ocean grid cells where the sea-ice concentration exceeds 15%. Although there are relatively large differences in the absolute extent between data sets, they agree well on the year-to-year changes and the trends.
+</p>
+                
+
+                <p>
+                    The data in the above plot are available in a zip file containing a csv file for each data set.
+                </p>
+                <p>
+                    Data file: <a href="formatted_data/Arctic_sea_ice_data_files.zip"
+                                  aria-label="Bundle of csv data in a zip file">Arctic_sea_ice_data_files.zip</a>
+                    <br>Checksum: 35df101da0ad6f9e2e156dc44273f382
+                    <button onclick="copyText('35df101da0ad6f9e2e156dc44273f382')">Copy</button>
+                    <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
+                                   aria-label="extrenal link to data format description">BADC CSV format</a><br>
+                </p>
+
+                
+                <h3>NSIDC</h3>
+                <p>
+                    
+                    <a href="ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/north/monthly/data/N_01_extent_v3.0.csv" target="_blank"
+                       aria-label="Link to original data file for NSIDC">Original data file (external
+                        link)</a>
+                    
+                    <a href="ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/north/monthly/data/N_02_extent_v3.0.csv" target="_blank"
+                       aria-label="Link to original data file for NSIDC">Original data file (external
+                        link)</a>
+                    
+                    <a href="ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/north/monthly/data/N_03_extent_v3.0.csv" target="_blank"
+                       aria-label="Link to original data file for NSIDC">Original data file (external
+                        link)</a>
+                    
+                    <a href="ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/north/monthly/data/N_04_extent_v3.0.csv" target="_blank"
+                       aria-label="Link to original data file for NSIDC">Original data file (external
+                        link)</a>
+                    
+                    <a href="ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/north/monthly/data/N_05_extent_v3.0.csv" target="_blank"
+                       aria-label="Link to original data file for NSIDC">Original data file (external
+                        link)</a>
+                    
+                    <a href="ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/north/monthly/data/N_06_extent_v3.0.csv" target="_blank"
+                       aria-label="Link to original data file for NSIDC">Original data file (external
+                        link)</a>
+                    
+                    <a href="ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/north/monthly/data/N_07_extent_v3.0.csv" target="_blank"
+                       aria-label="Link to original data file for NSIDC">Original data file (external
+                        link)</a>
+                    
+                    <a href="ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/north/monthly/data/N_08_extent_v3.0.csv" target="_blank"
+                       aria-label="Link to original data file for NSIDC">Original data file (external
+                        link)</a>
+                    
+                    <a href="ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/north/monthly/data/N_09_extent_v3.0.csv" target="_blank"
+                       aria-label="Link to original data file for NSIDC">Original data file (external
+                        link)</a>
+                    
+                    <a href="ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/north/monthly/data/N_10_extent_v3.0.csv" target="_blank"
+                       aria-label="Link to original data file for NSIDC">Original data file (external
+                        link)</a>
+                    
+                    <a href="ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/north/monthly/data/N_11_extent_v3.0.csv" target="_blank"
+                       aria-label="Link to original data file for NSIDC">Original data file (external
+                        link)</a>
+                    
+                    <a href="ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/north/monthly/data/N_12_extent_v3.0.csv" target="_blank"
+                       aria-label="Link to original data file for NSIDC">Original data file (external
+                        link)</a>
+                    
+                </p>
+                
+                
+                
+                
+                
+                <p>
+                    Data citation: Fetterer, F., K. Knowles, W. N. Meier, M. Savoie, and A. K. Windnagel. 2017, updated daily. Sea Ice Index, Version 3. 1979-present. Boulder, Colorado USA. NSIDC: National Snow and Ice Data Center. doi: https://doi.org/10.7265/N5K072F8. [2023-08-01 17:06:13].
+                </p>
+                
+                
+                
+                <p>Acknowledgement: Fetterer, F., K. Knowles, W. N. Meier, M. Savoie, and A. K. Windnagel. 2017, updated daily. Sea Ice Index, Version 3. 1979-present. Boulder, Colorado USA. NSIDC: National Snow and Ice Data Center. doi: https://doi.org/10.7265/N5K072F8. [2023-08-01 17:06:13].</p>
+                
+                <p>To produce the plot, the following processing steps were performed:</p>
+                <ul>
+                    
+                    <li>Data set created from file ['N_01_extent_v3.0.csv', 'N_02_extent_v3.0.csv', 'N_03_extent_v3.0.csv', 'N_04_extent_v3.0.csv', 'N_05_extent_v3.0.csv', 'N_06_extent_v3.0.csv', 'N_07_extent_v3.0.csv', 'N_08_extent_v3.0.csv', 'N_09_extent_v3.0.csv', 'N_10_extent_v3.0.csv', 'N_11_extent_v3.0.csv', 'N_12_extent_v3.0.csv'] downloaded from ['ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/north/monthly/data/N_01_extent_v3.0.csv', 'ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/north/monthly/data/N_02_extent_v3.0.csv', 'ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/north/monthly/data/N_03_extent_v3.0.csv', 'ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/north/monthly/data/N_04_extent_v3.0.csv', 'ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/north/monthly/data/N_05_extent_v3.0.csv', 'ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/north/monthly/data/N_06_extent_v3.0.csv', 'ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/north/monthly/data/N_07_extent_v3.0.csv', 'ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/north/monthly/data/N_08_extent_v3.0.csv', 'ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/north/monthly/data/N_09_extent_v3.0.csv', 'ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/north/monthly/data/N_10_extent_v3.0.csv', 'ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/north/monthly/data/N_11_extent_v3.0.csv', 'ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/north/monthly/data/N_12_extent_v3.0.csv'] at ['2023-08-01 17:06:13', '2023-08-01 17:06:14', '2023-08-01 17:06:15', '2023-08-01 17:06:17', '2023-08-01 17:06:18', '2023-08-01 17:06:19', '2023-08-01 17:06:20', '2023-08-01 17:06:21', '2023-08-01 17:06:22', '2023-08-01 17:06:23', '2023-08-01 17:06:25', '2023-08-01 17:06:26']</li>
+                    
+                    <li>Rebaselined to 1991-2020 for each month separately by calculating the arithmetic mean of the data over the baseline period and subtracting the mean from all data values. This is done for each month separately (Januarys, Februarys etc).</li>
+                    
+                    <li>Calculated annual series by extracting March from each year</li>
+                    
+                    <li>Calculated annual series by extracting September from each year</li>
+                    
+                </ul>
+                
+                <h3>OSI SAF</h3>
+                <p>
+                    
+                    <a href="ftp://osisaf.met.no/prod_test/ice/index/v2p1/nh/osisaf_nh_sie_monthly.txt" target="_blank"
+                       aria-label="Link to original data file for OSI SAF">Original data file (external
+                        link)</a>
+                    
+                </p>
+                
+                
+                <p>
+                    Citation:
+                    
+                    <a href="https://doi.org/10.5194/tc-13-49-2019">Lavergne, T., Sorensen, A. M., Kern, S., Tonboe, R., Notz, D., Aaboe, S., Bell, L., Dybkjar, G., Eastwood, S., Gabarro, C., Heygster, G., Killie, M. A., Brandt Kreiner, M., Lavelle, J., Saldo, R., Sandven, S., and Pedersen, L. T.: Version 2 of the EUMETSAT OSI SAF and ESA CCI sea-ice concentration climate data records, The Cryosphere, 13, 49-78, doi:10.5194/tc-13-49-2019, 2019.</a>.
+                    
+                </p>
+                
+                
+                
+                
+                <p>
+                    Data citation: EUMETSAT Ocean and Sea Ice Satellite Application Facility, Sea ice index 1979-onwards (v2.1, 2020), OSI-420, Data extracted from OSI SAF FTP server: 1979-present, Northern Hemisphere, accessed 2023-08-01 17:06:29
+                </p>
+                
+                
+                
+                <p>Acknowledgement: The OSI SAF Sea Ice Index v2.1 is made available at https://osisaf-hl.met.no/v2p1-sea-ice-index.  The OSI SAF Sea Ice Index v2p1 is prepared using EUMETSAT OSI SAF Sea Ice Concentration data, with R&D input from the ESA Climate Change Initiative (ESA CCI) (Lavergne et al. 2019)</p>
+                
+                <p>To produce the plot, the following processing steps were performed:</p>
+                <ul>
+                    
+                    <li>Data set created from file ['osisaf_nh_sie_monthly.txt'] downloaded from ['ftp://osisaf.met.no/prod_test/ice/index/v2p1/nh/osisaf_nh_sie_monthly.txt'] at ['2023-08-01 17:06:29']</li>
+                    
+                    <li>Rebaselined to 1991-2020 for each month separately by calculating the arithmetic mean of the data over the baseline period and subtracting the mean from all data values. This is done for each month separately (Januarys, Februarys etc).</li>
+                    
+                    <li>Calculated annual series by extracting March from each year</li>
+                    
+                    <li>Calculated annual series by extracting September from each year</li>
+                    
+                </ul>
+                
+
+            </div>
+        </div>
+    </div>
+    
+    <div class="w3-container" style="margin:0 -16px">
+        <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
+            <div class="w3-content">
+
+                <h2><a id="Antarctic sea ice">Antarctic sea ice</a></h2>
+
+                
+                <p>
+Sea-ice concentrations are estimated from microwave radiances measured from satellites (from 1979). Sea-ice extent is calculated as the area of ocean grid cells where the sea-ice concentration exceeds 15%. Although there are relatively large differences in the absolute extent between data sets, they agree well on the year-to-year changes and the trends.
+</p>
+                
+
+                <p>
+                    The data in the above plot are available in a zip file containing a csv file for each data set.
+                </p>
+                <p>
+                    Data file: <a href="formatted_data/Antarctic_sea_ice_data_files.zip"
+                                  aria-label="Bundle of csv data in a zip file">Antarctic_sea_ice_data_files.zip</a>
+                    <br>Checksum: 2fcda8cb32902fef1ba1091e24d79819
+                    <button onclick="copyText('2fcda8cb32902fef1ba1091e24d79819')">Copy</button>
+                    <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
+                                   aria-label="extrenal link to data format description">BADC CSV format</a><br>
+                </p>
+
+                
+                <h3>NSIDC</h3>
+                <p>
+                    
+                    <a href="ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/south/monthly/data/S_01_extent_v3.0.csv" target="_blank"
+                       aria-label="Link to original data file for NSIDC">Original data file (external
+                        link)</a>
+                    
+                    <a href="ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/south/monthly/data/S_02_extent_v3.0.csv" target="_blank"
+                       aria-label="Link to original data file for NSIDC">Original data file (external
+                        link)</a>
+                    
+                    <a href="ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/south/monthly/data/S_03_extent_v3.0.csv" target="_blank"
+                       aria-label="Link to original data file for NSIDC">Original data file (external
+                        link)</a>
+                    
+                    <a href="ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/south/monthly/data/S_04_extent_v3.0.csv" target="_blank"
+                       aria-label="Link to original data file for NSIDC">Original data file (external
+                        link)</a>
+                    
+                    <a href="ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/south/monthly/data/S_05_extent_v3.0.csv" target="_blank"
+                       aria-label="Link to original data file for NSIDC">Original data file (external
+                        link)</a>
+                    
+                    <a href="ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/south/monthly/data/S_06_extent_v3.0.csv" target="_blank"
+                       aria-label="Link to original data file for NSIDC">Original data file (external
+                        link)</a>
+                    
+                    <a href="ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/south/monthly/data/S_07_extent_v3.0.csv" target="_blank"
+                       aria-label="Link to original data file for NSIDC">Original data file (external
+                        link)</a>
+                    
+                    <a href="ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/south/monthly/data/S_08_extent_v3.0.csv" target="_blank"
+                       aria-label="Link to original data file for NSIDC">Original data file (external
+                        link)</a>
+                    
+                    <a href="ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/south/monthly/data/S_09_extent_v3.0.csv" target="_blank"
+                       aria-label="Link to original data file for NSIDC">Original data file (external
+                        link)</a>
+                    
+                    <a href="ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/south/monthly/data/S_10_extent_v3.0.csv" target="_blank"
+                       aria-label="Link to original data file for NSIDC">Original data file (external
+                        link)</a>
+                    
+                    <a href="ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/south/monthly/data/S_11_extent_v3.0.csv" target="_blank"
+                       aria-label="Link to original data file for NSIDC">Original data file (external
+                        link)</a>
+                    
+                    <a href="ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/south/monthly/data/S_12_extent_v3.0.csv" target="_blank"
+                       aria-label="Link to original data file for NSIDC">Original data file (external
+                        link)</a>
+                    
+                </p>
+                
+                
+                
+                
+                
+                <p>
+                    Data citation: Fetterer, F., K. Knowles, W. N. Meier, M. Savoie, and A. K. Windnagel. 2017, updated daily. Sea Ice Index, Version 3. 1979-present. Boulder, Colorado USA. NSIDC: National Snow and Ice Data Center. doi: https://doi.org/10.7265/N5K072F8. [2023-08-01 17:05:57].
+                </p>
+                
+                
+                
+                <p>Acknowledgement: Fetterer, F., K. Knowles, W. N. Meier, M. Savoie, and A. K. Windnagel. 2017, updated daily. Sea Ice Index, Version 3. 1979-present. Boulder, Colorado USA. NSIDC: National Snow and Ice Data Center. doi: https://doi.org/10.7265/N5K072F8. [2023-08-01 17:05:57].</p>
+                
+                <p>To produce the plot, the following processing steps were performed:</p>
+                <ul>
+                    
+                    <li>Data set created from file ['S_01_extent_v3.0.csv', 'S_02_extent_v3.0.csv', 'S_03_extent_v3.0.csv', 'S_04_extent_v3.0.csv', 'S_05_extent_v3.0.csv', 'S_06_extent_v3.0.csv', 'S_07_extent_v3.0.csv', 'S_08_extent_v3.0.csv', 'S_09_extent_v3.0.csv', 'S_10_extent_v3.0.csv', 'S_11_extent_v3.0.csv', 'S_12_extent_v3.0.csv'] downloaded from ['ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/south/monthly/data/S_01_extent_v3.0.csv', 'ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/south/monthly/data/S_02_extent_v3.0.csv', 'ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/south/monthly/data/S_03_extent_v3.0.csv', 'ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/south/monthly/data/S_04_extent_v3.0.csv', 'ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/south/monthly/data/S_05_extent_v3.0.csv', 'ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/south/monthly/data/S_06_extent_v3.0.csv', 'ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/south/monthly/data/S_07_extent_v3.0.csv', 'ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/south/monthly/data/S_08_extent_v3.0.csv', 'ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/south/monthly/data/S_09_extent_v3.0.csv', 'ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/south/monthly/data/S_10_extent_v3.0.csv', 'ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/south/monthly/data/S_11_extent_v3.0.csv', 'ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/south/monthly/data/S_12_extent_v3.0.csv'] at ['2023-08-01 17:05:57', '2023-08-01 17:05:58', '2023-08-01 17:05:59', '2023-08-01 17:06:00', '2023-08-01 17:06:01', '2023-08-01 17:06:03', '2023-08-01 17:06:04', '2023-08-01 17:06:05', '2023-08-01 17:06:06', '2023-08-01 17:06:07', '2023-08-01 17:06:08', '2023-08-01 17:06:10']</li>
+                    
+                    <li>Rebaselined to 1991-2020 for each month separately by calculating the arithmetic mean of the data over the baseline period and subtracting the mean from all data values. This is done for each month separately (Januarys, Februarys etc).</li>
+                    
+                    <li>Calculated annual series by extracting February from each year</li>
+                    
+                    <li>Calculated annual series by extracting September from each year</li>
+                    
+                </ul>
+                
+                <h3>OSI SAF v2.1</h3>
+                <p>
+                    
+                    <a href="ftp://osisaf.met.no/prod_test/ice/index/v2p1/sh/osisaf_sh_sie_monthly.txt" target="_blank"
+                       aria-label="Link to original data file for OSI SAF v2.1">Original data file (external
+                        link)</a>
+                    
+                </p>
+                
+                
+                <p>
+                    Citation:
+                    
+                    <a href="https://doi.org/10.5194/tc-13-49-2019">Lavergne, T., Sorensen, A. M., Kern, S., Tonboe, R., Notz, D., Aaboe, S., Bell, L., Dybkjar, G., Eastwood, S., Gabarro, C., Heygster, G., Killie, M. A., Brandt Kreiner, M., Lavelle, J., Saldo, R., Sandven, S., and Pedersen, L. T.: Version 2 of the EUMETSAT OSI SAF and ESA CCI sea-ice concentration climate data records, The Cryosphere, 13, 49-78, doi:10.5194/tc-13-49-2019, 2019.</a>.
+                    
+                </p>
+                
+                
+                
+                
+                <p>
+                    Data citation: EUMETSAT Ocean and Sea Ice Satellite Application Facility, Sea ice index 1979-onwards (v2.1, 2020), OSI-420, Data extracted from OSI SAF FTP server: 1979-present, Northern Hemisphere, accessed 2023-08-01 17:06:28
+                </p>
+                
+                
+                
+                <p>Acknowledgement: The OSI SAF Sea Ice Index v2.1 is made available at https://osisaf-hl.met.no/v2p1-sea-ice-index.  The OSI SAF Sea Ice Index v2p1 is prepared using EUMETSAT OSI SAF Sea Ice Concentration data, with R&D input from the ESA Climate Change Initiative (ESA CCI) (Lavergne et al. 2019)</p>
+                
+                <p>To produce the plot, the following processing steps were performed:</p>
+                <ul>
+                    
+                    <li>Data set created from file ['osisaf_sh_sie_monthly.txt'] downloaded from ['ftp://osisaf.met.no/prod_test/ice/index/v2p1/sh/osisaf_sh_sie_monthly.txt'] at ['2023-08-01 17:06:28']</li>
+                    
+                    <li>Rebaselined to 1991-2020 for each month separately by calculating the arithmetic mean of the data over the baseline period and subtracting the mean from all data values. This is done for each month separately (Januarys, Februarys etc).</li>
+                    
+                    <li>Calculated annual series by extracting February from each year</li>
+                    
+                    <li>Calculated annual series by extracting September from each year</li>
+                    
+                </ul>
+                
+
+            </div>
+        </div>
+    </div>
+    
+    <div class="w3-container" style="margin:0 -16px">
+        <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
+            <div class="w3-content">
+
+                <h2><a id="Sea-surface temperature">Sea-surface temperature</a></h2>
+
+                
+                <p>
+Sea-surface temperature (SST) is the temperature of the surface ocean, typically measured in the upper metre, or metres of the ocean, by ships, buoys and satellites.
+</p>
+                
+
+                <p>
+                    The data in the above plot are available in a zip file containing a csv file for each data set.
+                </p>
+                <p>
+                    Data file: <a href="formatted_data/Sea-surface_temperature_data_files.zip"
+                                  aria-label="Bundle of csv data in a zip file">Sea-surface_temperature_data_files.zip</a>
+                    <br>Checksum: afb2ce0ea3d999a24ac00312c6e9a8d4
+                    <button onclick="copyText('afb2ce0ea3d999a24ac00312c6e9a8d4')">Copy</button>
+                    <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
+                                   aria-label="extrenal link to data format description">BADC CSV format</a><br>
+                </p>
+
+                
+                <h3>ERSST</h3>
+                <p>
+                    
+                    <a href="https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5.1/access/timeseries/aravg.mon.ocean.90S.90N.v5.1.0.2023MMMM.asc" target="_blank"
+                       aria-label="Link to original data file for ERSST">Original data file (external
+                        link)</a>
+                    
+                    <a href="https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5.1/access/timeseries/aravg.ann.ocean.90S.90N.v5.1.0.2023MMMM.asc" target="_blank"
+                       aria-label="Link to original data file for ERSST">Original data file (external
+                        link)</a>
+                    
+                </p>
+                
+                
+                <p>
+                    Citation:
+                    
+                    <a href="https://doi.org/10.1175/JCLI-D-16-0836.1">Huang, B., Peter W. Thorne, et. al, 2017: Extended Reconstructed Sea Surface Temperature version 5 (ERSSTv5), Upgrades, validations, and intercomparisons. J. Climate, doi: 10.1175/JCLI-D-16-0836.1</a>.
+                    
+                </p>
+                
+                
+                
+                
+                <p>
+                    Data citation: Boyin Huang, Peter W. Thorne, Viva F. Banzon, Tim Boyer, Gennady Chepurin, Jay H. Lawrimore, Matthew J. Menne, Thomas M. Smith, Russell S. Vose, and Huai-Min Zhang (2017): NOAA Extended Reconstructed Sea Surface Temperature (ERSST), Version 5. [indicate subset used]. NOAA National Centers for Environmental Information. doi:10.7289/V5T72FNM [2023-08-01 17:03:30].
+                </p>
+                
+                
+                
+                <p>To produce the plot, the following processing steps were performed:</p>
+                <ul>
+                    
+                    <li>Data set created from file ['aravg.mon.ocean.90S.90N.v5.1.0.2023MMMM.asc', 'aravg.ann.ocean.90S.90N.v5.1.0.2023MMMM.asc'] downloaded from ['https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5.1/access/timeseries/aravg.mon.ocean.90S.90N.v5.1.0.2023MMMM.asc', 'https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5.1/access/timeseries/aravg.ann.ocean.90S.90N.v5.1.0.2023MMMM.asc'] at ['2023-08-01 17:03:30']</li>
+                    
+                    <li>Calculated annual average from monthly averages using arithmetic mean</li>
+                    
+                    <li>Rebaselined to 1991-2020 by subtracting the arithemtic mean for that period from all data values.</li>
+                    
+                </ul>
+                
+                <h3>HadSST4</h3>
+                <p>
+                    
+                    <a href="https://www.metoffice.gov.uk/hadobs/hadsst4/data/csv/HadSST.4.0.1.0_monthly_GLOBE.csv" target="_blank"
+                       aria-label="Link to original data file for HadSST4">Original data file (external
+                        link)</a>
+                    
+                    <a href="https://www.metoffice.gov.uk/hadobs/hadsst4/data/csv/HadSST.4.0.1.0_annual_GLOBE.csv" target="_blank"
+                       aria-label="Link to original data file for HadSST4">Original data file (external
+                        link)</a>
+                    
+                </p>
+                
+                
+                <p>
+                    Citation:
+                    
+                    <a href="https://doi.org/10.1029/2018JD029867">Kennedy, J. J., Rayner, N. A., Atkinson, C. P., and Killick, R. E. (2019). An ensemble data set of sea-surface temperature change from 1850: the Met Office Hadley Centre HadSST.4.0.0.0 data set. Journal of Geophysical Research: Atmospheres, 124. https://doi.org/10.1029/2018JD029867</a>.
+                    
+                </p>
+                
+                
+                
+                
+                
+                
+                <p>Acknowledgement: HadSST.4.0.1.0 data were obtained from http://www.metoffice.gov.uk/hadobs/hadsst4 on 2023-08-01 17:04:36 and are © British Crown Copyright, Met Office 2023, provided under an Open Government License, http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/</p>
+                
+                <p>To produce the plot, the following processing steps were performed:</p>
+                <ul>
+                    
+                    <li>Data set created from file ['HadSST.4.0.1.0_monthly_GLOBE.csv', 'HadSST.4.0.1.0_annual_GLOBE.csv'] downloaded from ['https://www.metoffice.gov.uk/hadobs/hadsst4/data/csv/HadSST.4.0.1.0_monthly_GLOBE.csv', 'https://www.metoffice.gov.uk/hadobs/hadsst4/data/csv/HadSST.4.0.1.0_annual_GLOBE.csv'] at ['2023-08-01 17:04:36', '2023-08-01 17:04:36']</li>
+                    
+                    <li>Calculated annual average from monthly averages using arithmetic mean</li>
+                    
+                    <li>Rebaselined to 1991-2020 by subtracting the arithemtic mean for that period from all data values.</li>
+                    
+                </ul>
+                
+
+            </div>
+        </div>
+    </div>
+    
+
+    <p>
+        Page created on 2023-08-01 using
+        <a href="https://github.com/jjk-code-otter/climate-indicator-manager">climind v0.1</a>
+    </p>
+
+</div>
+
+
+</body>
+</html>
