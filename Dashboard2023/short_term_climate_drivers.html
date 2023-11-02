@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Short Term Climate Drivers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<style>
+h1, h2, h3, h4, h5, h6 {
+		font-weight: 600;
+	}
+h3 {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+p {
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+.button_link {
+  background-color: #777777;
+  color: white;
+  padding: 14px 25px;
+  margin-bottom: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+}
+.navbar {
+  margin-bottom: 12px;
+  margin-top: 0px;
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 8px 10px;
+  text-decoration: none;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 8px 10px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #ddd;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 8px 10px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+</style>
+
+<script>
+        function copyText(invar) {
+
+            /* Copy text into clipboard */
+            navigator.clipboard.writeText
+                (invar);
+        }
+
+</script>
+<body>
+
+<div class="w3-container w3-padding-32 w3-light-grey">
+
+    <div class="w3-card navbar w3-margin-bottom ">
+        <a href="dashboard.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                
+                <a href="dashboard.html">Key Climate Indicators</a>
+                
+                <a href="greenhouse_gases.html">Greenhouse gases</a>
+                
+                <a href="global_mean_temperature.html">Global mean temperature</a>
+                
+                <a href="ocean_heat_content.html">Ocean Indicators</a>
+                
+                <a href="sea_level.html">Sea Level</a>
+                
+                <a href="sea_ice_extent.html">Sea ice extent</a>
+                
+                <a href="glaciers_and_ice_sheets.html">Glaciers and Ice Sheets</a>
+                
+                <a href="short_term_climate_drivers.html">Short Term Climate Drivers</a>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div class="w3-container" style="margin:0 -16px">
+        <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
+            <h1>Short Term Climate Drivers</h1>
+        </div>
+    </div>
+
+    
+    <div class="w3-row-padding" style="margin:0 -16px">
+
+        
+        
+        <div class="w3-third">
+
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
+                <p>
+                    <img src="figures/ENSO.png" width=100% alt="Monthly Nino 3.4 index (&deg;C, difference from the 1991-2020 average)  from 1950-2023. Data are from the following two data sets: ERSSTv5, HadISST."
+                         title="Graph of ENSO">
+                </p>
+                <h3>ENSO</h3>
+                <p>
+                    Monthly Nino 3.4 index (&deg;C, difference from the 1991-2020 average)  from 1950-2023. Data are from the following two data sets: ERSSTv5, HadISST.
+                    <button onclick="copyText('Monthly Nino 3.4 index (&deg;C, difference from the 1991-2020 average)  from 1950-2023. Data are from the following two data sets: ERSSTv5, HadISST.')">Copy caption</button>
+                </p>
+                <p>
+                <div style="float: left;">
+                    Image: <a href="figures/ENSO.png" target="_blank" aria-label="Figure in png format">png</a>-<a
+                        href="figures/ENSO.pdf" target="_blank"
+                        aria-label="Figure in pdf format">pdf</a>-<a
+                        href="figures/ENSO.svg" target="_blank"
+                        aria-label="Figure in svg format">svg</a><br>
+                    Formatted data: <a href="formatted_data/ENSO_data_files.zip"
+                                       aria-label="Bundle of csv data in a zip file">csv</a>
+                    (<a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
+                        aria-label="extrenal link to data format description">format</a>)<br>
+                    <a href="#ENSO"
+                       aria-label="link to references, acknowledgements and processing details">References and
+                        processing</a><br>
+                </div>
+                <div style="float: right;">
+                    
+                </div>
+                </p>
+            </div>
+
+        </div>
+        
+        
+        
+        <div class="w3-third">
+
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
+                <p>
+                    <img src="figures/SOI.png" width=100% alt="Monthly Southern Oscillation Index (hPa, difference from the 1950-2000 average)  from 1951-2023. Data are from CPC SOI."
+                         title="Graph of SOI">
+                </p>
+                <h3>SOI</h3>
+                <p>
+                    Monthly Southern Oscillation Index (hPa, difference from the 1950-2000 average)  from 1951-2023. Data are from CPC SOI.
+                    <button onclick="copyText('Monthly Southern Oscillation Index (hPa, difference from the 1950-2000 average)  from 1951-2023. Data are from CPC SOI.')">Copy caption</button>
+                </p>
+                <p>
+                <div style="float: left;">
+                    Image: <a href="figures/SOI.png" target="_blank" aria-label="Figure in png format">png</a>-<a
+                        href="figures/SOI.pdf" target="_blank"
+                        aria-label="Figure in pdf format">pdf</a>-<a
+                        href="figures/SOI.svg" target="_blank"
+                        aria-label="Figure in svg format">svg</a><br>
+                    Formatted data: <a href="formatted_data/SOI_data_files.zip"
+                                       aria-label="Bundle of csv data in a zip file">csv</a>
+                    (<a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
+                        aria-label="extrenal link to data format description">format</a>)<br>
+                    <a href="#SOI"
+                       aria-label="link to references, acknowledgements and processing details">References and
+                        processing</a><br>
+                </div>
+                <div style="float: right;">
+                    
+                </div>
+                </p>
+            </div>
+
+        </div>
+        
+        
+        
+        <div class="w3-third">
+
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
+                <p>
+                    <img src="figures/Pacific_Decadal_Oscillation.png" width=100% alt="Monthly Pacific Decadal Oscillation index (&deg;C, difference from the 1950-2000 average)  from 1950-2023. Data are from NOAA CPC."
+                         title="Graph of Pacific Decadal Oscillation">
+                </p>
+                <h3>Pacific Decadal Oscillation</h3>
+                <p>
+                    Monthly Pacific Decadal Oscillation index (&deg;C, difference from the 1950-2000 average)  from 1950-2023. Data are from NOAA CPC.
+                    <button onclick="copyText('Monthly Pacific Decadal Oscillation index (&deg;C, difference from the 1950-2000 average)  from 1950-2023. Data are from NOAA CPC.')">Copy caption</button>
+                </p>
+                <p>
+                <div style="float: left;">
+                    Image: <a href="figures/Pacific_Decadal_Oscillation.png" target="_blank" aria-label="Figure in png format">png</a>-<a
+                        href="figures/Pacific_Decadal_Oscillation.pdf" target="_blank"
+                        aria-label="Figure in pdf format">pdf</a>-<a
+                        href="figures/Pacific_Decadal_Oscillation.svg" target="_blank"
+                        aria-label="Figure in svg format">svg</a><br>
+                    Formatted data: <a href="formatted_data/Pacific_Decadal_Oscillation_data_files.zip"
+                                       aria-label="Bundle of csv data in a zip file">csv</a>
+                    (<a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
+                        aria-label="extrenal link to data format description">format</a>)<br>
+                    <a href="#Pacific Decadal Oscillation"
+                       aria-label="link to references, acknowledgements and processing details">References and
+                        processing</a><br>
+                </div>
+                <div style="float: right;">
+                    
+                </div>
+                </p>
+            </div>
+
+        </div>
+        
+        
+
+    </div>
+    
+    <div class="w3-row-padding" style="margin:0 -16px">
+
+        
+        
+        <div class="w3-third">
+
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
+                <p>
+                    <img src="figures/Arctic_Oscillation.png" width=100% alt="Monthly Arctic Oscillation index (1, difference from the 1950-2000 average)  from 2010-2023. Data are from NOAA CPC."
+                         title="Graph of Arctic Oscillation">
+                </p>
+                <h3>Arctic Oscillation</h3>
+                <p>
+                    Monthly Arctic Oscillation index (1, difference from the 1950-2000 average)  from 2010-2023. Data are from NOAA CPC.
+                    <button onclick="copyText('Monthly Arctic Oscillation index (1, difference from the 1950-2000 average)  from 2010-2023. Data are from NOAA CPC.')">Copy caption</button>
+                </p>
+                <p>
+                <div style="float: left;">
+                    Image: <a href="figures/Arctic_Oscillation.png" target="_blank" aria-label="Figure in png format">png</a>-<a
+                        href="figures/Arctic_Oscillation.pdf" target="_blank"
+                        aria-label="Figure in pdf format">pdf</a>-<a
+                        href="figures/Arctic_Oscillation.svg" target="_blank"
+                        aria-label="Figure in svg format">svg</a><br>
+                    Formatted data: <a href="formatted_data/Arctic_Oscillation_data_files.zip"
+                                       aria-label="Bundle of csv data in a zip file">csv</a>
+                    (<a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
+                        aria-label="extrenal link to data format description">format</a>)<br>
+                    <a href="#Arctic Oscillation"
+                       aria-label="link to references, acknowledgements and processing details">References and
+                        processing</a><br>
+                </div>
+                <div style="float: right;">
+                    
+                </div>
+                </p>
+            </div>
+
+        </div>
+        
+        
+        
+        <div class="w3-third">
+
+            <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey" style="padding-bottom:10px">
+                <p>
+                    <img src="figures/Antarctic_Oscillation.png" width=100% alt="Monthly Antarctic Oscillation index (1, difference from the 1950-2000 average)  from 2010-2023. Data are from NOAA CPC."
+                         title="Graph of Antarctic Oscillation">
+                </p>
+                <h3>Antarctic Oscillation</h3>
+                <p>
+                    Monthly Antarctic Oscillation index (1, difference from the 1950-2000 average)  from 2010-2023. Data are from NOAA CPC.
+                    <button onclick="copyText('Monthly Antarctic Oscillation index (1, difference from the 1950-2000 average)  from 2010-2023. Data are from NOAA CPC.')">Copy caption</button>
+                </p>
+                <p>
+                <div style="float: left;">
+                    Image: <a href="figures/Antarctic_Oscillation.png" target="_blank" aria-label="Figure in png format">png</a>-<a
+                        href="figures/Antarctic_Oscillation.pdf" target="_blank"
+                        aria-label="Figure in pdf format">pdf</a>-<a
+                        href="figures/Antarctic_Oscillation.svg" target="_blank"
+                        aria-label="Figure in svg format">svg</a><br>
+                    Formatted data: <a href="formatted_data/Antarctic_Oscillation_data_files.zip"
+                                       aria-label="Bundle of csv data in a zip file">csv</a>
+                    (<a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
+                        aria-label="extrenal link to data format description">format</a>)<br>
+                    <a href="#Antarctic Oscillation"
+                       aria-label="link to references, acknowledgements and processing details">References and
+                        processing</a><br>
+                </div>
+                <div style="float: right;">
+                    
+                </div>
+                </p>
+            </div>
+
+        </div>
+        
+        
+
+    </div>
+    
+
+    
+    <div class="w3-container" style="margin:0 -16px">
+        <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
+            <div class="w3-content">
+                <h1>Introduction</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container" style="margin:0 -16px">
+        <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
+            <div class="w3-content">
+                <p>
+Climate modes are recurrent patterns, usually of pressure or sea-surface temperature (SST), typically characterized by negative and positive phases, which each have distinctive effects on the distribution of rainfall, temperature and other meteorological elements on time scales varying from days to seasons and beyond.
+</p>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="w3-container" style="margin:0 -16px">
+        <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
+            <div class="w3-content">
+                <h1>Key messages</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container" style="margin:0 -16px">
+        <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
+            <div class="w3-content">
+
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div class="w3-container" style="margin:0 -16px">
+        <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
+            <div class="w3-content">
+                <h1>Dataset and processing details</h1>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="w3-container" style="margin:0 -16px">
+        <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
+            <div class="w3-content">
+
+                <h2><a id="ENSO">ENSO</a></h2>
+
+                
+                
+                
+
+                <p>
+                    The data in the above plot are available in a zip file containing a csv file for each data set.
+                </p>
+                <p>
+                    Data file: <a href="formatted_data/ENSO_data_files.zip"
+                                  aria-label="Bundle of csv data in a zip file">ENSO_data_files.zip</a>
+                    <br>Checksum: 1f9c25da5bd0d9bdc017dc1735b002ea
+                    <button onclick="copyText('1f9c25da5bd0d9bdc017dc1735b002ea')">Copy</button>
+                    <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
+                                   aria-label="extrenal link to data format description">BADC CSV format</a><br>
+                </p>
+
+                
+                <h3>ERSSTv5</h3>
+                <p>
+                    
+                    <a href="https://psl.noaa.gov/data/correlation/nina34.data" target="_blank"
+                       aria-label="Link to original data file for ERSSTv5">Original data file (external
+                        link)</a>
+                    
+                </p>
+                
+                
+                
+                
+                
+                
+                
+                <p>To produce the plot, the following processing steps were performed:</p>
+                <ul>
+                    
+                    <li>Data set created from file ['nina34.data'] downloaded from ['https://psl.noaa.gov/data/correlation/nina34.data'] at ['2023-08-07 14:48:13']</li>
+                    
+                    <li>Rebaselined to 1991-2020 for each month separately by calculating the arithmetic mean of the data over the baseline period and subtracting the mean from all data values. This is done for each month separately (Januarys, Februarys etc).</li>
+                    
+                    <li>Selected years within the range 1950 to 2023.</li>
+                    
+                </ul>
+                
+                <h3>HadISST</h3>
+                <p>
+                    
+                    <a href="https://psl.noaa.gov/gcos_wgsp/Timeseries/Data/nino34.long.data" target="_blank"
+                       aria-label="Link to original data file for HadISST">Original data file (external
+                        link)</a>
+                    
+                </p>
+                
+                
+                
+                
+                
+                
+                
+                <p>To produce the plot, the following processing steps were performed:</p>
+                <ul>
+                    
+                    <li>Data set created from file ['nino34.long.data'] downloaded from ['https://psl.noaa.gov/gcos_wgsp/Timeseries/Data/nino34.long.data'] at ['2023-08-07 14:48:14']</li>
+                    
+                    <li>Rebaselined to 1991-2020 for each month separately by calculating the arithmetic mean of the data over the baseline period and subtracting the mean from all data values. This is done for each month separately (Januarys, Februarys etc).</li>
+                    
+                    <li>Selected years within the range 1950 to 2023.</li>
+                    
+                </ul>
+                
+
+            </div>
+        </div>
+    </div>
+    
+    <div class="w3-container" style="margin:0 -16px">
+        <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
+            <div class="w3-content">
+
+                <h2><a id="SOI">SOI</a></h2>
+
+                
+                
+                
+
+                <p>
+                    The data in the above plot are available in a zip file containing a csv file for each data set.
+                </p>
+                <p>
+                    Data file: <a href="formatted_data/SOI_data_files.zip"
+                                  aria-label="Bundle of csv data in a zip file">SOI_data_files.zip</a>
+                    <br>Checksum: b1724aeb2adcaf4d2eb569d04c9956dc
+                    <button onclick="copyText('b1724aeb2adcaf4d2eb569d04c9956dc')">Copy</button>
+                    <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
+                                   aria-label="extrenal link to data format description">BADC CSV format</a><br>
+                </p>
+
+                
+                <h3>CPC SOI</h3>
+                <p>
+                    
+                    <a href="https://psl.noaa.gov/data/correlation/soi.data" target="_blank"
+                       aria-label="Link to original data file for CPC SOI">Original data file (external
+                        link)</a>
+                    
+                </p>
+                
+                
+                
+                
+                
+                
+                
+                <p>To produce the plot, the following processing steps were performed:</p>
+                <ul>
+                    
+                    <li>Data set created from file ['soi.data'] downloaded from ['https://psl.noaa.gov/data/correlation/soi.data'] at ['2023-08-28 10:53:43']</li>
+                    
+                    <li>Selected years within the range 1950 to 2023.</li>
+                    
+                </ul>
+                
+
+            </div>
+        </div>
+    </div>
+    
+    <div class="w3-container" style="margin:0 -16px">
+        <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
+            <div class="w3-content">
+
+                <h2><a id="Pacific Decadal Oscillation">Pacific Decadal Oscillation</a></h2>
+
+                
+                
+                
+
+                <p>
+                    The data in the above plot are available in a zip file containing a csv file for each data set.
+                </p>
+                <p>
+                    Data file: <a href="formatted_data/Pacific_Decadal_Oscillation_data_files.zip"
+                                  aria-label="Bundle of csv data in a zip file">Pacific_Decadal_Oscillation_data_files.zip</a>
+                    <br>Checksum: 31f50452b19737b17021eee347e2b94b
+                    <button onclick="copyText('31f50452b19737b17021eee347e2b94b')">Copy</button>
+                    <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
+                                   aria-label="extrenal link to data format description">BADC CSV format</a><br>
+                </p>
+
+                
+                <h3>NOAA CPC</h3>
+                <p>
+                    
+                    <a href="https://www.ncei.noaa.gov/pub/data/cmb/ersst/v5/index/ersst.v5.pdo.dat" target="_blank"
+                       aria-label="Link to original data file for NOAA CPC">Original data file (external
+                        link)</a>
+                    
+                </p>
+                
+                
+                <p>
+                    Citation:
+                    
+                    <a href="https://www.ncei.noaa.gov/access/monitoring/pdo/">https://www.ncei.noaa.gov/access/monitoring/pdo/</a>.
+                    
+                </p>
+                
+                
+                
+                
+                
+                
+                <p>To produce the plot, the following processing steps were performed:</p>
+                <ul>
+                    
+                    <li>Data set created from file ['ersst.v5.pdo.dat'] downloaded from ['https://www.ncei.noaa.gov/pub/data/cmb/ersst/v5/index/ersst.v5.pdo.dat'] at ['2023-08-07 14:38:27']</li>
+                    
+                    <li>Selected years within the range 1950 to 2023.</li>
+                    
+                </ul>
+                
+
+            </div>
+        </div>
+    </div>
+    
+    <div class="w3-container" style="margin:0 -16px">
+        <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
+            <div class="w3-content">
+
+                <h2><a id="Arctic Oscillation">Arctic Oscillation</a></h2>
+
+                
+                
+                
+
+                <p>
+                    The data in the above plot are available in a zip file containing a csv file for each data set.
+                </p>
+                <p>
+                    Data file: <a href="formatted_data/Arctic_Oscillation_data_files.zip"
+                                  aria-label="Bundle of csv data in a zip file">Arctic_Oscillation_data_files.zip</a>
+                    <br>Checksum: 6c4eda3b52bbcbdcc12da5ad63e41ae6
+                    <button onclick="copyText('6c4eda3b52bbcbdcc12da5ad63e41ae6')">Copy</button>
+                    <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
+                                   aria-label="extrenal link to data format description">BADC CSV format</a><br>
+                </p>
+
+                
+                <h3>NOAA CPC</h3>
+                <p>
+                    
+                    <a href="https://www.cpc.ncep.noaa.gov/products/precip/CWlink/daily_ao_index/monthly.ao.index.b50.current.ascii.table" target="_blank"
+                       aria-label="Link to original data file for NOAA CPC">Original data file (external
+                        link)</a>
+                    
+                </p>
+                
+                
+                <p>
+                    Citation:
+                    
+                    <a href="https://www.ncei.noaa.gov/access/monitoring/ao/">https://www.ncei.noaa.gov/access/monitoring/ao/</a>.
+                    
+                </p>
+                
+                
+                
+                
+                
+                
+                <p>To produce the plot, the following processing steps were performed:</p>
+                <ul>
+                    
+                    <li>Data set created from file ['monthly.ao.index.b50.current.ascii.table'] downloaded from ['https://www.cpc.ncep.noaa.gov/products/precip/CWlink/daily_ao_index/monthly.ao.index.b50.current.ascii.table'] at ['2023-08-07 14:38:26']</li>
+                    
+                    <li>Selected years within the range 2010 to 2023.</li>
+                    
+                </ul>
+                
+
+            </div>
+        </div>
+    </div>
+    
+    <div class="w3-container" style="margin:0 -16px">
+        <div class="w3-card w3-container w3-white w3-margin-bottom w3-text-dark-grey">
+            <div class="w3-content">
+
+                <h2><a id="Antarctic Oscillation">Antarctic Oscillation</a></h2>
+
+                
+                
+                
+
+                <p>
+                    The data in the above plot are available in a zip file containing a csv file for each data set.
+                </p>
+                <p>
+                    Data file: <a href="formatted_data/Antarctic_Oscillation_data_files.zip"
+                                  aria-label="Bundle of csv data in a zip file">Antarctic_Oscillation_data_files.zip</a>
+                    <br>Checksum: e109369d1e87a0c281b2447d615deb0d
+                    <button onclick="copyText('e109369d1e87a0c281b2447d615deb0d')">Copy</button>
+                    <br>Format: <a href="https://help.ceda.ac.uk/article/105-badc-csv" target="_blank"
+                                   aria-label="extrenal link to data format description">BADC CSV format</a><br>
+                </p>
+
+                
+                <h3>NOAA CPC</h3>
+                <p>
+                    
+                    <a href="https://www.cpc.ncep.noaa.gov/products/precip/CWlink/daily_ao_index/aao/monthly.aao.index.b79.current.ascii.table" target="_blank"
+                       aria-label="Link to original data file for NOAA CPC">Original data file (external
+                        link)</a>
+                    
+                </p>
+                
+                
+                <p>
+                    Citation:
+                    
+                    <a href="https://www.ncei.noaa.gov/access/monitoring/ao/">https://www.ncei.noaa.gov/access/monitoring/ao/</a>.
+                    
+                </p>
+                
+                
+                
+                
+                
+                
+                <p>To produce the plot, the following processing steps were performed:</p>
+                <ul>
+                    
+                    <li>Data set created from file ['monthly.aao.index.b79.current.ascii.table'] downloaded from ['https://www.cpc.ncep.noaa.gov/products/precip/CWlink/daily_ao_index/aao/monthly.aao.index.b79.current.ascii.table'] at ['2023-08-07 14:38:25']</li>
+                    
+                    <li>Selected years within the range 2010 to 2023.</li>
+                    
+                </ul>
+                
+
+            </div>
+        </div>
+    </div>
+    
+
+    <p>
+        Page created on 2023-11-02 using
+        <a href="https://github.com/jjk-code-otter/climate-indicator-manager">climind v1.0</a>
+    </p>
+
+</div>
+
+
+</body>
+</html>
