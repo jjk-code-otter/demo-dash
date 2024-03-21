@@ -7,7 +7,7 @@
   <rdf:RDF xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2024-02-08T12:02:22.421729</dc:date>
+    <dc:date>2024-03-21T10:13:05.801896</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -49,10 +49,10 @@ L 1036.8 576.72
       <defs>
        <path d="M 0 0 
 L 0 6 
-" id="m15e371a5b3" style="stroke:#696969;stroke-width:1.25;"/>
+" id="m8c6ee86246" style="stroke:#696969;stroke-width:1.25;"/>
       </defs>
       <g>
-       <use style="fill:#696969;stroke:#696969;stroke-width:1.25;" x="294.262408" xlink:href="#m15e371a5b3" y="576.72"/>
+       <use style="fill:#696969;stroke:#696969;stroke-width:1.25;" x="294.262408" xlink:href="#m8c6ee86246" y="576.72"/>
       </g>
      </g>
      <g id="text_1">
@@ -131,7 +131,7 @@ z
     <g id="xtick_2">
      <g id="line2d_2">
       <g>
-       <use style="fill:#696969;stroke:#696969;stroke-width:1.25;" x="513.623587" xlink:href="#m15e371a5b3" y="576.72"/>
+       <use style="fill:#696969;stroke:#696969;stroke-width:1.25;" x="513.623587" xlink:href="#m8c6ee86246" y="576.72"/>
       </g>
      </g>
      <g id="text_2">
@@ -168,7 +168,7 @@ z
     <g id="xtick_3">
      <g id="line2d_3">
       <g>
-       <use style="fill:#696969;stroke:#696969;stroke-width:1.25;" x="732.984767" xlink:href="#m15e371a5b3" y="576.72"/>
+       <use style="fill:#696969;stroke:#696969;stroke-width:1.25;" x="732.984767" xlink:href="#m8c6ee86246" y="576.72"/>
       </g>
      </g>
      <g id="text_3">
@@ -184,7 +184,7 @@ z
     <g id="xtick_4">
      <g id="line2d_4">
       <g>
-       <use style="fill:#696969;stroke:#696969;stroke-width:1.25;" x="952.345946" xlink:href="#m15e371a5b3" y="576.72"/>
+       <use style="fill:#696969;stroke:#696969;stroke-width:1.25;" x="952.345946" xlink:href="#m8c6ee86246" y="576.72"/>
       </g>
      </g>
      <g id="text_4">
@@ -291,7 +291,7 @@ z
    <g id="matplotlib.axis_2">
     <g id="ytick_1">
      <g id="line2d_5">
-      <path clip-path="url(#p393dfacb07)" d="M 144 554.04 
+      <path clip-path="url(#pf18831fe60)" d="M 144 554.04 
 L 1036.8 554.04 
 " style="fill:none;stroke:#d3d3d3;stroke-linecap:round;stroke-opacity:0.5;"/>
      </g>
@@ -314,7 +314,7 @@ z
     </g>
     <g id="ytick_2">
      <g id="line2d_6">
-      <path clip-path="url(#p393dfacb07)" d="M 144 478.44 
+      <path clip-path="url(#pf18831fe60)" d="M 144 478.44 
 L 1036.8 478.44 
 " style="fill:none;stroke:#d3d3d3;stroke-linecap:round;stroke-opacity:0.5;"/>
      </g>
@@ -350,7 +350,7 @@ z
     </g>
     <g id="ytick_3">
      <g id="line2d_7">
-      <path clip-path="url(#p393dfacb07)" d="M 144 402.84 
+      <path clip-path="url(#pf18831fe60)" d="M 144 402.84 
 L 1036.8 402.84 
 " style="fill:none;stroke:#d3d3d3;stroke-linecap:round;stroke-opacity:0.5;"/>
      </g>
@@ -394,7 +394,7 @@ z
     </g>
     <g id="ytick_4">
      <g id="line2d_8">
-      <path clip-path="url(#p393dfacb07)" d="M 144 327.24 
+      <path clip-path="url(#pf18831fe60)" d="M 144 327.24 
 L 1036.8 327.24 
 " style="fill:none;stroke:#d3d3d3;stroke-linecap:round;stroke-opacity:0.5;"/>
      </g>
@@ -445,7 +445,7 @@ z
     </g>
     <g id="ytick_5">
      <g id="line2d_9">
-      <path clip-path="url(#p393dfacb07)" d="M 144 251.64 
+      <path clip-path="url(#pf18831fe60)" d="M 144 251.64 
 L 1036.8 251.64 
 " style="fill:none;stroke:#d3d3d3;stroke-linecap:round;stroke-opacity:0.5;"/>
      </g>
@@ -460,7 +460,7 @@ L 1036.8 251.64
     </g>
     <g id="ytick_6">
      <g id="line2d_10">
-      <path clip-path="url(#p393dfacb07)" d="M 144 176.04 
+      <path clip-path="url(#pf18831fe60)" d="M 144 176.04 
 L 1036.8 176.04 
 " style="fill:none;stroke:#d3d3d3;stroke-linecap:round;stroke-opacity:0.5;"/>
      </g>
@@ -475,7 +475,7 @@ L 1036.8 176.04
     </g>
     <g id="ytick_7">
      <g id="line2d_11">
-      <path clip-path="url(#p393dfacb07)" d="M 144 100.44 
+      <path clip-path="url(#pf18831fe60)" d="M 144 100.44 
 L 1036.8 100.44 
 " style="fill:none;stroke:#d3d3d3;stroke-linecap:round;stroke-opacity:0.5;"/>
      </g>
@@ -962,7 +962,7 @@ z
     </g>
    </g>
    <g id="line2d_13">
-    <path clip-path="url(#p393dfacb07)" d="M 184.581818 402.84 
+    <path clip-path="url(#pf18831fe60)" d="M 184.581818 402.84 
 L 206.517936 289.44 
 L 228.454054 402.84 
 L 250.390172 327.24 
@@ -1005,15 +1005,15 @@ L 996.218182 100.44
   </g>
   <g id="text_16">
    <g id="patch_4">
-    <path d="M 874.164375 646.18275 
+    <path d="M 875.079375 646.18275 
 L 1040.76 646.18275 
 L 1040.76 628.26525 
-L 874.164375 628.26525 
+L 875.079375 628.26525 
 z
 " style="fill:#ffffff;stroke:#ffffff;stroke-linejoin:miter;"/>
    </g>
-   <!-- Created: 2024-02-08 12:02:22 -->
-   <g style="fill:#696969;" transform="translate(878.124375 640.224)scale(0.12 -0.12)">
+   <!-- Created: 2024-03-21 10:13:05 -->
+   <g style="fill:#696969;" transform="translate(879.039375 640.224)scale(0.12 -0.12)">
     <defs>
      <path d="M 17.96875 49.3125 
 L 17.96875 38.375 
@@ -1026,6 +1026,56 @@ L 7.078125 0
 L 7.078125 10.984375 
 z
 " id="FranklinGothic-Book-58"/>
+     <path d="M 19.34375 31.34375 
+L 19.34375 37.984375 
+L 26.953125 37.984375 
+Q 35.296875 37.984375 38.890625 41.40625 
+Q 42.484375 44.828125 42.484375 49.703125 
+Q 42.484375 55.078125 38.46875 58.21875 
+Q 34.46875 61.375 28.421875 61.375 
+Q 17.1875 61.375 12.890625 50.53125 
+L 5.375 52.6875 
+Q 11.8125 68.015625 29.203125 68.015625 
+Q 38.96875 68.015625 44.96875 62.8125 
+Q 50.984375 57.625 50.984375 50.296875 
+Q 50.984375 44.625 47.359375 40.40625 
+Q 43.75 36.1875 38.09375 35.109375 
+Q 44.4375 34.1875 49 29.78125 
+Q 53.5625 25.390625 53.5625 18.40625 
+Q 53.5625 10.0625 46.765625 4.375 
+Q 39.984375 -1.3125 28.171875 -1.3125 
+Q 18.796875 -1.3125 12.125 3.125 
+Q 5.46875 7.5625 2.9375 14.9375 
+L 10.6875 17.53125 
+Q 14.203125 5.46875 28.03125 5.46875 
+Q 37.015625 5.46875 40.9375 9.296875 
+Q 44.875 13.140625 44.875 18.453125 
+Q 44.875 24.21875 40.15625 27.78125 
+Q 35.453125 31.34375 26.953125 31.34375 
+z
+" id="FranklinGothic-Book-51"/>
+     <path d="M 48.875 66.65625 
+L 48.1875 59.46875 
+L 15.4375 59.46875 
+L 14.015625 37.84375 
+Q 21.4375 45.125 30.328125 45.125 
+Q 39.703125 45.125 46.515625 38.625 
+Q 53.328125 32.125 53.328125 22.015625 
+Q 53.328125 11.765625 45.921875 5.21875 
+Q 38.53125 -1.3125 27.828125 -1.3125 
+Q 19.4375 -1.3125 12.890625 3.078125 
+Q 6.34375 7.46875 4.296875 14.453125 
+L 11.421875 16.890625 
+Q 15.828125 5.28125 27.9375 5.28125 
+Q 35.890625 5.28125 40.578125 9.984375 
+Q 45.265625 14.703125 45.265625 22.015625 
+Q 45.265625 29.6875 40.625 33.984375 
+Q 35.984375 38.28125 29.5 38.28125 
+Q 20.015625 38.28125 13.8125 29.203125 
+L 7.234375 30.609375 
+L 9.375 66.65625 
+z
+" id="FranklinGothic-Book-53"/>
     </defs>
     <use xlink:href="#FranklinGothic-Book-67"/>
     <use x="57.910156" xlink:href="#FranklinGothic-Book-114"/>
@@ -1042,24 +1092,24 @@ z
     <use x="552.273438" xlink:href="#FranklinGothic-Book-52"/>
     <use x="610.916016" xlink:href="#FranklinGothic-Book-45"/>
     <use x="635.916016" xlink:href="#FranklinGothic-Book-48"/>
-    <use x="694.558594" xlink:href="#FranklinGothic-Book-50"/>
+    <use x="694.558594" xlink:href="#FranklinGothic-Book-51"/>
     <use x="753.201172" xlink:href="#FranklinGothic-Book-45"/>
-    <use x="778.201172" xlink:href="#FranklinGothic-Book-48"/>
-    <use x="836.84375" xlink:href="#FranklinGothic-Book-56"/>
-    <use x="895.486328" xlink:href="#FranklinGothic-Book-32"/>
-    <use x="920.486328" xlink:href="#FranklinGothic-Book-49"/>
-    <use x="979.128906" xlink:href="#FranklinGothic-Book-50"/>
-    <use x="1037.771484" xlink:href="#FranklinGothic-Book-58"/>
-    <use x="1062.771484" xlink:href="#FranklinGothic-Book-48"/>
-    <use x="1121.414062" xlink:href="#FranklinGothic-Book-50"/>
-    <use x="1180.056641" xlink:href="#FranklinGothic-Book-58"/>
-    <use x="1205.056641" xlink:href="#FranklinGothic-Book-50"/>
-    <use x="1263.699219" xlink:href="#FranklinGothic-Book-50"/>
+    <use x="778.201172" xlink:href="#FranklinGothic-Book-50"/>
+    <use x="833.34375" xlink:href="#FranklinGothic-Book-49"/>
+    <use x="891.986328" xlink:href="#FranklinGothic-Book-32"/>
+    <use x="916.986328" xlink:href="#FranklinGothic-Book-49"/>
+    <use x="972.378906" xlink:href="#FranklinGothic-Book-48"/>
+    <use x="1031.021484" xlink:href="#FranklinGothic-Book-58"/>
+    <use x="1056.021484" xlink:href="#FranklinGothic-Book-49"/>
+    <use x="1113.789062" xlink:href="#FranklinGothic-Book-51"/>
+    <use x="1172.431641" xlink:href="#FranklinGothic-Book-58"/>
+    <use x="1197.431641" xlink:href="#FranklinGothic-Book-48"/>
+    <use x="1256.074219" xlink:href="#FranklinGothic-Book-53"/>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="p393dfacb07">
+  <clipPath id="pf18831fe60">
    <rect height="498.96" width="892.8" x="144" y="77.76"/>
   </clipPath>
  </defs>
